@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google"
 import styles from '@/styles/global.css'
-import NavBar from './components/NavBar'
+import Navbar from './components/NavBar'
 import { lazy, Suspense } from "react"
 
 const font = Inter({
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='es'>
       <body className={`${font.variable} bg-primary`}>
-        <NavBar />
+        <Navbar />
         <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <main className='p-6'>{children}</main>
