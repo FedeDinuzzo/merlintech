@@ -1,10 +1,8 @@
 import styles from "./constants/style"
 import Hero from './components/Hero'
-import { lazy, Suspense } from "react"
-
-const Clients = lazy(() => import('./components/Clients'))
-const Scroll = lazy(() => import('./components/Scroll'))
-const Partners = lazy(() => import('./components/Partners'))
+import Clients from './components/Clients'
+import Scroll from './components/Scroll'
+import Partners from './components/Partners'
 
 export const metadata = {
   alternates: {
@@ -17,12 +15,9 @@ function Home() {
     <div className={`${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Hero />
-
-        <Suspense fallback={`Loading...`}>
-          <Clients />
-          <Scroll />
-          <Partners />
-        </Suspense>
+        <Clients />
+        <Scroll />
+        <Partners />
       </div>
     </div>
   )

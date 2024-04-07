@@ -1,13 +1,7 @@
-import { Inter } from "next/font/google"
+import { Inter } from '@next/font/google'
 import styles from '../styles/globals.css'
 import Navbar from './components/Navbar'
-import { lazy, Suspense } from "react"
-
-const font = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  // weight: ['400', '600']
-})
+import Footer from './components/Footer'
 
 // export const metadata = {
 //   title: '▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA',
@@ -45,8 +39,12 @@ const font = Inter({
 //   },
 // }
 
-const Contact = lazy(() => import('./components/Contact'))
-const Footer = lazy(() => import('./components/Footer'))
+const font = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ['400', '600']
+})
+
 
 export default function RootLayout({ children }) {
   return (
@@ -56,10 +54,7 @@ export default function RootLayout({ children }) {
         <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <main className='p-6'>{children}</main>
-            <Suspense fallback={`Loading...`}>
-              <Contact />
-              <Footer />
-            </Suspense>
+            <Footer />
           </div>
         </div>
       </body>

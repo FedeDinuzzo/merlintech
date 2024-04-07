@@ -1,5 +1,4 @@
-import styles from "./constants/style"
-import { lazy, Suspense } from "react"
+import styles from "../constants/style"
 
 export const metadata = {
   alternates: {
