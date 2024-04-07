@@ -1,12 +1,12 @@
 import { Inter } from "next/font/google"
-import styles from '@/styles/global.css'
-import Navbar from './components/NavBar'
+import styles from '../styles/globals.css'
+import Navbar from './components/Navbar'
 import { lazy, Suspense } from "react"
 
 const font = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  //weight: ['400', '600']
+  // weight: ['400', '600']
 })
 
 // export const metadata = {
@@ -45,7 +45,7 @@ const font = Inter({
 //   },
 // }
 
-
+const Contact = lazy(() => import('./components/Contact'))
 const Footer = lazy(() => import('./components/Footer'))
 
 export default function RootLayout({ children }) {
@@ -57,6 +57,7 @@ export default function RootLayout({ children }) {
           <div className={`${styles.boxWidth}`}>
             <main className='p-6'>{children}</main>
             <Suspense fallback={`Loading...`}>
+              <Contact />
               <Footer />
             </Suspense>
           </div>

@@ -6,22 +6,22 @@ const styles = {
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
-  flexStartHero: "flex justify-center md:justify-start md:mt-4 xl:mt-0 xl:justify-center items-start",
+  flexStartHero: "flex justify-center m:justify-start m:mt-4 l:mt-0 l:justify-center items-start",
 
-  paddingX: "sm:px-16 px-6",
-  paddingY: "py-6 lg:py-0 xl:py-16",
-  padding: "sm:px-16 px-6 sm:py-12 py-4",
+  paddingX: "s:px-16 px-6",
+  paddingY: "py-6 l:py-0 xl:py-16",
+  padding: "s:px-16 px-6 s:py-12 py-4",
 
-  marginX: "sm:mx-16 mx-6",
-  marginY: "sm:my-16 my-6",
+  marginX: "s:mx-16 mx-6",
+  marginY: "s:my-16 my-6",
 };
 
 export const layout = {
-  section: `flex md:flex-row flex-col ${styles.paddingY}`,
-  sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
+  section: `flex m:flex-row flex-col ${styles.paddingY}`,
+  sectionReverse: `flex m:flex-row flex-col-reverse ${styles.paddingY}`,
 
-  sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
-  sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
+  sectionImgReverse: `flex-1 flex ${styles.flexCenter} m:mr-10 mr-0 m:mt-0 mt-10 relative`,
+  sectionImg: `flex-1 flex ${styles.flexCenter} m:ml-10 ml-0 m:mt-0 mt-10 relative`,
 
   sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
 };

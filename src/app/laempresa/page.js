@@ -3,15 +3,15 @@ import { lazy, Suspense } from "react"
 
 export const metadata = {
   alternates: {
-    canonical: "https://merlintech.com.ar/servicios",
+    canonical: "https://merlintech.com.ar/la-empresa",
   },
 }
 
-function Servicios() {
+function Laempresa() {
   return (
     <div className={`${styles.flexStart}`}>
     </div>
   )
 }
 
-export default Servicios
+export default Laempresa
