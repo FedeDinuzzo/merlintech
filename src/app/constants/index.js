@@ -3,7 +3,7 @@
 // Navbar
 export const navLinks = [
   {
-    id: "",
+    id: "inicio",
     img: "navInicio",
     title: "Inicio",
   },
@@ -47,10 +47,10 @@ export const clients = [
   {
     id: "polygon-2",
     icon: "EskabePolygon",
-  },  {
+  }, {
     id: "polygon-3",
     icon: "BrinksPolygon",
-  },  {
+  }, {
     id: "polygon-4",
     icon: "UnicefPolygon",
   },
@@ -113,10 +113,10 @@ export const partners = [
   {
     id: "Hexagon-2",
     icon: "Hexagon2",
-  },  {
+  }, {
     id: "Hexagon-3",
     icon: "Hexagon3",
-  },  {
+  }, {
     id: "Hexagon-4",
     icon: "Hexagon4",
   },
