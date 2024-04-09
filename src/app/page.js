@@ -12,9 +12,12 @@ export const metadata = {
 
 function Home() {
   return (
-    <div className={`${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
+    <div className={``}>
+      <div className={``}>
+        <Hero
+          title="Soporte Tecnico IT"
+          title2="Para Empresas"
+        />
         <Clients />
         <Scroll />
         <Partners />

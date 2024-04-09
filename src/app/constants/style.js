@@ -1,12 +1,12 @@
 const styles = {
-  boxWidth: "w-full l:max-w-[1400px]",
+  boxWidth: "w-full l:max-w-[1440px]",
 
-  heading2: "font-inter font-semibold text-[18px] text-white leading-[27px] w-full",
+  heading: "font-inter font-medium text-[44px] l:text-[60px] tracking-tighter text-white leading-[27px] w-full",
+  heading2: "font-inter font-semibold text-[30px] l:text-[50px] tracking-tighter text-white leading-[27px] w-full",
   paragraph: "font-inter font-normal text-dimWhite text-[16px] leading-[24px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
-  flexStartHero: "flex justify-center m:justify-start m:mt-4 l:mt-0 l:justify-center items-start",
 
   paddingX: "s:px-16 px-6",
   paddingY: "py-6 l:py-0 xl:py-16",

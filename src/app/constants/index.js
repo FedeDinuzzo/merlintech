@@ -27,7 +27,8 @@ export const navLinks = [
 // Hero Homepage
 export const heroCard = [
   {
-    title: "Soporte IT Personalizado",
+    title: "Soporte Tecnico IT",
+    title2: "Para Empresas",
     content: "Asegure que sus datos y sistemas estén siempre disponibles, protegidos y actualizados.",
     button: "Realizar Auditoria",
     icon: "ArrowRight",

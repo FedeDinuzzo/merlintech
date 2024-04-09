@@ -42,7 +42,7 @@ import Footer from './components/Footer'
 const font = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  weight: ['400', '600']
+  weight: ['400', '500']
 })
 
 
