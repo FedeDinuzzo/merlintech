@@ -32,17 +32,33 @@ body {
   -text-fill-color: transparent;
 }
 
-.bg-blue-gradient {
-  background: linear-gradient(
-    157.81deg,
-    #def9fa -43.27%,
-    #bef3f5 -21.24%,
-    #9dedf0 12.19%,
-    #7de7eb 29.82%,
-    #5ce1e6 51.94%,
-    #33bbcf 90.29%
-  );
+.bg-button-three {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px 0px, rgba(0, 0, 0, 0.05) 0px 4px 4px 0px, rgba(255, 255, 255, 0.1) 0px 1px 22px 0px, rgba(197, 204, 255, 0.2) 0px 0px 20px 0px inset, rgba(198, 219, 255, 0.35) 0px 1px 3px 0px inset;
+  opacity: 1;
+  outline: 1px solid rgba(255, 255, 255, 0.01);
+  outline-offset: -2px;
 }
+
+.bg-button-three:hover {
+  animation: pulse 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1), 0 0 10px rgba(255, 255, 255, 0.1) inset;
+    outline: 1px solid rgba(255, 255, 255, 0.01);
+    outline-offset: -2px;
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.2) inset;
+    outline: 1px solid rgba(255, 255, 255, 0.4);
+    outline-offset: -2px;
+  }
+}
+
 
 .bg-black-gradient {
   background: linear-gradient(
