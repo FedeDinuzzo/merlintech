@@ -19,7 +19,7 @@ module.exports = {
       colors: {
         primary: "#000000",
         secondary: "#ffffff",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
+        dimWhite: "rgba(255, 255, 255, 0.6)",
       },
     },
     screens: {
