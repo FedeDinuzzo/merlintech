@@ -8,14 +8,19 @@ export const navLinks = [
     title: "Inicio",
   },
   {
-    id: "heladeras",
-    img: "navHeladera",
-    title: "Heladeras",
+    id: "Servicios",
+    img: "navServicios",
+    title: "Servicios",
   },
   {
-    id: "lavarropas",
-    img: "navLavarropas",
-    title: "Lavarropas",
+    id: "La empresa",
+    img: "navLaempresa",
+    title: "La empresa",
+  },
+  {
+    id: "Testimonios",
+    img: "navTestimonios",
+    title: "Testimonios",
   },
   {
     id: "contacto",

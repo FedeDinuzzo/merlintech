@@ -1,6 +1,8 @@
+"use client"
+
 import { Inter } from '@next/font/google'
 import styles from '../styles/globals.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer'
 
 // export const metadata = {
@@ -49,13 +51,11 @@ const font = Inter({
 export default function RootLayout({ children }) {
   return (
     <html lang='es'>
-      <body className={`${font.variable} bg-primary`}>
+      <body className={`${font.variable}`}>
         <Navbar />
-        <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-          <div className={`${styles.boxWidth}`}>
-            <main className='p-6'>{children}</main>
-            <Footer />
-          </div>
+        <div className={`bg-primary py-[140px] px-5`}>
+          <main>{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
