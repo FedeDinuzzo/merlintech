@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Clients from './components/Clients'
 import Scroll from './components/Scroll'
 import Partners from './components/Partners'
+import Contact from './components/Contact'
 
 export const metadata = {
   alternates: {
@@ -20,6 +21,7 @@ function Home() {
       <Clients />
       <Scroll />
       <Partners />
+      <Contact />
     </div>
   )
 }
