@@ -1,4 +1,5 @@
 import styles from "../constants/style"
+import Features from "../components/Features"
 
 export const metadata = {
   alternates: {
@@ -8,7 +9,8 @@ export const metadata = {
 
 function Laempresa() {
   return (
-    <div className={`${styles.flexStart}`}>
+    <div>
+      <Features />
     </div>
   )
 }

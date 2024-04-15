@@ -82,11 +82,19 @@ body {
 }
 
 .bg-card-hero {
-    border: 1px solid  rgba(255, 255, 255, .15);
+    border: 1px solid rgba(255, 255, 255, .15);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-radius: 40px;
     box-shadow: 0 30px 60px #0003, 0 15px 30px #0000000d, 0 5px 10px #0000000d, inset 0 0 100px #ccd7ff40;
+}
+
+.bg-card-service {
+  border: 1px solid rgba(255, 255, 255, .15);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  box-shadow: 0 30px 60px #0000001a,0 15px 30px #0000000d,0 5px 10px #0000000d,inset 0 0 100px #ccd7ff26;
 }
 
 .bg-radial-blue {
@@ -100,6 +108,19 @@ body {
   width: 1054px;
   aspect-ratio: 1 / 1;
 }
+
+.bg-radial-pink {
+  background: 
+  radial-gradient(47.3% 47.29999999999998% at 50% 49.99999999999999%,rgba(110,122,255,.5) 0%,rgba(0,128,255,0) 100%);
+  height: 1200px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  aspect-ratio: 1 / 1;
+}
+
 
 .bg-black-gradient {
   background: linear-gradient(
