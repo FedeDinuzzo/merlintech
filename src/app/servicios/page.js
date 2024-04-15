@@ -1,3 +1,4 @@
+import AllServices from "../components/AllServices"
 import styles from "../constants/style"
 
 export const metadata = {
@@ -8,7 +9,8 @@ export const metadata = {
 
 function Servicios() {
   return (
-    <div className={`${styles.flexStart}`}>
+    <div className={``}>
+      <AllServices />
     </div>
   )
 }

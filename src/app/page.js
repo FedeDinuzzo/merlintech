@@ -13,15 +13,13 @@ export const metadata = {
 function Home() {
   return (
     <div className={``}>
-      <div className={``}>
-        <Hero
-          title="Soporte Tecnico IT"
-          title2="Para Empresas"
-        />
-        <Clients />
-        <Scroll />
-        <Partners />
-      </div>
+      <Hero
+        title="Soporte Tecnico IT"
+        title2="Para Empresas"
+      />
+      <Clients />
+      <Scroll />
+      <Partners />
     </div>
   )
 }

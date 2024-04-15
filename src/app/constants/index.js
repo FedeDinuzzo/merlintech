@@ -300,36 +300,36 @@ export const social = [
 // Services Page
 export const services = [
   {
-    id: "service-1",
-    image: "Card1Services",
+    id: "service1",
+    image: "Card1Services.png",
     title: "Backups y Copias de Seguridad",
     content: "Mantenga a salvo los datos e información de su negocio con la configuración de Backups remotos y automatizados",
     button: "Disaster Recovery",
-    btnIcon: "ArrowRight",
+    btnIcon: "ChevronRight",
   },
   {
-    id: "service-2",
+    id: "service2",
     image: "Card2Services",
     title: "Recuperacion de la Informacion",
     content: "Protéjase de una eventual pérdida de datos con un almacenamiento encriptado y una recuperación virtual a través de nuestro escritorio remoto. Accediendo a sus equipos para reparar cualquier problema en su software.",
     button: "Proteccion y resguardo",
-    btnIcon: "ArrowRight",
+    btnIcon: "ChevronRight",
   },
   {
-    id: "service-3",
+    id: "service3",
     image: "Card3Services",
     title: "Streaming: Centro Operacional",
     content: "El centro de control BOCC ha sido diseñado para mejorar la calidad, la fiabilidad y la disponibilidad de la transmisión de contenidos multimedia. Delegue la monitorización, las alertas, la asistencia en vivo y preserve sus flujos de vídeo OTT con los expertos en contenido multimedia de Merlin.",
     button: "Gestion de Streaming",
-    btnIcon: "ArrowRight",
+    btnIcon: "ChevronRight",
   },
   {
-    id: "service-4",
+    id: "service4",
     image: "Card4Services",
     title: "Cyber Seguridad",
     content: "Proteja su negocio de malware, hackers, virus y prevenga futuros riesgos de seguridad",
     button: "Defensa Multinivel",
-    btnIcon: "ArrowRight",
+    btnIcon: "ChevronRight",
   },
 ];
 
