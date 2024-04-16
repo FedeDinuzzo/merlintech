@@ -3,7 +3,7 @@
 // Navbar
 export const navLinks = [
   {
-    id: "inicio",
+    id: "",
     title: "Inicio",
   },
   {
