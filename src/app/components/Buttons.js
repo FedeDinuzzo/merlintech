@@ -34,7 +34,7 @@ export const ButtonThree = ({ text, link, image }) => {
 export const ButtonFour = ({ text, link, image }) => {
   return (
     <Link href={`/${link}`} aria-label={link}>
-      <button type="button" className={`py-2 px-4 gap-x-2 bg-blue bg-button-three font-inter font-medium text-[13px] text-secondary outline-none rounded-lg flex`}>
+      <button type="button" className={`py-4 px-8 gap-x-2 bg-blue bg-button-four font-inter font-medium text-[14px] text-secondary rounded-[10px] flex`}>
         {text} <Image src={image} className="fill-white mt-0.5" alt="arrow" width="16" height="16" />
       </button>
     </Link>
