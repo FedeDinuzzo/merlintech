@@ -1,14 +1,16 @@
 import styles from "@/app/constants/style"
 import Image from 'next/image'
 import logo from '../../public/LogoMerlin.svg'
-import instagram from '../../public/instagram.svg'
-import linkedin from '../../public/x.svg'
+import FooterLine from '../../public/FooterLine.svg'
+import Instagram from '../../public/IconInstagram.svg'
+import Linkedin from '../../public/IconLinkedin.svg'
+import Facebook from '../../public/IconFacebook.svg'
 import { footerLinks } from '@/app/constants/index'
 import { Fragment } from "react"
 import Link from "next/link"
 
 const Footer = () => (
-  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
+  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col m:px-5 px-0`}>
     <div className={`${styles.boxWidth}`}>
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
 
@@ -19,10 +21,13 @@ const Footer = () => (
           {footerLinks.map((footerLink, link) => (
             <Fragment key={link}>
               <div link={footerLink.key} className="flex flex-col ss:my-0 my-4 min-w-[150px]">
-                <div className="font-poppins font-medium text-[18px] leading-[27px] text-white">
-                  {footerLink.title}
+                <div className={`flex`}>
+                  <Image src={FooterLine} alt='line' width={2} height={20} className="mr-2" />
+                  <div className="font-poppins font-medium text-[18px] leading-[27px] text-white">
+                    {footerLink.title}
+                  </div>
                 </div>
-                <ul className="list-none mt-4">
+                <ul className="list-none mt-4 ml-2">
                   {footerLink.links.map((link, id, index) => (
                     <Fragment key={id} >
                       <li className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${index !== footerLink.links.length - 1 ? 'mb-4' : 'mb-0'}`}>
@@ -37,17 +42,14 @@ const Footer = () => (
 
 
           <div className="flex flex-row md:mt-0 mt-6">
-            <div className="w-[21px] h-[21px] mx-1">
-              <Image src={instagram} alt='Social Icon' width={100} height={100} className="cursor-pointer" />
+            <div className="w-[36px] h-[36px] mx-1">
+              <Image src={Instagram} alt='Social Icon' width={36} height={36} className="cursor-pointer" />
             </div>
-            <div className="w-[21px] h-[21px] mx-1">
-              <Image src={""} alt='Social Icon' width={100} height={100} className="cursor-pointer mr-6" />
+            <div className="w-[36px] h-[36px] mx-1">
+              <Image src={Linkedin} alt='Social Icon' width={100} height={100} className="cursor-pointer" />
             </div>
-            <div className="w-[21px] h-[21px] mx-1">
-              <Image src={""} alt='Social Icon' width={100} height={100} className="cursor-pointer mr-6" />
-            </div>
-            <div className="w-[21px] h-[21px] mx-1">
-              <Image src={""} alt='Social Icon' width={100} height={100} className="cursor-pointer mr-6" />
+            <div className="w-[36px] h-[36px] mx-1">
+              <Image src={Facebook} alt='Social Icon' width={100} height={100} className="cursor-pointer" />
             </div>
           </div>
         </div>

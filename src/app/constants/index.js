@@ -282,18 +282,27 @@ export const social = [
   },
   {
     id: "social-2",
-    icon: "facebook",
+    icon: "Facebook",
     link: "",
   },
   {
     id: "social-3",
-    icon: "x",
+    icon: "X",
     link: "",
   },
   {
     id: "social-4",
     icon: "linkedin",
     link: "https://www.linkedin.com/",
+  },
+]
+
+// Tax Data
+export const taxData = [
+  {
+    id: "taxData-1",
+    icon: "DataFiscal",
+    link: "http://qr.afip.gob.ar/?qr=b3QEcW17fgrFdrGofVZ4kA,,",
   },
 ]
 
