@@ -35,7 +35,7 @@ export default function Navbar() {
       <div className={`fixed top-0 h-[60px] w-full z-40 bg-black bg-opacity-10 backdrop-filter backdrop-blur-[10px]`}>
         <nav className={`z-30 p-4 w-[100%] h-[100%] border-b-[1px] broder-solid border-white border-opacity-10`}>
           <div className={`flex justify-center`}>
-            <div className={`flex justify-between items-center w-[100vw] m:w-[768px] h-6 px-[6px] `}>
+            <div className={`flex items-center justify-between w-[100vw] h-6 px-[6px] m:justify-normal m:w-[768px]`}>
               {/* <Link to="" smooth={true}> */}
               <Image className="w-32 h-8 cursor-pointer" src={logo} alt="logo" />
               {/* </Link> */}
@@ -53,12 +53,22 @@ export default function Navbar() {
                 )}
               </div>
 
-              <ul ref={menuRef} className={(showNav ? "right-0" : "-right-full") + " text-secondary m:static fixed bottom-0 top-[60px] m:flex m:space-x-7 items-center bg-card-contact h-56 py-5 m:py-0 rounded-l-lg m:bg-transparent m:text-white m:w-auto w-6/12 m:space-y-0 space-y-5 p-4 px-8 transition-right"}>
-                {navLinks.map((nav, index) => (
-                  <li key={nav.id} className={`font-inter font-medium cursor-pointer text-[14px] text-secondary`}>
-                    <Link href={`/${nav.id}`} aria-label={`Ir a la sección ${nav.title}`}>{nav.title}</Link>
-                  </li>
-                ))}
+              <ul ref={menuRef} className={(showNav ? "right-0" : "-right-full") + " text-secondary m:static fixed bottom-0 top-[60px] m:flex m:space-x-12 items-center bg-card-contact h-56 py-5 m:py-0 rounded-l-lg m:bg-transparent m:shadow-none m:border-none m:text-white m:w-auto w-6/12 m:space-y-0 space-y-5 p-4 px-8"}>
+                <li className={`font-inter font-medium cursor-pointer text-[14px] text-secondary`}>
+                  <Link href={`/`} aria-label={`Ir a la sección inicio`}>Inicio</Link>
+                </li>
+                <li className={`font-inter font-medium cursor-pointer text-[14px] text-secondary`}>
+                  <Link href={`/servicios`} aria-label={`Ir a la sección Servicios`}>Servicios</Link>
+                </li>
+                <li className={`font-inter font-medium cursor-pointer text-[14px] text-secondary`}>
+                  <Link href={`/la-empresa`} aria-label={`Ir a la sección La empresa`}>La empresa</Link>
+                </li>
+                <li className={`font-inter font-medium cursor-pointer text-[14px] text-secondary m:pl-[140px]`}>
+                  <Link href={`/testimonios`} aria-label={`Ir a los Testimonios`}>Testimonios</Link>
+                </li>
+                <li className={`font-inter font-medium cursor-pointer text-[14px] text-secondary`}>
+                  <Link href={`/contacto`} aria-label={`Ir a Contacto`}>Contacto</Link>
+                </li>
 
 
                 {/* <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -75,9 +85,9 @@ export default function Navbar() {
             <Link to="footer" smooth={true}><button onClick={() => setShowNav(false)} className="text-lg hover:underline hover:underline-offset-1">CONTACT</button></Link> */}
               </ul>
             </div>
-          </div>
+          </div >
         </nav >
-      </div>
+      </div >
     </>
   );
 }
