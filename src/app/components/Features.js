@@ -16,7 +16,7 @@ const Features = () => {
         <Image className="mt-72 m:mt-60 m:-ml-48 w-[60%] opacity-60 absolute" src={ContactBall} alt="Ball" />
       </div>
       <div className={`flex mb-[60px]`}>
-        <div className={`flex flex-col l:w-[1260px] mx-auto gap-[30px]   m:px-0`}>
+        <div className={`flex flex-col l:w-[1260px] mx-auto gap-[30px] px-4 m:px-0`}>
           <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-2`}>
             <div className={`bg-line-services`}></div>
             <h1 className={`inline text-white`}>Nuestra Filosofia </h1>

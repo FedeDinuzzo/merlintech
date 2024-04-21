@@ -17,7 +17,7 @@ const Contact = () => {
         <Image className="mt-44 absolute" src={ContactBall} alt="Ball" />
       </div>
       <div className={`flex mb-[60px]`}>
-        <div className={`flex flex-col l:w-[1260px] mx-auto gap-[30px]    m:px-0`}>
+        <div className={`flex flex-col l:w-[1260px] mx-auto gap-[30px] px-4 m:px-0`}>
           <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-2`}>
             <h3 className={`inline text-white`}>Agentes Disponibles </h3>
             <h3 className={`opacity-40 inline`}>contactanos y reserva tu lugar en merlintech. Tu negocio crece, nosotros crecemos con vos.</h3>
@@ -73,7 +73,7 @@ const Contact = () => {
                 <h4 className={`${styles.heading3White} my-2.5 inline`}>Telefono . </h4>
                 <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>+54 911 7090-5150</p>
               </div>
-              <div className={``}>
+              <div className={`mb-8 m:mb-0`}>
                 <h4 className={`${styles.heading3White} my-2.5 inline`}>Email . </h4>
                 <p className={`${styles.paragraph} mb-2.5 pl-2 inline underline underline-offset-2`}>info@merlintech.com.ar</p>
               </div>
