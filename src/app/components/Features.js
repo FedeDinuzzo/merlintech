@@ -35,7 +35,7 @@ const Features = () => {
           </div>
         </div>
 
-        <div className={`bg-card-service flex flex-col flex-nowrap justify-evenly m:h-[465px] m:w-[520px] p-8`}>
+        <div className={`bg-card-service flex flex-col flex-nowrap justify-evenly m:h-[465px] m:max-w-[520px] l:w-[520px] p-8`}>
           <div className={`max-w-[360px] mx-auto`}>
             <Image className={`min-w-[282px] mb-5`} src={Card2Empresa} alt="supportIT" width="360" height="210" />
             <h2 className={`${styles.heading3} my-2.5`}>+25 Años en el rubro</h2>
@@ -43,7 +43,7 @@ const Features = () => {
           </div>
         </div>
 
-        <div className={`bg-card-service flex flex-col flex-nowrap justify-evenly m:h-[465px] m:w-[520px] p-8`}>
+        <div className={`bg-card-service flex flex-col flex-nowrap justify-evenly m:h-[465px] m:max-w-[520px] l:w-[520px] p-8`}>
           <div className={`max-w-[360px] mx-auto`}>
             <Image className={`min-w-[282px] mb-5`} src={Card3Empresa} alt="supportIT" width="360" height="210" />
             <h2 className={`${styles.heading3} my-2.5`}>+5 Paises presentes</h2>

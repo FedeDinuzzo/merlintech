@@ -53,7 +53,7 @@ export default function Navbar() {
                 )}
               </div>
 
-              <ul ref={menuRef} className={(showNav ? "right-0" : "-right-full") + " text-secondary m:static fixed bottom-0 top-14 m:flex m:space-x-7 items-center bg-gray-700 rounded-l-lg m:bg-transparent m:text-white m:w-auto w-6/12 m:space-y-0 space-y-5 p-4 px-8 transition-right"}>
+              <ul ref={menuRef} className={(showNav ? "right-0" : "-right-full") + " text-secondary m:static fixed bottom-0 top-[60px] m:flex m:space-x-7 items-center bg-card-contact h-56 py-5 m:py-0 rounded-l-lg m:bg-transparent m:text-white m:w-auto w-6/12 m:space-y-0 space-y-5 p-4 px-8 transition-right"}>
                 {navLinks.map((nav, index) => (
                   <li key={nav.id} className={`font-inter font-medium cursor-pointer text-[14px] text-secondary`}>
                     <Link href={`/${nav.id}`} aria-label={`Ir a la sección ${nav.title}`}>{nav.title}</Link>

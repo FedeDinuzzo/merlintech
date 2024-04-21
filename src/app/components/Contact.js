@@ -18,7 +18,7 @@ const Contact = () => {
       </div>
       <div className={`flex mb-[60px]`}>
         <div className={`flex flex-col l:w-[1260px] mx-auto gap-[30px] px-4 m:px-0`}>
-          <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-2`}>
+          <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-20`}>
             <h3 className={`inline text-white`}>Agentes Disponibles </h3>
             <h3 className={`opacity-40 inline`}>contactanos y reserva tu lugar en merlintech. Tu negocio crece, nosotros crecemos con vos.</h3>
           </div>
@@ -27,7 +27,7 @@ const Contact = () => {
       </div>
 
       <div className={`${styles.flexCenter} flex-wrap p-[20px] gap-[20px] m:p-[30px] m:gap-[10px] l:gap-[20px] max-w-[1380px] mx-auto`}>
-        <div className={`bg-card-contact pt-5 pl-5 max-w-[620px]`}>
+        <div className={`bg-card-contact pt-5 pl-5 max-w-[590px] l:max-w-[620px]`}>
           {/* AGREGAR SOMBRA CON CSS */}
           <Image className="absolute inset-0 w-full h-full object-cover rounded-[20px] z-10" src={ShadowContact} alt="Overlay" />
           <h3 className={`${styles.heading3} text-[20px] mt-2.5 mb-2`}>Disney</h3>
@@ -37,7 +37,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className={`bg-card-contact pt-5 pl-5 max-w-[620px]`}>
+        <div className={`bg-card-contact pt-5 pl-5 max-w-[590px] l:max-w-[620px]`}>
           <Image className="absolute inset-0 w-full h-full object-cover rounded-[20px] z-10" src={ShadowContact} alt="Overlay" />
           <h3 className={`${styles.heading3} text-[20px] mt-2.5 mb-2`}>Nike Argentina</h3>
           <p className={`${styles.paragraph} mb-2 pr-5 m:pr-32 max-w-[620px]`}>Our platform provides real-time guidance and advice on UI design best practices whether you're working on layout optimization, color scheme selection, or typography.</p>
