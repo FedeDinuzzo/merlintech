@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
     <html lang='es'>
       <body className={`${font.variable}`}>
         <Navbar />
-        <div className={`bg-primary`}>
+        <div className={`bg-primary pt-36`}>
           <main>{children}</main>
           <Footer />
         </div>
