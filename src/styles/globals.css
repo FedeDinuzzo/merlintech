@@ -64,6 +64,16 @@ body {
   animation: pulse 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
+.bg-navbar {
+  border: 1px solid rgba(255, 255, 255, .15);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  opacity: 1;
+  box-shadow: 0 30px 60px #0000001a,0 15px 30px #0000000d,0 5px 10px #0000000d,inset 0 0 180px #ccd7ff26;
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1), 0 0 10px rgba(255, 255, 255, 0.1) inset;

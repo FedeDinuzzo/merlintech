@@ -53,7 +53,7 @@ export default function Navbar() {
                 )}
               </div>
 
-              <ul ref={menuRef} className={(showNav ? "right-0" : "-right-full") + " text-secondary m:static fixed bottom-0 top-[60px] m:flex m:space-x-12 items-center bg-card-contact h-56 py-5 m:py-0 rounded-l-lg m:bg-transparent m:shadow-none m:border-none m:text-white m:w-auto w-6/12 m:space-y-0 space-y-5 p-4 px-8"}>
+              <ul ref={menuRef} className={(showNav ? "right-5" : "-right-full") + " text-secondary m:static fixed bottom-0 top-[80px] m:flex m:space-x-10 items-center bg-navbar h-56 py-5 m:py-0 rounded-l-lg m:bg-transparent m:shadow-none m:border-none m:text-white m:w-auto w-6/12 m:space-y-0 space-y-5 p-4 px-8"}>
                 <li className={`font-inter font-medium cursor-pointer text-[14px] text-secondary`}>
                   <Link href={`/`} aria-label={`Ir a la sección inicio`}>Inicio</Link>
                 </li>
@@ -61,12 +61,12 @@ export default function Navbar() {
                   <Link href={`/servicios`} aria-label={`Ir a la sección Servicios`}>Servicios</Link>
                 </li>
                 <li className={`font-inter font-medium cursor-pointer text-[14px] text-secondary`}>
-                  <Link href={`/la-empresa`} aria-label={`Ir a la sección La empresa`}>La empresa</Link>
+                  <Link href={`/nosotros`} aria-label={`Ir a la sección La empresa`}>Nosotros</Link>
                 </li>
                 <li className={`font-inter font-medium cursor-pointer text-[14px] text-secondary m:pl-[140px]`}>
                   <Link href={`/testimonios`} aria-label={`Ir a los Testimonios`}>Testimonios</Link>
                 </li>
-                <li className={`font-inter font-medium cursor-pointer text-[14px] text-secondary`}>
+                <li className={`font-inter font-medium cursor-pointer text-[14px] text-secondary bg-button-three m:py-2 m:px-4`}>
                   <Link href={`/contacto`} aria-label={`Ir a Contacto`}>Contacto</Link>
                 </li>
 
