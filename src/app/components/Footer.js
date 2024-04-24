@@ -5,6 +5,8 @@ import FooterLine from '../../public/FooterLine.svg'
 import Instagram from '../../public/IconInstagram.svg'
 import Linkedin from '../../public/IconLinkedin.svg'
 import Facebook from '../../public/IconFacebook.svg'
+import DataFiscal from '../../public/DataFiscal.webp'
+import ArrowUp from '../../public/ArrowUp.svg'
 import { footerLinks } from '@/app/constants/index'
 import { Fragment } from "react"
 import Link from "next/link"
@@ -59,8 +61,21 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="m:mt-20 w-full flex justify-between items-center m:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45] m:-mb-8">
-        <p className={`${styles.paragraph}`}>Copyright © 2024 | merlin technology</p>
+      <div className="m:mt-20 w-full flex justify-around m:justify-between items-center pt-6 border-t-[1px] border-t-[#3F3E45] m:-mb-8">
+        <p className={`${styles.paragraph} flex w-1/2`}>Copyright © 2024 | merlin technology</p>
+        
+        <Link href={`/`} aria-label={`Enlace a AFIP data fiscal`}>
+          <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="cursor-pointer m:hidden flex" />
+        </Link>
+
+        <Link className={`${styles.paragraph} hidden m:visible m:flex items-center`} href={`/`} aria-label={`Enlace a AFIP data fiscal`}>
+          Data Fiscal
+          <Image src={ArrowUp} alt='Tax Data Icon' width={36} height={36} className="cursor-pointer ml-4 border-[1px] border-white/20 rounded-full p-1.5 hidden m:block" />  
+        </Link>
+  
+        <Link className={``} href={`/`} aria-label={`Top Of The Page`}>
+          <Image src={ArrowUp} alt='' width={36} height={36} className="cursor-pointer ml-4 border-[1px] border-white/20 rounded-full p-1.5 hidden m:block" />  
+        </Link>
       </div>
     </div>
   </section>
