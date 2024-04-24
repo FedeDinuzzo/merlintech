@@ -259,14 +259,27 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Paginas",
+    title: "Servicios",
     links: [
       {
-        name: "Servicios",
+        name: "Soluciones",
         link: "",
       },
       {
-        name: "Sobre Nosotros",
+        name: "Testimonios",
+        link: "",
+      },
+    ],
+  },
+  {
+    title: "Nosotros",
+    links: [
+      {
+        name: "La empresa",
+        link: "",
+      },
+      {
+        name: "Experiencias",
         link: "",
       },
     ],
