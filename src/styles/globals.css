@@ -209,17 +209,46 @@ body {
   background: var(--black-gradient);
 }
 
-/* .blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
-  filter: blur(123px);
+.polygon-grid {
+  display: grid;
+  grid-template-areas:
+    "polygon1 polygon2 polygon3 polygon4 polygon5"
+    "polygon6 polygon7 polygon8 polygon9 polygon10"
+    "polygon11 polygon12 polygon13 polygon14 polygon15"
+    "polygon16 polygon17 polygon18 polygon19 polygon20"
+    "polygon21 polygon22 polygon23 polygon24 polygon25";
+  grid-gap: 5px;
 }
 
-.pink__gradient {
-  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
-  filter: blur(900px);
+.polygon-item {
+  background-color: #ccc;
+  border: 1px solid #999;
+  text-align: center;
+  padding: 10px;
 }
 
-.white__gradient {
-  background: rgba(255, 255, 255, 0.6);
-  filter: blur(750px);
-} */
+#polygon1 { grid-area: polygon1; }
+#polygon2 { grid-area: polygon2; }
+#polygon3 { grid-area: polygon3; }
+#polygon4 { grid-area: polygon4; }
+#polygon5 { grid-area: polygon5; }
+#polygon6 { grid-area: polygon6; }
+#polygon7 { grid-area: polygon7; }
+#polygon8 { grid-area: polygon8; }
+#polygon9 { grid-area: polygon9; }
+#polygon10 { grid-area: polygon10; }
+#polygon11 { grid-area: polygon11; }
+#polygon12 { grid-area: polygon12; }
+#polygon13 { grid-area: polygon13; }
+#polygon14 { grid-area: polygon14; }
+#polygon15 { grid-area: polygon15; }
+#polygon16 { grid-area: polygon16; }
+#polygon17 { grid-area: polygon17; }
+#polygon18 { grid-area: polygon18; }
+#polygon19 { grid-area: polygon19; }
+#polygon20 { grid-area: polygon20; }
+#polygon21 { grid-area: polygon21; }
+#polygon22 { grid-area: polygon22; }
+#polygon23 { grid-area: polygon23; }
+#polygon24 { grid-area: polygon24; }
+#polygon25 { grid-area: polygon25; }
