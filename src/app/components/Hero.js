@@ -13,9 +13,9 @@ const Hero = () => {
 
   return (
     <section id="home" className={`min-h-[100vh]`}>
-      {/* <div className={`flex justify-center`}>
+      <div className={`absolute top-[60px]`}>
         <div className={`bg-lines`}></div>
-      </div> */}
+      </div>
       <div className={`bg-radial-blue`}></div>
       <div className={`text-center mx-5 m:mx-10 l:mx-20 relative`}>
         <div className={`${styles.flexCenter} mb-5`}>

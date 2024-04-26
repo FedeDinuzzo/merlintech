@@ -84,13 +84,25 @@ body {
     outline-offset: -1px;
   }
 }
+
 .bg-lines {
   image-rendering: pixelated;
   flex-shrink: 0;
   background-size: 100% 86%;
   background-image: url("../public/Lines.svg");
   flex: none;
-  height: 1420px;
+  height: 1000px;
+  position: absolute;
+  width: 1998px;
+}
+
+.bg-lines-partners {
+  image-rendering: pixelated;
+  flex-shrink: 0;
+  background-size: 100% 100%;
+  background-image: url("../public/PartnersLines.svg");
+  flex: none;
+  height: 1440px;
   position: absolute;
   width: 1998px;
 }
@@ -209,46 +221,46 @@ body {
   background: var(--black-gradient);
 }
 
-.polygon-grid {
+.transition {
+  transition: transform 0.5s ease-in-out; /* Define la transición para la propiedad transform */
+}
+
+/* .hexagon-grid {
   display: grid;
   grid-template-areas:
-    "polygon1 polygon2 polygon3 polygon4 polygon5"
-    "polygon6 polygon7 polygon8 polygon9 polygon10"
-    "polygon11 polygon12 polygon13 polygon14 polygon15"
-    "polygon16 polygon17 polygon18 polygon19 polygon20"
-    "polygon21 polygon22 polygon23 polygon24 polygon25";
-  grid-gap: 5px;
+    "hexagon1 hexagon2 hexagon3 hexagon4 hexagon5"
+    "hexagon6 hexagon7 hexagon8 hexagon9 hexagon10"
+    "hexagon11 hexagon12 hexagon13 hexagon14 hexagon15"
+    "hexagon16 hexagon17 hexagon18 hexagon19 hexagon20"
+    "hexagon21 hexagon22 hexagon23 hexagon24 hexagon25";
+  
 }
 
-.polygon-item {
-  background-color: #ccc;
-  border: 1px solid #999;
-  text-align: center;
-  padding: 10px;
+.hexagon-item {
+
 }
 
-#polygon1 { grid-area: polygon1; }
-#polygon2 { grid-area: polygon2; }
-#polygon3 { grid-area: polygon3; }
-#polygon4 { grid-area: polygon4; }
-#polygon5 { grid-area: polygon5; }
-#polygon6 { grid-area: polygon6; }
-#polygon7 { grid-area: polygon7; }
-#polygon8 { grid-area: polygon8; }
-#polygon9 { grid-area: polygon9; }
-#polygon10 { grid-area: polygon10; }
-#polygon11 { grid-area: polygon11; }
-#polygon12 { grid-area: polygon12; }
-#polygon13 { grid-area: polygon13; }
-#polygon14 { grid-area: polygon14; }
-#polygon15 { grid-area: polygon15; }
-#polygon16 { grid-area: polygon16; }
-#polygon17 { grid-area: polygon17; }
-#polygon18 { grid-area: polygon18; }
-#polygon19 { grid-area: polygon19; }
-#polygon20 { grid-area: polygon20; }
-#polygon21 { grid-area: polygon21; }
-#polygon22 { grid-area: polygon22; }
-#polygon23 { grid-area: polygon23; }
-#polygon24 { grid-area: polygon24; }
-#polygon25 { grid-area: polygon25; }
+#hexagon1 { grid-area: hexagon1; }
+#hexagon2 { grid-area: hexagon2; }
+#hexagon3 { grid-area: hexagon3; }
+#hexagon4 { grid-area: hexagon4; }
+#hexagon5 { grid-area: hexagon5; }
+#hexagon6 { grid-area: hexagon6; }
+#hexagon7 { grid-area: hexagon7; }
+#hexagon8 { grid-area: hexagon8; }
+#hexagon9 { grid-area: hexagon9; }
+#hexagon10 { grid-area: hexagon10; }
+#hexagon11 { grid-area: hexagon0; }
+#hexagon12 { grid-area: hexagon12; }
+#hexagon13 { grid-area: hexagon13; }
+#hexagon14 { grid-area: hexagon14; }
+#hexagon15 { grid-area: hexagon15; }
+#hexagon16 { grid-area: hexagon16; }
+#hexagon17 { grid-area: hexagon17; }
+#hexagon18 { grid-area: hexagon18; }
+#hexagon19 { grid-area: hexagon19; }
+#hexagon20 { grid-area: hexagon20; }
+#hexagon21 { grid-area: hexagon21; }
+#hexagon22 { grid-area: hexagon22; }
+#hexagon23 { grid-area: hexagon23; }
+#hexagon24 { grid-area: hexagon24; } */
