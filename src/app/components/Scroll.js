@@ -11,6 +11,10 @@ function Scroll() {
       <section className={`min-h-[100vh] flex justify-between`}>
         {/* <Image className={`absolute flex`} src={ScrollCard} alt="" width="990" height="762" /> */}
         <div className={`flex flex-col m:p-16`}>
+            <h1 className={`inline text-white`}>Simplifica </h1>
+            <h3 className={`opacity-40 inline`}>tus
+            operaciones con nuestro servicio de soporte IT</h3>
+
           <h2 className={`${styles.heading}`}>
             <span className={``}>Simplifica </span>
             tus
