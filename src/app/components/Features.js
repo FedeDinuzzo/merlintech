@@ -11,12 +11,12 @@ import Card4Empresa from "../../public/Card4Empresa.png"
 const Features = () => {
 
   return (
-    <section id="features" className={``}>
+    <section id="features" className={`px-5`}>
       <div className={`flex flex-col items-center`}>
         <Image className="mt-72 m:mt-60 m:-ml-48 w-[60%] opacity-60 absolute" src={ContactBall} alt="Ball" />
       </div>
       <div className={`flex mb-[60px]`}>
-        <div className={`flex flex-col l:w-[1260px] mx-auto gap-[30px] px-4 m:px-0`}>
+        <div className={`flex flex-col l:w-[1260px] mx-auto gap-[30px]`}>
           <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-2`}>
             <div className={`bg-line-services`}></div>
             <h1 className={`inline text-white`}>Nuestra Filosofia </h1>
@@ -26,9 +26,16 @@ const Features = () => {
         </div>
       </div>
 
-      <div className={`${styles.flexCenter} flex-wrap p-[20px] gap-[20px] m:p-[30px] l:p-[40px] m:gap-[10px] l:gap-[20px] max-w-[1380px] mx-auto`}>
-        <div className={`bg-card-service flex flex-col flex-nowrap justify-evenly m:h-[465px] m:w-[720px] p-8`}>
-          <div className={`max-w-[360px] mx-auto`}>
+      {/* <div className={`flex flex-col justify-evenly items-center min-h-[380px] w-[340px] p-5`}>
+          <div className="absolute min-h-[380px] min-w-[340px] bg-card-service z-0">
+            <Image className={`absolute h-[380px] rounded-[40px]`} src={cardInnerShadow} alt="supportIT" />
+          </div> */}
+
+      <div className={`${styles.flexCenter} flex-wrap gap-[20px] m:p-[30px] l:p-[40px] m:gap-[10px] l:gap-[20px] max-w-[1380px] mx-auto`}>
+
+        <div className={`flex flex-col flex-nowrap justify-evenly m:h-[465px] m:w-[720px] p-8`}>
+          <div className="absolute w-[360px] h-[400px] bg-card-service z-0"></div>
+          <div className={`max-w-[360px] z-10`}>
             <Image className={`min-w-[282px] mb-5`} src={Card1Empresa} alt="supportIT" width="360" height="210" />
             <h2 className={`${styles.heading3} my-2.5`}>+300 Empresas nos eligieron</h2>
             <p className={`${styles.paragraph} mb-2.5`}>Ellos confian y confiaron en nosotros. Porque entendemos a la perfección sus necesidades tecnológicas y les brindamos soluciones a medida y efectivas.</p>

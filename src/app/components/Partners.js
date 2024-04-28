@@ -1,23 +1,23 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '../constants/style'
-import SpiralBlur from '../../public/SpiralBlur.png'
-import hexagon0 from '../../public/hexagon0.png'
-import hexagon1 from '../../public/hexagon1.png'
-import hexagon2 from '../../public/hexagon2.png'
-import hexagon3 from '../../public/hexagon3.png'
-import hexagon4 from '../../public/hexagon4.png'
-import hexagon5 from '../../public/hexagon5.png'
-import hexagon6 from '../../public/hexagon6.png'
-import hexagon7 from '../../public/hexagon7.png'
-import hexagon8 from '../../public/hexagon8.png'
-import hexagon9 from '../../public/hexagon9.png'
-import hexagon10 from '../../public/hexagon10.png'
-import Ceo from '../../public/Ceo.png'
+import SpiralBlur from '@/public/SpiralBlur.png'
+import hexagon0 from '@/public/hexagon0.png'
+import hexagon1 from '@/public/hexagon1.png'
+import hexagon2 from '@/public/hexagon2.png'
+import hexagon3 from '@/public/hexagon3.png'
+import hexagon4 from '@/public/hexagon4.png'
+import hexagon5 from '@/public/hexagon5.png'
+import hexagon6 from '@/public/hexagon6.png'
+import hexagon7 from '@/public/hexagon7.png'
+import hexagon8 from '@/public/hexagon8.png'
+import hexagon9 from '@/public/hexagon9.png'
+import hexagon10 from '@/public/hexagon10.png'
+import Ceo from '@/public/Ceo.png'
 
 function Partners() {
   return (
-    <section className={`min-h-[160vh] flex flex-col justify-center items-center`}>
+    <section className={`min-h-[160vh] flex flex-col justify-center items-center px-5`}>
       <div className={`flex z-10`}>
         <h3 className={`${styles.heading2Partners} text-gradient max-w-[305px] tracking-tighter`}>NUESTROS PARTNERS & RESELLERS</h3>
         <div className={`${styles.heading2Partners}  max-w-[305px] flex flex-col items-end mt-2`}>
@@ -33,7 +33,7 @@ function Partners() {
       <div className={`bg-lines-partners mt-10 z-0`}></div>
 
 
-      <div className={`grid grid-cols-4 max-w-[96vw] px-4 m:max-w-[613px] z-50`}>
+      <div className={`grid grid-cols-4 max-w-[96vw] m:max-w-[613px] z-50`}>
         <div className={`mt-[56%] -mx-[8px] m:-mx-3`}>
           <Image className={`mb-3`} src={hexagon2} alt="Brands and Partners" width="175" height="151" />
           <Image src={hexagon6} alt="Brands and Partners" width="175" height="151" />

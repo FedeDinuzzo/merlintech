@@ -7,22 +7,23 @@ import Linkedin from '../../public/IconLinkedin.svg'
 import Facebook from '../../public/IconFacebook.svg'
 import DataFiscal from '../../public/DataFiscal.webp'
 import ArrowUp from '../../public/ArrowUp.svg'
+import ChevronDown from '../../public/ChevronDown.svg'
 import { footerLinks } from '@/app/constants/index'
 import { Fragment } from "react"
 import Link from "next/link"
 
 const Footer = () => (
-  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col m:px-5 px-0 mt-20`}>
+  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col mt-20`}>
     <div className={`${styles.boxWidth}`}>
-      <div className={`flex-col mb-8 w-full`}>
+      <div className={`flex-col mb-8 w-full `}>
         <div className="flex mx-auto justify-around flex-wrap w-full">
-          <div className="mr-0 w-full px-4 mb-10 l:w-auto m:mr-96 l:px-0 l:mb-0">
+          <div className="mr-0 w-full mb-5 m:mr-96 l:mb-0 l:w-auto px-5 l:px-0">
             <Image src={logo} alt="logo" loading="lazy" width="123" height="32" />
           </div>
           {footerLinks.map((footerLink, link) => (
             <Fragment key={link}>
               <div link={footerLink.key} className="flex flex-col s:my-0 my-4 min-w-[150px]">
-                <div className={`flex`}>
+                <div className={`flex mt-5 l:mt-0`}>
                   <Image src={FooterLine} alt='line' width={2} height={20} className="mr-2" />
                   <div className="ont-inter font-normal text-[15px] leading-[27px] text-white">
                     {footerLink.title}
@@ -42,7 +43,7 @@ const Footer = () => (
           ))}
 
           <div className="flex flex-col">
-            <div className="flex">
+            <div className="flex mt-5 m:mt-0">
               <Image src={FooterLine} alt='line' width={2} height={20} className="mr-2" />
               <h3 className="font-inter font-normal text-[15px] leading-[27px] text-white">SEGUINOS</h3>
             </div>
@@ -61,20 +62,20 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="m:mt-20 w-full flex justify-around m:justify-between items-center pt-6 border-t-[1px] border-t-[#3F3E45] m:-mb-8">
-        <p className={`${styles.paragraph} flex w-1/2`}>Copyright © 2024 | merlin technology</p>
-        
+      <div className="m:mt-20 w-full flex justify-between items-center pt-6 border-t-[1px] border-t-[#3F3E45] px-5 l:px-0 m:mb-8 l:-mb-8">
+        <p className={`${styles.paragraph} flex`}>© 2024 | Merlin Technology</p>
+
         <Link href={`/`} aria-label={`Enlace a AFIP data fiscal`}>
-          <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="cursor-pointer m:hidden flex" />
+          <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="rounded cursor-pointer m:hidden flex" />
         </Link>
 
-        <Link className={`${styles.paragraph} hidden m:visible m:flex items-center`} href={`/`} aria-label={`Enlace a AFIP data fiscal`}>
+        <Link className={`${styles.paragraph} hidden m:visible m:flex ml-72 items-center`} href={`/`} aria-label={`Enlace a AFIP data fiscal`}>
           Data Fiscal
-          <Image src={ArrowUp} alt='Tax Data Icon' width={36} height={36} className="cursor-pointer ml-4 border-[1px] border-white/20 rounded-full p-1.5 hidden m:block" />  
+          <Image src={ChevronDown} alt='Tax Data Icon' width={20} height={20} className="cursor-pointer ml-5 hidden m:block" />
         </Link>
-  
+
         <Link className={``} href={`/`} aria-label={`Top Of The Page`}>
-          <Image src={ArrowUp} alt='' width={36} height={36} className="cursor-pointer ml-4 border-[1px] border-white/20 rounded-full p-1.5 hidden m:block" />  
+          <Image src={ArrowUp} alt='' width={36} height={36} className="cursor-pointer border-[1px] border-white/20 rounded-full p-1.5" />
         </Link>
       </div>
     </div>
