@@ -1,6 +1,7 @@
 import styles from "@/app/constants/style"
 import Image from 'next/image'
 import supportIT from "@/public/supportIT.png"
+import HeroBlur from "@/public/HeroBlur.png"
 import cuposLimitados from "@/public/cuposLimitados.png"
 import { Button } from "./Buttons"
 import { ButtonTwo } from "./Buttons"
@@ -12,12 +13,13 @@ import SupportRing from "../../public/SupportRing.svg"
 const Hero = () => {
 
   return (
-    <section id="home" className={`flex flex-col min-h-[100vh] px-5 inset-0`}>
+    <section id="home" className={`flex flex-col flex-nowrap min-h-min justify-center items-center overflow-hidden relative w-full px-0`}>
       <div className={`absolute top-[60px]`}>
-        <div className={`hidden m:flex bg-lines h-[1000px] w-[100vw] max-w-[1998px]`}></div>
+        <div className={`hidden m:flex bg-lines h-[1500px] w-[100vw]`}></div>
       </div>
-      <div className={`top-[14px]`}>
-        <div className={`bg-radial-blue absolute h-[1054px] w-[1054px]`}></div>
+
+      <div className={`flex-none inset-0 overflow-hidden absolute  z-0`}>
+        <div className={`absolute bg-radial-blue h-[1054px] top-[14px]`}></div>
       </div>
 
       <div className={`text-center m:mx-10 l:mx-20 relative`}>

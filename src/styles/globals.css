@@ -125,7 +125,7 @@ body {
 }
 
 .bg-radial-blue {
-  background: 
+  background:
   radial-gradient(50% 49.99999999999999% at 50% 49.99999999999999%, rgba(31, 143, 255, .5) 0%, rgba(31, 143, 255, 0) 100%);
   left: 50%;
   transform: translate(-50%);
