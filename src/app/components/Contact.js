@@ -40,7 +40,7 @@ const Contact = () => {
         <div className={`bg-card-contact pt-5 pl-5 max-w-[590px] l:max-w-[620px]`}>
           <Image className="absolute inset-0 w-full h-full object-cover rounded-[20px] z-10" src={ShadowContact} alt="Overlay" />
           <h3 className={`${styles.heading3} text-[20px] mt-2.5 mb-2`}>Nike Argentina</h3>
-          <p className={`${styles.paragraph} mb-2 pr-5 m:pr-32 max-w-[620px]`}>Our platform provides real-time guidance and advice on UI design best practices whether you're working on layout optimization, color scheme selection, or typography.</p>
+          <p className={`${styles.paragraph} mb-2 pr-5 m:pr-32 max-w-[620px]`}>Our platform provides real-time guidance and advice on UI design best practices whether youre working on layout optimization, color scheme selection, or typography.</p>
           <div className={`flex`}>
             <Image className={`self-end w-2/5`} src={Nike} alt="supportIT" width="245" height="266" />
             <Image className={`self-end w-3/5 rounded-br-[20px]`} src={Nike2} alt="supportIT" width="362" height="320" />

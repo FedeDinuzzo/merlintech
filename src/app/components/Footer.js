@@ -63,7 +63,7 @@ const Footer = () => (
       </div>
 
       <div className="m:mt-20 w-full flex justify-between items-center pt-6 border-t-[1px] border-t-[#3F3E45] px-5 l:px-0 m:mb-8 l:-mb-8">
-        <p className={`${styles.paragraph} flex`}>© 2024 | Merlin Technology</p>
+        <p className={`${styles.paragraph} flex`}>&#169;​ 2024 | Merlin Technology</p>
 
         <Link href={`/`} aria-label={`Enlace a AFIP data fiscal`}>
           <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="rounded cursor-pointer m:hidden flex" />
