@@ -90,10 +90,6 @@ body {
   flex-shrink: 0;
   background-size: 100% 86%;
   background-image: url("../public/Lines.svg");
-  flex: none;
-  height: 1000px;
-  position: absolute;
-  width: 1998px;
 }
 
 .bg-lines-partners {
@@ -101,10 +97,7 @@ body {
   flex-shrink: 0;
   background-size: 100% 100%;
   background-image: url("../public/PartnersLines.svg");
-  flex: none;
-  height: 1440px;
-  position: absolute;
-  width: 1998px;
+
 }
 
 .bg-card-hero {
@@ -134,12 +127,8 @@ body {
 .bg-radial-blue {
   background: 
   radial-gradient(50% 49.99999999999999% at 50% 49.99999999999999%, rgba(31, 143, 255, .5) 0%, rgba(31, 143, 255, 0) 100%);
-  height: 1054px;
   left: 50%;
-  position: absolute;
-  top: 14px;
   transform: translate(-50%);
-  width: 1054px;
   aspect-ratio: 1 / 1;
 }
 

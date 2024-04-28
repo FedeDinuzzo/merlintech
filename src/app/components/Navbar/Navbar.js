@@ -32,7 +32,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className={`fixed top-0 h-[60px] w-full z-40 bg-black bg-opacity-10 backdrop-filter backdrop-blur-[10px]`}>
+      <div className={`max-w-[100vw] fixed top-0 h-[60px] w-full z-40 bg-black bg-opacity-10 backdrop-filter backdrop-blur-[10px]`}>
         <nav className={`z-30 p-4 w-[100%] h-[100%] border-b-[1px] broder-solid border-white border-opacity-10`}>
           <div className={`flex justify-center`}>
             <div className={`flex items-center justify-between w-[100vw] h-6 p-2 m:justify-normal m:w-[768px]`}>

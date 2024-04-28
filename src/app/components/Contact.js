@@ -13,8 +13,8 @@ import Number2 from "../../public/Number2.svg"
 const Contact = () => {
   return (
     <section id="features" className={`px-5`}>
-      <div className={`flex justify-center`}>
-        <Image className="mt-44 absolute" src={ContactBall} alt="Ball" />
+      <div className={`flex justify-center -ml-40`}>
+        <Image className="mt-44 hidden m:flex absolute" src={ContactBall} alt="Ball" />
       </div>
       <div className={`flex mb-[60px]`}>
         <div className={`flex flex-col mx-auto gap-[30px] l:w-[1260px]`}>

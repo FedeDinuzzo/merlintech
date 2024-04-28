@@ -20,7 +20,7 @@ function Clients() {
     <>
       <section className={`min-h-[100vh] w-full flex flex-col items-center justify-center px-5`}>
         <h2 className={`${styles.heading3} text-center text-[36px] m:text-[60px] font-normal py-1 m:py-4 z-20`}>Clientes destacados</h2>
-        <div className={`z-20 text-center flex justify-between w-[1100px] `}>
+        <div className={`z-20 text-center flex justify-between l:w-[1100px] `}>
           <h2 className={`${styles.heading3} text-[36px] m:text-[60px] font-normal py-1 m:py-4 m:space-x-40 l:space-x-60`}>
             <span>alrededor</span>
             <span> del mundo</span>

@@ -12,11 +12,14 @@ import SupportRing from "../../public/SupportRing.svg"
 const Hero = () => {
 
   return (
-    <section id="home" className={`min-h-[100vh] px-5`}>
+    <section id="home" className={`flex flex-col min-h-[100vh] px-5 inset-0`}>
       <div className={`absolute top-[60px]`}>
-        <div className={`bg-lines`}></div>
+        <div className={`hidden m:flex bg-lines h-[1000px] w-[100vw] max-w-[1998px]`}></div>
       </div>
-      <div className={`bg-radial-blue`}></div>
+      <div className={`top-[14px]`}>
+        <div className={`bg-radial-blue absolute h-[1054px] w-[1054px]`}></div>
+      </div>
+
       <div className={`text-center m:mx-10 l:mx-20 relative`}>
         <div className={`${styles.flexCenter} mb-5`}>
           <ButtonThree image={ChevronRight} text="Top 1 del pais" link="" />

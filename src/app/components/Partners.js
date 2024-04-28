@@ -20,9 +20,9 @@ function Partners() {
     <section className={`min-h-[160vh] flex flex-col justify-center items-center px-5`}>
       <div className={`flex z-10`}>
         <h3 className={`${styles.heading2Partners} text-gradient max-w-[305px] tracking-tighter`}>NUESTROS PARTNERS & RESELLERS</h3>
-        <div className={`${styles.heading2Partners}  max-w-[305px] flex flex-col items-end mt-2`}>
-          <h4 className={`text-[120px] m:text-[140px] text-gradient py-8`}>+24</h4>
-          <p className={`text-[16px] text-dimWhite  -mt-2 m:-mt-4`}>Socios desde 2000</p>
+        <div className={`${styles.heading2Partners} m:max-w-[305px] flex flex-col items-end mt-2`}>
+          <h4 className={`text-[90px] m:text-[140px] text-gradient py-8`}>+24</h4>
+          <p className={`text-[16px] text-dimWhite -mt-2 m:-mt-4`}>Socios desde 2000</p>
         </div>
       </div>
 
@@ -30,8 +30,9 @@ function Partners() {
         <iframe src='https://my.spline.design/distortedspiralcopy-d85ad473f4a28e665eaab8ae4f04118b/' frameborder='0' width='100%' height='100%'></iframe>
       </div>
       <Image className={`absolute z-10 -mt-40 m:-mt-10 opacity-60 min-h-[800px]`} src={SpiralBlur} alt="gradient lights" width="1080" height="1080" />
-      <div className={`bg-lines-partners mt-10 z-0`}></div>
-
+      <div className={`absolute mt-10 z-0`}>
+        <div className={`hidden m:flex bg-lines-partners h-[1440px] w-[100vw] max-w-[1998px] mx-auto`}></div>
+      </div>
 
       <div className={`grid grid-cols-4 max-w-[96vw] m:max-w-[613px] z-50`}>
         <div className={`mt-[56%] -mx-[8px] m:-mx-3`}>
@@ -68,7 +69,7 @@ function Partners() {
         </div>
       </div>
 
-    </section >
+    </section>
   )
 }
 
