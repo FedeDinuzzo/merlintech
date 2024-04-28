@@ -26,7 +26,7 @@ const Features = () => {
         </div>
       </div>
 
-      {/* <div className={`flex flex-col justify-evenly items-center min-h-[380px] w-[340px] p-5`}>
+      {/*  <div className={`flex flex-col justify-evenly items-center min-h-[380px] w-[340px] p-5`}>
           <div className="absolute min-h-[380px] min-w-[340px] bg-card-service z-0">
             <Image className={`absolute h-[380px] rounded-[40px]`} src={cardInnerShadow} alt="supportIT" />
           </div> */}
