@@ -13,7 +13,8 @@ import Card4Services from "../../public/Card4Services.png"
 const AllServices = () => {
 
   return (
-    <section id="home" className={`flex flex-col flex-wrap justify-center gap-5`}>
+    <section className={`flex flex-col flex-wrap justify-center gap-5`}>
+      <div id="home" className={`absolute top-0`} />
       <div className={`flex flex-col items-center`}>
         <Image className="opacity-80 -top-[40px] absolute" src={ServicesBackground} alt="Ball" priority />
       </div>

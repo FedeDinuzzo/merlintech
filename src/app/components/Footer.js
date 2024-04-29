@@ -43,25 +43,30 @@ const Footer = () => (
           ))}
 
           <div className="flex flex-col">
-            <div className="flex mt-5 m:mt-0">
+            <div className="flex mt-5 l:mt-0">
               <Image src={FooterLine} alt='line' width={2} height={20} className="mr-2" />
               <h3 className="font-inter font-normal text-[15px] leading-[27px] text-white">SEGUINOS</h3>
             </div>
             <div className="flex mt-4 px-2 -ml-4">
               <div className="-mr-1">
-                <Image src={Instagram} alt='Social Icon' width={50} height={50} className="cursor-pointer" />
+                <Link href="https://www.instagram.com/merlintechok/" target="_blank" aria-label={`Enlace a instagram merlintech`}>
+                  <Image src={Instagram} alt='Social Icon' width={50} height={50} className="cursor-pointer" />
+                </Link>
               </div>
               <div className="-mr-1">
-                <Image src={Linkedin} alt='Social Icon' width={50} height={50} className="cursor-pointer" />
+                <Link href="https://www.linkedin.com/company/merlin-tech-it-support/" target="_blank" aria-label={`Enlace a linkedin merlintech`}>
+                  <Image src={Linkedin} alt='Social Icon' width={50} height={50} className="cursor-pointer" />
+                </Link>
               </div>
               <div className="">
-                <Image src={Facebook} alt='Social Icon' width={50} height={50} className="cursor-pointer" />
+                <Link href="https://www.facebook.com/merlintech" target="_blank" aria-label={`Enlace a facebook merlintech`}>
+                  <Image src={Facebook} alt='Social Icon' width={50} height={50} className="cursor-pointer" />
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <div className="m:mt-20 w-full flex justify-between items-center pt-6 border-t-[1px] border-t-[#3F3E45] px-5 l:px-0 m:mb-8 l:-mb-8">
         <p className={`${styles.paragraph} flex`}>&#169;​ 2024 | Merlin Technology</p>
 

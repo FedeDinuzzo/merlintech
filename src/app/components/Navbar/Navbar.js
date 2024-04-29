@@ -33,9 +33,9 @@ export default function Navbar() {
         <nav className={`z-30 p-4 w-[100%] h-[100%] border-b-[1px] broder-solid border-white border-opacity-10`}>
           <div className={`flex justify-center`}>
             <div className={`flex items-center justify-between w-[100vw] h-6 p-2 m:justify-normal m:w-[768px]`}>
-              {/* <Link to="" smooth={true}> */}
-              <Image className="w-32 h-8 cursor-pointer -ml-5" src={logo} alt="logo" priority />
-              {/* </Link> */}
+              <Link href={`/`} className={`-ml-8`}>
+                <Image className="w-32 h-8 cursor-pointer -ml-1" src={logo} alt="logo" priority />
+              </Link>
               <div className='m:hidden'>
                 {showNav ? (
                   <MenuClose

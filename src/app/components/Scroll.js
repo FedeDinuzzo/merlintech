@@ -2,23 +2,20 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../constants/style'
 import ScrollCard from '../../public/ScrollBlur.png'
-import { ButtonFour } from "./Buttons"
+import { Button } from "./Buttons"
 import ChevronRight from "../../public/ChevronRight.svg"
 
 function Scroll() {
   return (
     <>
-      <section className={`min-h-[100vh] flex justify-between`}>
+      <section className={`min-h-[100vh] relative flex justify-between`}>
+        <div id="servicios" smooth={true} className={`absolute -mt-32`} />
         {/* <Image className={`absolute flex`} src={ScrollCard} alt="" width="990" height="762" /> */}
-        <div className={`flex flex-col m:p-16`}>
-            <h1 className={`inline text-white`}>Simplifica </h1>
-            <h3 className={`opacity-40 inline`}>tus
-            operaciones con nuestro servicio de soporte IT</h3>
-
+        <div className={`flex flex-col m:p-16 max-w-[582px]`}>
           <h2 className={`${styles.heading}`}>
-            <span className={``}>Simplifica </span>
-            tus
-            operaciones con nuestro servicio de soporte IT
+            Simplifica
+            <span className={`inline text-white opacity-40`}>tus
+              operaciones con nuestro servicio de soporte IT</span>
           </h2>
 
           <div className={``}>
@@ -36,12 +33,18 @@ function Scroll() {
             </div>
           </div>
 
-          <ButtonFour image={ChevronRight} text={`COMENZAR CONSULTORIA`} link={''} />
+          <Button image={ChevronRight} text={`COMENZAR CONSULTORIA`} link={''} />
         </div>
 
-        <div className={`flex`}>
-          <Image className={``} src={ScrollCard} alt="" width="990" height="762" />
+        <div className={`flex-none inset-0 overflow-hidden absolute z-0 min-h-[790px]`}>
+          <div className={`absolute bg-radial-white h-[790px] z-0`}></div>
+          <div className={`absolute bg-radial-violet h-[600px] mt-[95px] ml-[5%] z-10`}></div>
         </div>
+
+
+        {/* <div className={`flex`}>
+          <Image className={``} src={ScrollCard} alt="" width="990" height="762" />
+        </div> */}
         <div className={`hidden`}>
 
         </div>

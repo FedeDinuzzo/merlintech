@@ -11,7 +11,8 @@ import Card4Empresa from "../../public/Card4Empresa.png"
 const Features = () => {
 
   return (
-    <section id="features" className={`px-5`}>
+    <section className={`px-5`}>
+      <div id="home" className={`absolute top-0`} />
       <div className={`flex flex-col items-center`}>
         <Image className="mt-72 m:mt-60 m:-ml-48 w-[60%] opacity-60 absolute" src={ContactBall} alt="Ball" />
       </div>

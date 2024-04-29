@@ -246,15 +246,15 @@ export const footerLinks = [
     links: [
       {
         name: "Clientes",
-        link: "",
+        link: "#clientes",
       },
       {
-        name: "Prestaciones",
-        link: "",
+        name: "Servicios",
+        link: "#servicios",
       },
       {
         name: "Socios",
-        link: "",
+        link: "#socios",
       },
     ],
   },
@@ -263,11 +263,7 @@ export const footerLinks = [
     links: [
       {
         name: "Soluciones",
-        link: "",
-      },
-      {
-        name: "Testimonios",
-        link: "",
+        link: "servicios",
       },
     ],
   },
@@ -276,11 +272,7 @@ export const footerLinks = [
     links: [
       {
         name: "La empresa",
-        link: "",
-      },
-      {
-        name: "Experiencias",
-        link: "",
+        link: "nosotros",
       },
     ],
   },

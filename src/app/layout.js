@@ -3,6 +3,7 @@
 import { Inter } from '@next/font/google'
 import styles from '../styles/globals.css'
 import Navbar from './components/Navbar/Navbar'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 // export const metadata = {
@@ -55,6 +56,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <div className={`bg-primary pt-36`}>
           <main>{children}</main>
+          <Contact />
           <Footer />
         </div>
       </body>
