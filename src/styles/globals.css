@@ -88,7 +88,7 @@ body {
 .bg-lines {
   image-rendering: pixelated;
   flex-shrink: 0;
-  background-size: 100% 86%;
+  background-size: cover;
   background-image: url("../public/Lines.svg");
 }
 
@@ -126,8 +126,26 @@ body {
 
 .bg-radial-blue {
   background:
-  radial-gradient(50% 49.99999999999999% at 50% 49.99999999999999%, rgba(31, 143, 255, .5) 0%, rgba(31, 143, 255, 0) 100%);
+  radial-gradient(50% 49.99999999999999% at 50% 49.99999999999999%, rgba(31, 143, 255, .3) 0%, rgba(31, 143, 255, 0) 100%);
   left: 50%;
+  transform: translate(-50%);
+  aspect-ratio: 1 / 1;
+}
+
+.bg-radial-white {
+  background: linear-gradient(to bottom right, rgba(23, 106, 177, .3), rgba(203, 216, 241, .3)); 
+  border-radius: 50%;
+  filter: blur(100px);
+  left: 50%;
+  transform: translate(-50%);
+  aspect-ratio: 1 / 1;
+}
+
+.bg-radial-violet {
+  background: linear-gradient(to bottom left, rgba(8, 11, 50, .4), rgba(105, 50, 214, 0.4)); 
+  border-radius: 50%;
+  filter: blur(100px);
+  left: 45%;
   transform: translate(-50%);
   aspect-ratio: 1 / 1;
 }

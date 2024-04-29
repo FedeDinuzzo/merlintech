@@ -13,16 +13,15 @@ import SupportRing from "../../public/SupportRing.svg"
 const Hero = () => {
 
   return (
-    <section id="home" className={`flex flex-col flex-nowrap min-h-min justify-center items-center overflow-hidden relative w-full px-0`}>
-      <div className={`absolute top-[60px]`}>
-        <div className={`hidden m:flex bg-lines h-[1500px] w-[100vw]`}></div>
+    <section id="home" className={`flex flex-col flex-nowrap min-h-min justify-center`}>
+      <div className={`absolute -left-3 top-[60px] bg-lines h-[1000px] w-[100vw]`}></div>
+
+      <div className={`flex-none inset-0 overflow-hidden absolute z-0 min-h-[1440px]`}>
+        <div className={`absolute bg-radial-white h-[1054px] top-[100px] z-10`}></div>
+        <div className={`absolute bg-radial-violet h-[807px] top-[260px] z-20`}></div>
       </div>
 
-      <div className={`flex-none inset-0 overflow-hidden absolute  z-0`}>
-        <div className={`absolute bg-radial-blue h-[1054px] top-[14px]`}></div>
-      </div>
-
-      <div className={`text-center m:mx-10 l:mx-20 relative`}>
+      <div className={`text-center m:mx-10 l:mx-20 relative px-5`}>
         <div className={`${styles.flexCenter} mb-5`}>
           <ButtonThree image={ChevronRight} text="Top 1 del pais" link="" />
         </div>
