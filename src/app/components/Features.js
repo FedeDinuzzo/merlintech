@@ -26,17 +26,10 @@ const Features = () => {
         </div>
       </div>
 
-      {/*  <div className={`flex flex-col justify-evenly items-center min-h-[380px] w-[340px] p-5`}>
-          <div className="absolute min-h-[380px] min-w-[340px] bg-card-service z-0">
-            <Image className={`absolute h-[380px] rounded-[40px]`} src={cardInnerShadow} alt="supportIT" />
-          </div> */}
-
       <div className={`${styles.flexCenter} flex-wrap gap-[20px] m:p-[30px] l:p-[40px] m:gap-[10px] l:gap-[20px] max-w-[1380px] mx-auto`}>
-
-        <div className={`flex flex-col flex-nowrap justify-evenly m:h-[465px] m:w-[720px] p-8`}>
-          <div className="absolute w-[360px] h-[400px] bg-card-service z-0"></div>
-          <div className={`max-w-[360px] z-10`}>
-            <Image className={`min-w-[282px] mb-5`} src={Card1Empresa} alt="supportIT" width="360" height="210" />
+        <div className={`bg-card-service flex flex-col flex-nowrap justify-evenly m:h-[465px] m:w-[720px] p-8 `}>
+          <div className={`max-w-[360px] mx-auto`}>
+            <Image className={`min-w-[282px] mb-5`} src={Card1Empresa} alt="supportIT" width="360" height="210" priority />
             <h2 className={`${styles.heading3} my-2.5`}>+300 Empresas nos eligieron</h2>
             <p className={`${styles.paragraph} mb-2.5`}>Ellos confian y confiaron en nosotros. Porque entendemos a la perfección sus necesidades tecnológicas y les brindamos soluciones a medida y efectivas.</p>
           </div>

@@ -25,7 +25,7 @@ const Footer = () => (
               <div link={footerLink.key} className="flex flex-col s:my-0 my-4 min-w-[150px]">
                 <div className={`flex mt-5 l:mt-0`}>
                   <Image src={FooterLine} alt='line' width={2} height={20} className="mr-2" />
-                  <div className="ont-inter font-normal text-[15px] leading-[27px] text-white">
+                  <div className="font-inter font-normal text-[15px] leading-[27px] text-white">
                     {footerLink.title}
                   </div>
                 </div>
@@ -65,18 +65,18 @@ const Footer = () => (
       <div className="m:mt-20 w-full flex justify-between items-center pt-6 border-t-[1px] border-t-[#3F3E45] px-5 l:px-0 m:mb-8 l:-mb-8">
         <p className={`${styles.paragraph} flex`}>&#169;​ 2024 | Merlin Technology</p>
 
-        <Link href={`/`} aria-label={`Enlace a AFIP data fiscal`}>
+        <Link href="http://qr.afip.gob.ar/?qr=b3QEcW17fgrFdrGofVZ4kA,," target="_blank" aria-label={`Enlace a AFIP data fiscal`}>
           <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="rounded cursor-pointer m:hidden flex" />
         </Link>
 
-        <Link className={`${styles.paragraph} hidden m:visible m:flex ml-72 items-center`} href={`/`} aria-label={`Enlace a AFIP data fiscal`}>
+        <Link className={`${styles.paragraph} hidden m:visible m:flex ml-72 items-center`} href="http://qr.afip.gob.ar/?qr=b3QEcW17fgrFdrGofVZ4kA,," target="_blank" aria-label={`Enlace a AFIP data fiscal`}>
           Data Fiscal
           <Image src={ChevronDown} alt='Tax Data Icon' width={20} height={20} className="cursor-pointer ml-5 hidden m:block" />
         </Link>
 
-        <Link className={``} href={`/`} aria-label={`Top Of The Page`}>
+        <a href="#home">
           <Image src={ArrowUp} alt='' width={36} height={36} className="cursor-pointer border-[1px] border-white/20 rounded-full p-1.5" />
-        </Link>
+        </a>
       </div>
     </div>
   </section>

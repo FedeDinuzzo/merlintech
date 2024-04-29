@@ -12,7 +12,8 @@ import Number2 from "../../public/Number2.svg"
 
 const Contact = () => {
   return (
-    <section id="features" className={`px-5`}>
+    <section className={`px-5`}>
+      <div id="testimonios" className={`absolute -mt-20`} />
       <div className={`flex justify-center -ml-40`}>
         <Image className="mt-44 hidden m:flex absolute" src={ContactBall} alt="Ball" />
       </div>
@@ -48,6 +49,7 @@ const Contact = () => {
         </div>
 
         <div className={`bg-card-contact flex flex-grow flex-wrap max-w-[1260px] min-h-[194px] justify-evenly p-10`}>
+          <div id="contacto" className={`absolute -mt-32`} />
           <div className={`flex flex-col m:flex-row justify-center align-top`}>
             <div className={`mr-2.5 -mt-3 mb-4 -ml-2.5 l:-ml-24`}>
               <Image src={Number} alt="supportIT" width="48" height="48" />

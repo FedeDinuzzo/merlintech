@@ -13,12 +13,12 @@ import SupportRing from "../../public/SupportRing.svg"
 const Hero = () => {
 
   return (
-    <section id="home" className={`flex flex-col flex-nowrap min-h-min justify-center`}>
-      <div className={`absolute -left-3 top-[60px] bg-lines h-[1000px] w-[100vw]`}></div>
+    <section className={`flex flex-col flex-nowrap min-h-min justify-center`}>
+      <div id="home" className={`absolute -left-3 top-[60px] bg-lines h-[1000px] w-[100vw]`}></div>
 
       <div className={`flex-none inset-0 overflow-hidden absolute z-0 min-h-[1440px]`}>
-        <div className={`absolute bg-radial-white h-[1054px] top-[200px] z-10`}></div>
-        <div className={`absolute bg-radial-violet h-[807px] top-[400px] z-20`}></div>
+        <div className={`absolute bg-radial-white h-[1054px] top-[200px] z-0`}></div>
+        <div className={`absolute bg-radial-violet h-[807px] top-[400px] z-10`}></div>
       </div>
 
       <div className={`text-center m:mx-10 l:mx-20 relative px-5`}>
@@ -44,18 +44,18 @@ const Hero = () => {
       <div className={`${styles.flexCenter}`}>
         <div className={`relative my-5`}>
           <div className={`${styles.flexCenter} min-h-[627px]`}> {/* border-[.75px] border-[rgba(255, 255, 255, .1)] border-solid blur-[7.5px] ${styles.flexStart} bg-[#050505e6] rounded-[23px] flex flex-row flex-nowrap gap-[15px] inset-0 mix-blend-screen overflow-hidden p-0 absolute will-change-transform */}
-            <Image className={`min-h-[627px]`} src={supportIT} alt="supportIT" width="1200" height="627" priorty />
-            <div className={`absolute top-[5%] left-[5%] z-10`}>
-              <Image className={``} src={SupportRing} alt="SupportRing" width="136" height="136" priorty />
+            <Image className={`min-h-[627px] z-30`} src={supportIT} alt="supportIT" width="1200" height="627" priority />
+            <div className={`absolute top-[5%] left-[5%] z-50`}>
+              <Image className={``} src={SupportRing} alt="SupportRing" width="136" height="136" priority />
             </div>
-            <div className={`absolute right-[5%] top-[70%] z-10`}>
-              <Image className={``} src={ProgressRing} alt="progressRing" width="148" height="148" priorty />
+            <div className={`absolute right-[5%] top-[70%] z-50`}>
+              <Image className={``} src={ProgressRing} alt="progressRing" width="148" height="148" priority />
             </div>
           </div>
 
           <div className="flex item">
-            <div className={`bg-card-hero absolute flex flex-col flex-nowrap h-[380px] w-[340px] gap-2.5 p-5 top-[50%] l:top-[-22px] `}>
-              <Image src={cuposLimitados} alt="supportIT" width="1200" height="627" priorty />
+            <div className={`bg-card-hero absolute flex flex-col flex-nowrap h-[380px] w-[340px] gap-2.5 p-5 top-[50%] l:top-[-22px] z-40`}>
+              <Image src={cuposLimitados} alt="supportIT" width="1200" height="627" priority />
               <h2 className={`${styles.heading3} my-2.5`}>Soporte IT Personalizado</h2>
               <p className={`${styles.paragraph} mb-2.5`}>Asegure que sus datos y sistemas estén siempre disponibles, protegidos y actualizados.</p>
               <ButtonTwo image={ChevronRight} text="Realizar Auditoria" link="" />
