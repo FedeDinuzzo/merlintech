@@ -142,7 +142,7 @@ body {
 }
 
 .bg-radial-violet {
-  background: linear-gradient(to bottom left, rgba(3, 4, 24, 0.7), rgba(105, 50, 214, 0.3)); 
+  background: linear-gradient(to bottom left, rgba(3, 4, 24, 1), rgba(105, 50, 214, 0.4)); 
   border-radius: 50%;
   filter: blur(100px);
   left: 44%;
