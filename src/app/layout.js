@@ -3,8 +3,10 @@
 import { Inter } from '@next/font/google'
 import styles from '../styles/globals.css'
 import Navbar from './components/Navbar/Navbar'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import { lazy, Suspense } from "react"
+
+const Contact = lazy(() => import('./components/Contact'))
+const Footer = lazy(() => import('./components/Footer'))
 
 // export const metadata = {
 //   title: '▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA',
@@ -56,8 +58,10 @@ export default function RootLayout({ children }) {
         <Navbar />
         <div className={`bg-primary pt-36`}>
           <main>{children}</main>
-          <Contact />
-          <Footer />
+          <Suspense fallback={`Loading...`}>
+            <Contact />
+            <Footer />
+          </Suspense>
         </div>
       </body>
     </html>

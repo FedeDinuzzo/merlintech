@@ -1,8 +1,10 @@
 import styles from "./constants/style"
 import Hero from './components/Hero'
-import Clients from './components/Clients'
-import Scroll from './components/Scroll'
-import Partners from './components/Partners'
+import { lazy, Suspense } from "react"
+
+const Clients = lazy(() => import('./components/Clients'))
+const Scroll = lazy(() => import('./components/Scroll'))
+const Partners = lazy(() => import('./components/Partners'))
 
 export const metadata = {
   alternates: {
@@ -17,9 +19,11 @@ function Home() {
         title="Soporte Tecnico IT"
         title2="Para Empresas"
       />
-      <Clients />
-      <Scroll />
-      <Partners />
+      <Suspense fallback={`Loading...`}>
+        <Clients />
+        <Scroll />
+        <Partners />
+      </Suspense>
     </div>
   )
 }

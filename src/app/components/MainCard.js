@@ -18,9 +18,9 @@ import ChevronDown from '../../public/ChevronDown.svg'
 
 export default function MainCard() {
   return (
-    <section className="flex h-[627px] min-w-[375px] w-[1100px] max-w-[100vw]">
+    <section className="flex h-[627px] min-w-[375px] w-[1100px] max-w-[100vw] rounded-[23px] bg-gradient-to-b from-[#0000] to-[#0006]">
       <div className={`bg-main-card border-[.75px] border-solid border-secondary border-opacity-10 flex flex-none flex-row flex-nowrap justify-start gap-15 inset-0 overflow-hidden p-0 absolute bg-[#050505e6] content-start items-start backdrop-blur-[7.5px]`}>
-        <div className={`min-w-[150px]  max-w-[33vw] border-r-[.75px] border-solid border-white border-opacity-10 bg-black bg-opacity-10 flex flex-col justify-between h-full p-15 relative overflow-visible`}>
+        <div className={`min-w-[150px] max-w-[33vw] border-r-[.75px] border-solid border-white border-opacity-10 bg-black bg-opacity-10 flex flex-col justify-between h-full p-15 relative overflow-visible`}>
           <div className={`flex flex-col items-start justify-between p-[15px] gap-6 min-h-min-content overflow-visible relative w-full h-full`}>
             <Image className="w-18 h-6 mt-[7.5px]" src={logo} alt="logo" priority />
 
@@ -75,19 +75,19 @@ export default function MainCard() {
         <div className={`flex flex-col text-white w-[897px] h-full max-w-[65vw] p-[15px]`}>
 
           <div className={`flex justify-between`}>
-            <div className={`shadow-main-card flex justify-center items-center w-[300px] max-w-[40vw] gap-[9px] py-[7.5px] px-[15px] overflow-hidden border-[.75px] bg-secondary bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
+            <div className={`shadow-main-card flex justify-center items-center w-[300px] max-w-[50vw] gap-[9px] py-[7.5px] px-[15px] overflow-hidden border-[.75px] bg-secondary bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
               <p className={`${styles.heading3MainCard} leading-5 text-[12px]`}>Encontra tu solucion</p>
               <Image className="" src={Search} alt="" priority />
             </div>
-            <Image className="" src={AvatarProgress} alt="" priority />
+            <Image className="hidden m:flex h-[37.5px] w-[37.5px]" src={AvatarProgress} alt="" priority />
           </div>
 
           <div className={`border-t-[1px] mt-[15px] border-secondary border-solid border-opacity-10`}></div>
 
           <div className={`flex justify-between my-[15px] h-[34px]`}>
-            <div className={`shadow-main-card flex justify-center items-center px-1 overflow-hidden border-[.75px] bg-[#0009] bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
+            <div className={`shadow-main-card flex justify-center items-center p-1 overflow-hidden border-[.75px] bg-[#0009] bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
               <div className={`flex justify-between items-center w-[210px]`}>
-                <h4 className={`${styles.heading3MainCard} px-2 leading-6 flex justify-center items-center overflow-hidden border-[.75px] bg-secondary bg-opacity-10 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>Ubicacion</h4>
+                <h4 className={`${styles.heading3MainCard} px-2 leading-5 flex justify-center items-center overflow-hidden border-[.75px] bg-secondary bg-opacity-10 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>Ubicacion</h4>
                 <h4 className={`${styles.heading3MainCard} ml-5`}>Baires</h4>
                 <h4 className={`${styles.heading3MainCard}`}>Argentina</h4>
               </div>
@@ -105,15 +105,35 @@ export default function MainCard() {
             </div>
           </div>
 
-          <div className={`flex flex-grow justify-between w-full`}>
-            <div className={``}>
-              Card col 1
+          <div className={`flex justify-between w-full`}>
+            <div className={`flex flex-col space-y-4 w-full`}>
+              <div className={`z-20 flex w-full h-[105px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+
+              </div>
+              <div className={`z-20 flex w-full h-[144px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+
+              </div>
+              <div className={`z-20 flex w-full h-[162px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+
+              </div>
             </div>
-            <div className={`hidden m:flex`}>
-              Card col 2
+
+            <div className={`hidden m:flex flex-col space-y-4 px-[15px] w-full`}>
+              <div className={`z-20 flex w-full h-[342px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+
+              </div>
+              <div className={`z-20 flex w-full h-[160px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+
+              </div>
             </div>
-            <div className={`hidden l:flex`}>
-              Card col 3
+
+            <div className={`hidden l:flex flex-col space-y-4 w-full`}>
+              <div className={`z-20 flex w-full h-[232px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+
+              </div>
+              <div className={`z-20 flex w-full h-[260px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+
+              </div>
             </div>
           </div>
         </div>
