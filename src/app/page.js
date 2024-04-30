@@ -1,10 +1,10 @@
 import styles from "./constants/style"
 import Hero from './components/Hero'
-import { lazy, Suspense } from "react"
+import dynamic from 'next/dynamic'
 
-const Clients = lazy(() => import('./components/Clients'))
-const Scroll = lazy(() => import('./components/Scroll'))
-const Partners = lazy(() => import('./components/Partners'))
+const DynamicClients = dynamic(() => import('./components/Clients'), { loading: () => <p>Loading...</p>, })
+const DynamicScroll = dynamic(() => import('./components/Scroll'), { loading: () => <p>Loading...</p>, })
+const DynamicPartners = dynamic(() => import('./components/Partners'), { loading: () => <p>Loading...</p>, })
 
 export const metadata = {
   alternates: {
@@ -19,11 +19,9 @@ function Home() {
         title="Soporte Tecnico IT"
         title2="Para Empresas"
       />
-      <Suspense fallback={`Loading...`}>
-        <Clients />
-        <Scroll />
-        <Partners />
-      </Suspense>
+      <DynamicClients />
+      <DynamicScroll />
+      <DynamicPartners />
     </div>
   )
 }
