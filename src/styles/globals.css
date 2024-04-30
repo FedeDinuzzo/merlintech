@@ -85,6 +85,10 @@ h1, h2, h3, h4, p {
   will-change: var(--framer-will-change-override, transform);
 }
 
+.shadow-main-card {
+  box-shadow: 0 7.5px 7.5px #0000001a, 0 3px 3px #0000000d, 0 .75px #0000000d;
+}
+
 .bg-lines {
   image-rendering: pixelated;
   flex-shrink: 0;

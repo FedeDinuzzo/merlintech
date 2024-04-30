@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
 
       <div className={`${styles.flexCenter}`}>
-        <div className={`relative my-5`}>
+        <div className={`relative my-10`}>
           <div className={`${styles.flexCenter} min-h-[627px]`}> {/* border-[.75px] border-[rgba(255, 255, 255, .1)] border-solid blur-[7.5px] ${styles.flexStart} bg-[#050505e6] rounded-[23px] flex flex-row flex-nowrap gap-[15px] inset-0 mix-blend-screen overflow-hidden p-0 absolute will-change-transform */}
             <MainCard />
             {/* <Image className={`min-h-[627px] z-30`} src={supportIT} alt="supportIT" width="1200" height="627" priority /> */}
