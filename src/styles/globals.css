@@ -76,17 +76,13 @@ h1, h2, h3, h4, p {
   opacity: 1;
 }
 
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1), 0 0 10px rgba(255, 255, 255, 0.1) inset;
-    outline: 1px solid rgba(255, 255, 255, 0.01);
-    outline-offset: -1px;
-  }
-  100% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.2) inset;
-    outline: 1px solid rgba(255, 255, 255, 0.4);
-    outline-offset: -1px;
-  }
+.bg-main-card {
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 23px;
+  box-shadow: 0 22.5px 45px #0000001a, 0 11.25px 22.5px #0000000d, 0 3.75px 7.5px #0000000d, inset 0 37.5px 75px #ffffff26;
+  mix-blend-mode: screen;
+  transform: perspective(1200px);
+  will-change: var(--framer-will-change-override, transform);
 }
 
 .bg-lines {

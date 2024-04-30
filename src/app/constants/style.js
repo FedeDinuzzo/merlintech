@@ -8,6 +8,7 @@ const styles = {
   heading3: "font-inter font-medium text-[18px] text-gradient leading-7 w-full",
   heading3Monitoreo: "font-inter font-normal text-[24px] text-gradient max-w-[250px] mx-auto leading-7 w-full",
   heading3Contact: "font-inter font-medium text-[30px] text-white leading-7 w-full",
+  heading3MainCard: "font-inter font-normal text-[10.5px] text-white leading-4 w-full",
   heading3White: "font-inter font-normal text-[18px] text-secondary leading-7 w-full",
   paragraph: "font-inter font-normal text-dimWhite text-[16px] leading-[24px]",
 
