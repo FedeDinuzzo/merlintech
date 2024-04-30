@@ -1,14 +1,13 @@
 import styles from "@/app/constants/style"
 import Image from 'next/image'
-import supportIT from "@/public/supportIT.png"
-import HeroBlur from "@/public/HeroBlur.png"
-import cuposLimitados from "@/public/cuposLimitados.png"
+// import HeroBlur from "@/public/HeroBlur.png"
+// import cuposLimitados from "@/public/cuposLimitados.png"
 import { Button } from "./Buttons"
-import { ButtonTwo } from "./Buttons"
+// import { ButtonTwo } from "./Buttons"
 import { ButtonThree } from "./Buttons"
 import ChevronRight from "../../public/ChevronRight.svg"
-import ProgressRing from "../../public/ProgressRing.svg"
-import SupportRing from "../../public/SupportRing.svg"
+// import ProgressRing from "../../public/ProgressRing.svg"
+// import SupportRing from "../../public/SupportRing.svg"
 import MainCard from "./MainCard"
 
 const Hero = () => {
