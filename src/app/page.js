@@ -14,7 +14,7 @@ export const metadata = {
 
 function Home() {
   return (
-    <div className={`space-y-48`}>
+    <div className={``}>
       <Hero
         title="Soporte Tecnico IT"
         title2="Para Empresas"

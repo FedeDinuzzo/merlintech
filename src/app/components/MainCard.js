@@ -45,48 +45,50 @@ export default function MainCard() {
             {/* SERVICES */}
             <div className={`-mt-20`}>
               {/* SERVICES TOP */}
-              <div className={`flex m:mx-[15px] mb-[7.5px] space-y-4`}>
-                <Image className="mt-3" src={MenuNineCircles} alt="" priority />
-                <p className={`${styles.headingMainCard} leading-4 pl-[9px]`}>Todos los Servicios</p>
+              <div className={`flex`}>
+                <div className='-ml-1 m:ml-0 border-l-[2px] -mb-[6px] border-[#2670e9] border-solid'></div>
+                <div className='-ml-1 m:ml-0 absolute w-36 h-7 bg-gradient-to-r from-[#2670e9] to-transparent opacity-30'></div>
+                <Image className="pt-[6px] ml-[2px] m:ml-[13px]" src={MenuNineCircles} alt="" priority />
+                <p className={`${styles.headingMainCard} pt-[6px] pl-[9px]`}>Todos los Servicios</p>
               </div>
               <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
                 <Image className="mt-3" src={Hand} alt="" priority />
-                <p className={`${styles.headingMainCard} leading-4 pl-[9px]`}>Soporte de PC</p>
+                <p className={`${styles.headingMainCard} pl-[9px]`}>Soporte de PC</p>
               </div>
               <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
                 <Image className="mt-3" src={PatternLock} alt="" priority />
-                <p className={`${styles.headingMainCard} leading-4 pl-[9px]`}>Redes y Servidores</p>
+                <p className={`${styles.headingMainCard} pl-[9px]`}>Redes y Servidores</p>
               </div>
               <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
                 <Image className="mt-3" src={CreditCard} alt="" priority />
-                <p className={`${styles.headingMainCard} leading-4 pl-[9px]`}>Licencias de Software</p>
+                <p className={`${styles.headingMainCard} pl-[9px]`}>Licencias de Software</p>
               </div>
               <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
                 <Image className="mt-3" src={PlayCircles} alt="" priority />
-                <p className={`${styles.headingMainCard} leading-4 pl-[9px]`}>Backup en la Nube</p>
+                <p className={`${styles.headingMainCard} pl-[9px]`}>Backup en la Nube</p>
               </div>
               <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
                 <Image className="mt-3" src={Square} alt="" priority />
-                <p className={`${styles.headingMainCard} leading-4 pl-[9px]`}>Servicio de Hosting</p>
+                <p className={`${styles.headingMainCard} pl-[9px]`}>Servicio de Hosting</p>
               </div>
               <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
                 <Image className="mt-3" src={Photo} alt="" priority />
-                <p className={`${styles.headingMainCard} leading-4 pl-[9px]`}>Camaras de Seguridad</p>
+                <p className={`${styles.headingMainCard} pl-[9px]`}>Camaras de Seguridad</p>
               </div>
             </div>
             {/* SERVICES BOTTOM */}
             <div className={`border-[.75px] border-solid border-white rounded-b-[10px] border-opacity-5 bg-black bg-opacity-10`}>
               <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
                 <Image className="mt-3" src={Keyboard} alt="" priority />
-                <p className={`${styles.headingMainCard} leading-4 pl-[9px]`}>Suministro Hardware</p>
+                <p className={`${styles.headingMainCard} pl-[9px]`}>Suministro Hardware</p>
               </div>
               <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
                 <Image className="mt-3" src={Settings} alt="" priority />
-                <p className={`${styles.headingMainCard} leading-4 pl-[9px]`}>Proteccion y Seguridad</p>
+                <p className={`${styles.headingMainCard} pl-[9px]`}>Proteccion y Seguridad</p>
               </div>
               <div className={`flex m:mx-[15px] my-[7.5px] space-y-4 mb-3`}>
                 <Image className="mt-3" src={Help} alt="" priority />
-                <p className={`${styles.headingMainCard} leading-4 pl-[9px]`}>Centro de Ayuda</p>
+                <p className={`${styles.headingMainCard} pl-[9px]`}>Centro de Ayuda</p>
               </div>
             </div>
           </div>
@@ -204,7 +206,7 @@ export default function MainCard() {
               <div className={`overflow-hidden z-20 flex w-full h-[342px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col p-[15px]`}>
                   <Image className="w-full mb-[6px]" src={ImageCard} alt="" priority />
-                  <div className={`${styles.headingMainCard} my-1 bg-[#3395FF] rounded-md flex justify-center py-1 text-[13px] w-[160px]`}>ATENCION INMEDIATA</div>
+                  <div className={`${styles.headingMainCard} my-1 bg-[#3395FF] rounded-md flex justify-center py-1 text-[13px] w-[154px]`}>ATENCION INMEDIATA</div>
                   <h4 className={`${styles.headingMainCard} my-1 font-medium text-[13px]`}>Resolución Continua</h4>
                   <p className={`${styles.headingMainCard} my-1 opacity-80`}>Nos brindaron soluciones inmediatas, disponibles las 24 horas del día</p>
                   <div className={`flex my-3`}>
@@ -293,7 +295,7 @@ export default function MainCard() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   )
 }
