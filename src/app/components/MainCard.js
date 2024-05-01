@@ -131,7 +131,7 @@ export default function MainCard() {
               <div className={`overflow-hidden z-20 flex h-[105px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex`}>
                   <div className={`flex flex-col w-1/2 justify-between space-y-2 max-h-[105px] p-2.5 py-2 m-2.5`}>
-                    <h4 className={`${styles.headingMainCard} text-white`}>Horarios -&gt;</h4>
+                    <h4 className={`${styles.headingMainCard} text-white font-medium`}>Horarios -&gt;</h4>
                     <h4 className={`${styles.headingMainCard} opacity-80`}>Ubicacion -&gt;</h4>
                     <Image className={`w-28`} src={merlinCard} alt="" priority />
                   </div>
@@ -139,7 +139,7 @@ export default function MainCard() {
                   <Image className="w-1 flex py-1" src={separator} alt="" priority />
 
                   <div className={`flex flex-col w-1/2 space-y-2 max-h-[105px] p-2.5 py-2 m-2.5`}>
-                    <h4 className={`${styles.headingMainCard}`}>9:00AM - 6:00PM</h4>
+                    <h4 className={`${styles.headingMainCard} font-medium`}>9:00AM - 6:00PM</h4>
                     <p className={`${styles.headingMainCard} opacity-80`}>Billinghurst 1193 4 piso, depto A</p>
                     <p className={`${styles.headingMainCard} opacity-80`}>CABA - ARG</p>
                   </div>
@@ -150,7 +150,7 @@ export default function MainCard() {
                 <div className={`flex justify-between`}>
                   <div className={`flex flex-col w-1/2 pl-2.5 m-2.5 space-y-2`}>
                     <Image className="-mb-3 w-14 -ml-2" src={SupportTool} alt="" priority />
-                    <h4 className={`${styles.headingMainCard} text-[13px]`}>Asistencia IT</h4>
+                    <h4 className={`${styles.headingMainCard} font-medium text-[13px]`}>Asistencia IT</h4>
                     <p className={`${styles.headingMainCard} text-[10px] opacity-80 w-28`}>Soluciones dinamicas</p>
                     <div className='w-[10px] border-[1.75px] border-secondary border-solid rounded-lg'></div>
                   </div>
@@ -183,12 +183,12 @@ export default function MainCard() {
                 <div className={`flex justify-between px-2.5 py-1`}>
                   <Image className="w-10 -mt-16 mr-2" src={Stats} alt="" priority />
                   <div className={`flex flex-col p-2 space-y-3`}>
-                    <h4 className={`${styles.headingMainCard} text-[13px]`}>Clientes satisfechos</h4>
+                    <h4 className={`${styles.headingMainCard} font-medium text-[13px]`}>Clientes satisfechos</h4>
                     <p className={`${styles.headingMainCard} opacity-80`}>Gracias al equipo de soporte IT por mantener la magia de Disney. Su dedicación es fundamental para nuestro éxito</p>
                     <div className={`flex items-center`}>
                       <Image className="mr-2 h-6 w-6" src={AvatarDisney} alt="" priority />
                       <div>
-                        <h4 className={`${styles.headingMainCard}`}>Ceo Disney</h4>
+                        <h4 className={`${styles.headingMainCard} font-medium`}>Ceo Disney</h4>
                         <p className={`${styles.headingMainCard} opacity-80`}>Mensaje de agradecimiento</p>
                       </div>
                     </div>
@@ -200,26 +200,29 @@ export default function MainCard() {
             <div className={`hidden m:flex flex-col space-y-4 px-[15px] w-full`}>
               {/* CARD FOUR */}
               <div className={`overflow-hidden z-20 flex w-full h-[342px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
-                <div className={`flex flex-col`}>
-                  <Image className="" src={ImageCard} alt="" priority />
-                  <div className={``}>ATENCION INMEDIATA</div>
-                  <h4 className={``}>Resolución Continua</h4>
-                  <p className={``}>Nos brindaron soluciones inmediatas, disponibles las 24 horas del día</p>
-                  <div className={``}></div>
-                  <div className={``}>
-                    <Image className="" src={AvatarFox} alt="" priority />
-                    <div className={``}>
-                      <h4 className={``}>Gerente FOX</h4>
-                      <p className={``}>Mensaje de conformidad</p>
+                <div className={`flex flex-col p-[15px]`}>
+                  <Image className="w-full mb-[6px]" src={ImageCard} alt="" priority />
+                  <div className={`${styles.headingMainCard} my-1 bg-[#3395FF] rounded-md flex justify-center py-1 text-[13px] w-[160px]`}>ATENCION INMEDIATA</div>
+                  <h4 className={`${styles.headingMainCard} my-1 font-medium text-[13px]`}>Resolución Continua</h4>
+                  <p className={`${styles.headingMainCard} my-1 opacity-80`}>Nos brindaron soluciones inmediatas, disponibles las 24 horas del día</p>
+                  <div className={`flex my-3`}>
+                    <div className={`h-[3px] w-2/3 rounded-xl bg-[#3395FF]`}></div>
+                    <div className={`h-[3px] w-1/3 rounded-r-xl bg-white opacity-40 z-40`}></div>
+                  </div>
+                  <div className={`flex items-center`}>
+                    <Image className="mr-2 h-6 w-6" src={AvatarFox} alt="" priority />
+                    <div>
+                      <h4 className={`${styles.headingMainCard} font-medium`}>Gerente FOX</h4>
+                      <p className={`${styles.headingMainCard} opacity-80`}>Mensaje de Conformidad</p>
                     </div>
                   </div>
                 </div>
               </div>
               {/* CARD FIVE */}
               <div className={`overflow-hidden z-20 flex w-full h-[160px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
-                <div className={`flex flex-col`}>
-                  <h4 className={``}>Monitoreo Permanente</h4>
-                  <Image className="" src={Bars} alt="" priority />
+                <div className={`flex flex-col items-center w-full space-y-3`}>
+                  <h4 className={`${styles.headingMainCard} text-medium pl-6 text-[13.5px] mt-[15px] `}>Monitoreo Permanente</h4>
+                  <Image className="w-full px-6" src={Bars} alt="" priority />
                 </div>
               </div>
             </div>
