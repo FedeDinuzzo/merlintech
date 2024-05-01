@@ -1,13 +1,13 @@
 import styles from "@/app/constants/style"
 import Image from 'next/image'
-// import HeroBlur from "@/public/HeroBlur.png"
-// import cuposLimitados from "@/public/cuposLimitados.png"
+import cuposLimitados from "@/public/cuposLimitados.png"
 import { Button } from "./Buttons"
-// import { ButtonTwo } from "./Buttons"
+import { ButtonTwo } from "./Buttons"
 import { ButtonThree } from "./Buttons"
 import ChevronRight from "../../public/ChevronRight.svg"
-// import ProgressRing from "../../public/ProgressRing.svg"
-// import SupportRing from "../../public/SupportRing.svg"
+import ProgressRing from "../../public/ProgressRing.svg"
+import SupportRing from "../../public/SupportRing.svg"
+import Lights from "../../public/MainCard/Lights.png"
 import MainCard from "./MainCard"
 
 const Hero = () => {
@@ -43,26 +43,27 @@ const Hero = () => {
       </div>
 
       <div className={`${styles.flexCenter}`}>
-        <div className={`relative my-10`}>
+        <div className={`relative my-12`}>
           <div className={`${styles.flexCenter} min-h-[627px]`}> {/* border-[.75px] border-[rgba(255, 255, 255, .1)] border-solid blur-[7.5px] ${styles.flexStart} bg-[#050505e6] rounded-[23px] flex flex-row flex-nowrap gap-[15px] inset-0 mix-blend-screen overflow-hidden p-0 absolute will-change-transform */}
+            <Image className={`absolute w-full h-full`} src={Lights} alt="Lights" priority />
             <MainCard />
             {/* <Image className={`min-h-[627px] z-30`} src={supportIT} alt="supportIT" width="1200" height="627" priority /> */}
-            {/* <div className={`absolute top-[5%] left-[5%] z-50`}>
-              <Image className={``} src={SupportRing} alt="SupportRing" width="136" height="136" priority />
+            <div className={`absolute -top-[10%] -left-[9%] z-50`}>
+              <Image className={``} src={ProgressRing} alt="SupportRing" width="165" height="165" priority />
             </div>
-            <div className={`absolute right-[5%] top-[70%] z-50`}>
-              <Image className={``} src={ProgressRing} alt="progressRing" width="148" height="148" priority />
-            </div> */}
+            <div className={`absolute -right-[7%] top-[40%] z-50`}>
+              <Image className={``} src={SupportRing} alt="progressRing" width="170" height="170" priority />
+            </div>
           </div>
 
-          {/* <div className="flex item">
-            <div className={`bg-card-hero absolute flex flex-col flex-nowrap h-[380px] w-[340px] gap-2.5 p-5 top-[50%] l:top-[-22px] z-40`}>
+          <div className="flex item">
+            <div className={`bg-card-hero absolute flex flex-col flex-nowrap h-[380px] w-[340px] gap-2.5 p-5 top-[50%] l:-top-[5%] -right-[2%] z-40`}>
               <Image src={cuposLimitados} alt="supportIT" width="1200" height="627" priority />
               <h2 className={`${styles.heading3} my-2.5`}>Soporte IT Personalizado</h2>
               <p className={`${styles.paragraph} mb-2.5`}>Asegure que sus datos y sistemas estén siempre disponibles, protegidos y actualizados.</p>
               <ButtonTwo image={ChevronRight} text="Realizar Auditoria" link="" />
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@ import ChevronRight from "../../public/ChevronRight.svg"
 function Scroll() {
   return (
     <>
-      <section className={`min-h-[100vh] relative flex justify-between`}>
+      <section className={`min-h-[116vh] relative flex justify-between`}>
         <div id="servicios" smooth={true} className={`absolute -mt-32`} />
         {/* <Image className={`absolute flex`} src={ScrollCard} alt="" width="990" height="762" /> */}
         <div className={`flex flex-col m:p-16 max-w-[582px]`}>
@@ -36,9 +36,9 @@ function Scroll() {
           <Button image={ChevronRight} text={`COMENZAR CONSULTORIA`} link={''} />
         </div>
 
-        <div className={`flex-none inset-0 overflow-hidden absolute z-0 min-h-[790px]`}>
-          <div className={`absolute bg-radial-white h-[790px] z-0`}></div>
-          <div className={`absolute bg-radial-violet h-[600px] mt-[95px] ml-[5%] z-10`}></div>
+        <div className={`flex-none inset-0 overflow-hidden absolute z-40 min-h-[790px]`}>
+          <div className={`absolute bg-radial-white h-[790px] z-40`}></div>
+          <div className={`absolute bg-radial-violet h-[600px] mt-[95px] ml-[5%] z-50`}></div>
         </div>
 
 
