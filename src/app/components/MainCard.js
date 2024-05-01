@@ -102,7 +102,7 @@ export default function MainCard() {
           {/* LINE */}
           <div className={`border-t-[1px] mt-[15px] border-secondary border-solid border-opacity-10`}></div>
           {/* TOP UBCATION */}
-          <div className={`flex justify-between my-[15px] h-[34px]`}>
+          <div className={`flex justify-between my-[15px] h-[34px] pr-3 m:pr-0`}>
             <div className={`shadow-main-card flex justify-center items-center p-1 overflow-hidden border-[.75px] bg-[#0009] bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
               <div className={`flex justify-between items-center w-[210px]`}>
                 <h4 className={`${styles.headingMainCard} px-2 leading-5 flex justify-center items-center overflow-hidden border-[.75px] bg-secondary bg-opacity-10 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>Ubicacion</h4>
@@ -124,12 +124,12 @@ export default function MainCard() {
           </div>
 
           {/* CARDS */}
-          <div className={`flex justify-between w-full`}>
+          <div className={`flex justify-between w-full pr-3 m:pr-0`}>
             {/* COLUMN ONE */}
             <div className={`flex flex-col space-y-4 w-full`}>
               {/* CARD ONE */}
               <div className={`overflow-hidden z-20 flex h-[105px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
-                <div className={`flex`}>
+                <div className={`flex w-full`}>
                   <div className={`flex flex-col w-1/2 justify-between space-y-2 max-h-[105px] p-2.5 py-2 m-2.5`}>
                     <h4 className={`${styles.headingMainCard} text-white font-medium`}>Horarios -&gt;</h4>
                     <h4 className={`${styles.headingMainCard} opacity-80`}>Ubicacion -&gt;</h4>
@@ -147,14 +147,14 @@ export default function MainCard() {
               </div>
               {/* CARD TWO */}
               <div className={`overflow-hidden z-20 flex h-[144px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
-                <div className={`flex justify-between`}>
-                  <div className={`flex flex-col w-1/2 pl-2.5 m-2.5 space-y-2`}>
+                <div className={`flex justify-between w-full`}>
+                  <div className={`flex flex-col w-1/2 pl-2.5 m-2.5 space-y-1 m:space-y-2`}>
                     <Image className="-mb-3 w-14 -ml-2" src={SupportTool} alt="" priority />
                     <h4 className={`${styles.headingMainCard} font-medium text-[13px]`}>Asistencia IT</h4>
-                    <p className={`${styles.headingMainCard} text-[10px] opacity-80 w-28`}>Soluciones dinamicas</p>
+                    <p className={`${styles.headingMainCard} text-[10px] opacity-80 w-20 m:w-28`}>Soluciones dinamicas</p>
                     <div className='w-[10px] border-[1.75px] border-secondary border-solid rounded-lg'></div>
                   </div>
-                  <div className={`flex flex-col w-1/2 m-2.5 space-y-1`}>
+                  <div className={`flex flex-col w-1/2 m-0 m:m-2.5 space-y-1`}>
                     <div className={`flex items-center mt-1`}>
                       <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black rounded-full`}>1</div>
                       <h4 className={`${styles.headingMainCard} opacity-80`}>Cyber Seguridad</h4>
