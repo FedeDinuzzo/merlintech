@@ -230,58 +230,61 @@ export default function MainCard() {
             <div className={`hidden l:flex flex-col space-y-4 w-full`}>
               {/* CARD SIX */}
               <div className={`overflow-hidden z-20 flex w-full h-[232px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
-                <div className={`flex flex-col`}>
-                  <Image className="" src={Toggle} alt="" priority />
-                  <h4 className={``}>Planes</h4>
-                  <p className={``}>El mejor precio del mercado</p>
-                  <div className='w-[7.5px] border-[2.25px] border-secondary border-solid rounded-lg'></div>
-                  <p className={``}>Contamos con los mejores partners y resellers, ofreciendo un Soporte IT de categoria, a un precio competitivo, sin dudas la calidad esta asegurada</p>
-                  <div className='w-[7.5px] border-[2.25px] border-secondary border-solid rounded-lg'></div>
-                  <p className={``}><Image className="" src={DISmall} alt="" priority />Diego Pineda, Creador de Merlin</p>
+                <div className={`flex flex-col py-[15px] px-[30px] space-y-2`}>
+                  <Image className="-ml-[15px] -mb-4" src={Toggle} alt="" priority />
+                  <h4 className={`${styles.headingMainCard} text-[13.5px] text-medium`}>Planes</h4>
+                  <p className={`${styles.headingMainCard} text-[11px] opacity-80`}>El mejor precio del mercado</p>
+                  <div className='border-[0.5px] border-secondary opacity-5 border-solid rounded'></div>
+                  <p className={`${styles.headingMainCard} text-[11px] opacity-80`}>Contamos con los mejores partners y resellers, ofreciendo un Soporte IT de categoria, a un precio competitivo, sin dudas la calidad esta asegurada</p>
+                  <div className='border-[0.5px] border-secondary opacity-5 border-solid rounded'></div>
+                  <div className={`flex items-center`}>
+                    <Image className="-ml-3" src={DISmall} alt="" priority />
+                    <p className={`${styles.headingMainCard} -mt-[18px] text-[11px] opacity-80`}>Diego Pineda, Creador de Merlin</p>
+                  </div>
                 </div>
               </div>
               {/* CARD SEVEN */}
-              <div className={`overflow-hidden z-20 flex w-full h-[260px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
-                <div className={`flex justify-between`}>
-                  <h4 className={``}>Notificaciones</h4>
-                  <div className={`flex`}>
+              <div className={`overflow-hidden z-20 flex flex-col h-[260px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+                <div className={`flex justify-between pt-[15px] px-[15px]`}>
+                  <h4 className={`${styles.headingMainCard} text-medium text-[13.5px]`}>Notificaciones</h4>
+                  <div className={`flex justify-between -ml-28`}>
                     <Image className="" src={home} alt="" priority />
                     <Image className="" src={BarsHorizontal} alt="" priority />
-                    <Image className="" src={AvatarChino} alt="" priority />
+                    <Image className="ml-2 mt-[2px] h-5 w-5" src={AvatarChino} alt="" priority />
                   </div>
                 </div>
-                <div className={`flex flex-col`}>
-                  <div className={`flex`}>
-                    <Image className="" src={AvatarFox} alt="" priority />
-                    <div className={`flex flex-col`}>
-                      <h4 className={``}>Gerente FOX</h4>
-                      <p className={``}>Ticket resuelto</p>
+                <div className={`flex flex-col px-[15px] space-y-2`}>
+                  <div className={`flex w-full border-[1px] border-secondary border-opacity-10 rounded-md px-2 py-1`}>
+                    <Image className="mt-1 mr-2 h-6 w-6" src={AvatarFox} alt="" priority />
+                    <div className={`flex flex-col w-full`}>
+                      <h4 className={`${styles.headingMainCard} mr-[122px]`}>Gerente FOX</h4>
+                      <p className={`${styles.headingMainCard} opacity-80`}>Ticket resuelto</p>
                     </div>
-                    <p className={``}>2m ago</p>
+                    <p className={`${styles.headingMainCard} opacity-80`}>2m ago</p>
                   </div>
-                  <div className={`flex`}>
-                    <Image className="" src={AvatarUnicef} alt="" priority />
-                    <div className={`flex flex-col`}>
-                      <h4 className={``}>Ong Unicef</h4>
-                      <p className={``}>Tecnico en camino</p>
+                  <div className={`flex border-[1px] border-secondary border-opacity-10 rounded-md px-2 py-1`}>
+                    <Image className="mt-1 mr-2 h-6 w-6" src={AvatarUnicef} alt="" priority />
+                    <div className={`flex flex-col w-full`}>
+                      <h4 className={`${styles.headingMainCard} mr-[130px]`}>Ong Unicef</h4>
+                      <p className={`${styles.headingMainCard} opacity-80`}>Tecnico en camino</p>
                     </div>
-                    <p className={``}>5m ago</p>
+                    <p className={`${styles.headingMainCard} opacity-80`}>5m ago</p>
                   </div>
-                  <div className={`flex`}>
-                    <Image className="" src={AvatarDisney} alt="" priority />
-                    <div className={`flex flex-col`}>
-                      <h4 className={``}>Ceo Disney</h4>
-                      <p className={``}>Servidores en linea</p>
+                  <div className={`flex border-[1px] border-secondary border-opacity-10 rounded-md px-2 py-1`}>
+                    <Image className="mt-1 mr-2 h-6 w-6" src={AvatarDisney} alt="" priority />
+                    <div className={`flex flex-col w-full`}>
+                      <h4 className={`${styles.headingMainCard} mr-[123px]`}>Ceo Disney</h4>
+                      <p className={`${styles.headingMainCard} opacity-80`}>Servidores en linea</p>
                     </div>
-                    <p className={``}>15m ago</p>
+                    <p className={`${styles.headingMainCard} opacity-80`}>15m ago</p>
                   </div>
-                  <div className={`flex`}>
-                    <Image className="" src={AvatarNike} alt="" priority />
-                    <div className={`flex flex-col`}>
-                      <h4 className={``}>Manager Nike</h4>
-                      <p className={``}>Mantenimiento activado</p>
+                  <div className={`flex border-[1px] border-secondary border-opacity-10 rounded-md px-2 py-1`}>
+                    <Image className="mt-1 mr-2 h-6 w-6" src={AvatarNike} alt="" priority />
+                    <div className={`flex flex-col w-full`}>
+                      <h4 className={`${styles.headingMainCard} mr-[122px]`}>Manager Nike</h4>
+                      <p className={`${styles.headingMainCard} opacity-80`}>Mantenimiento activado</p>
                     </div>
-                    <p className={``}>1d ago</p>
+                    <p className={`${styles.headingMainCard} opacity-80`}>1d ago</p>
                   </div>
                 </div>
               </div>
