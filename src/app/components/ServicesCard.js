@@ -33,9 +33,9 @@ import AvatarNike from '../../public/MainCard/AvatarNike.png'
 import AvatarFox from '../../public/MainCard/AvatarFox.png'
 
 
-export default function MainCard() {
+export default function ServicesCard() {
   return (
-    <section className="flex h-[627px] min-w-[375px] w-[1100px] max-w-[92vw] l:max-w-[100vw] rounded-[23px] bg-gradient-to-b from-[#0000] to-[#0006]">
+    <section className="flex h-[627px] min-w-[375px] w-[1100px] max-w-[100vw] rounded-[23px] bg-gradient-to-b from-[#0000] to-[#0006]">
       <div className={`bg-main-card border-[.75px] border-solid border-secondary border-opacity-10 flex flex-none flex-row flex-nowrap justify-start gap-15 inset-0 overflow-hidden p-0 absolute bg-[#050505e6] content-start items-start backdrop-blur-[7.5px]`}>
         <div className={`min-w-[150px] max-w-[33vw] border-r-[.75px] border-solid border-white border-opacity-10 bg-black bg-opacity-10 flex flex-col justify-between h-full p-15 relative overflow-visible`}>
           {/* COLUMN LEFT SIDE */}

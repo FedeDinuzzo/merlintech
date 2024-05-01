@@ -9,6 +9,7 @@ import ProgressRing from "../../public/ProgressRing.svg"
 import SupportRing from "../../public/SupportRing.svg"
 import Lights from "../../public/MainCard/Lights.png"
 import MainCard from "./MainCard"
+import Ring from "./Ring"
 
 const Hero = () => {
 
@@ -43,21 +44,22 @@ const Hero = () => {
       </div>
 
       <div className={`${styles.flexCenter}`}>
-        <div className={`relative my-12`}>
+        <div className={`relative my-12 `}>
           <div className={`${styles.flexCenter} min-h-[627px]`}> {/* border-[.75px] border-[rgba(255, 255, 255, .1)] border-solid blur-[7.5px] ${styles.flexStart} bg-[#050505e6] rounded-[23px] flex flex-row flex-nowrap gap-[15px] inset-0 mix-blend-screen overflow-hidden p-0 absolute will-change-transform */}
             <Image className={`absolute w-full h-full`} src={Lights} alt="Lights" priority />
             <MainCard />
-            {/* <Image className={`min-h-[627px] z-30`} src={supportIT} alt="supportIT" width="1200" height="627" priority /> */}
-            <div className={`absolute top-[30%] left-[5%] m:left-[7%] m:-top-[13%] l:-left-[9%] z-50`}>
-              <Image className={``} src={ProgressRing} alt="SupportRing" width="165" height="165" priority />
+
+            <div className={`absolute top-[20%] left-[5%] m:left-[7%] m:-top-[13%] l:-left-[9%] z-50`}>
+              <Ring />
+              <Image className={`rounded-full`} src={ProgressRing} alt="SupportRing" width="165" height="165" priority />
             </div>
-            <div className={`absolute right-[4%] top-[99%] m:right-[15%] m:top-[82%] l:-right-[7%] l:top-[40%] z-50`}>
-              <Image className={``} src={SupportRing} alt="progressRing" width="170" height="170" priority />
+            <div className={`absolute right-[0%] top-[89%] m:right-[10%] m:top-[82%] l:-right-[9%] l:top-[40%] z-50`}>
+              <Image className={``} src={SupportRing} alt="progressRing" width="175" height="175" priority />
             </div>
           </div>
 
-          <div className="flex item">
-            <div className={`bg-card-hero absolute flex flex-col flex-nowrap h-[380px] w-[340px] gap-2.5 p-5 top-[56%] left-[18%] m:left-[32%] m:top-[50%] l:left-[71%] l:-top-[5%] z-40`}>
+          <div className="flex relative item">
+            <div className={`bg-card-hero absolute flex flex-col flex-nowrap h-[380px] w-[340px] gap-2.5 p-5 -top-[330px] left-1/2 translate-x-[-50%] l:left-[88%] l:-top-[670px] z-40`}>
               <Image src={cuposLimitados} alt="supportIT" width="1200" height="627" priority />
               <h2 className={`${styles.heading3} my-2.5`}>Soporte IT Personalizado</h2>
               <p className={`${styles.paragraph} mb-2.5`}>Asegure que sus datos y sistemas estén siempre disponibles, protegidos y actualizados.</p>

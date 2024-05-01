@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../constants/style'
 import ScrollCard from '../../public/ScrollBlur.png'
+import ServicesCard from './ServicesCard'
 import { Button } from "./Buttons"
 import ChevronRight from "../../public/ChevronRight.svg"
 
@@ -36,15 +37,18 @@ function Scroll() {
           <Button image={ChevronRight} text={`COMENZAR CONSULTORIA`} link={''} />
         </div>
 
-        <div className={`flex-none inset-0 overflow-hidden absolute z-40 min-h-[790px]`}>
+        <div className={`flex-none inset-0 overflow-hidden p-40 absolute z-40 min-h-[790px]`}>
           <div className={`absolute bg-radial-white h-[790px] z-40`}></div>
           <div className={`absolute bg-radial-violet h-[600px] mt-[95px] ml-[5%] z-50`}></div>
         </div>
 
-
-        {/* <div className={`flex`}>
-          <Image className={``} src={ScrollCard} alt="" width="990" height="762" />
-        </div> */}
+        <div className={`${styles.flexCenter}`}>
+          <div className={`relative my-12 z-50`}>
+            <div className={`${styles.flexCenter} min-h-[627px]`}>
+              <ServicesCard />
+            </div>
+          </div>
+        </div>
         <div className={`hidden`}>
 
         </div>
