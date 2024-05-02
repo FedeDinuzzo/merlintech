@@ -47,7 +47,7 @@ const Hero = () => {
         <div className={`relative my-12 `}>
           <div className={`${styles.flexCenter} min-h-[627px]`}> {/* border-[.75px] border-[rgba(255, 255, 255, .1)] border-solid blur-[7.5px] ${styles.flexStart} bg-[#050505e6] rounded-[23px] flex flex-row flex-nowrap gap-[15px] inset-0 mix-blend-screen overflow-hidden p-0 absolute will-change-transform */}
             <Image className={`absolute w-full h-full`} src={Lights} alt="Lights" priority />
-            <MainCard />
+            {/* <MainCard /> */}
 
             <div className={`absolute top-[20%] left-[5%] m:left-[7%] m:-top-[13%] l:-left-[9%] z-50`}>
               <Ring />
