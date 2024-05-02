@@ -20,7 +20,7 @@ const Hero = () => {
 
       <div className={`flex-none inset-0 overflow-hidden absolute z-0 min-h-[1440px]`}>
         <div className={`absolute bg-radial-white h-[1054px] top-[200px] z-0`}></div>
-        <div className={`absolute bg-radial-violet h-[807px] top-[400px] z-0`}></div>
+
       </div>
 
       <div className={`text-center m:mx-10 l:mx-20 relative px-5`}>
