@@ -25,6 +25,10 @@ h1, h2, h3, h4, p {
   z-index: 100;
 }
 
+div:after{
+  left: 0; /* Ajuste para Safari */
+}
+
 .text-gradient {
   background-image: linear-gradient(92deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
   -webkit-background-clip: text;
