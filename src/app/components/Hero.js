@@ -14,8 +14,10 @@ import Ring from "./Ring"
 const Hero = () => {
 
   return (
-    <section className={`flex flex-col flex-nowrap min-h-min justify-center`}>
-      <div id="home" className={`absolute -left-3 top-[60px] bg-lines h-[1000px] w-[100vw]`}></div>
+    <section id="home" className={`flex flex-col flex-nowrap min-h-min justify-center`}>
+      <div className={`absolute w-2 h-2 mt-40 bg-red z-50`} />
+      <div className={`hidden m:block absolute -left-3 top-[60px] bg-lines h-[1000px] w-[100vw]`}></div>
+
       <div className={`flex-none inset-0 overflow-hidden absolute z-0 min-h-[1440px]`}>
         <div className={`absolute bg-radial-white h-[1054px] top-[200px] z-0`}></div>
         <div className={`absolute bg-radial-violet h-[807px] top-[400px] z-10`}></div>
