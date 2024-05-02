@@ -36,8 +36,8 @@ import AvatarFox from '../../public/MainCard/AvatarFox.png'
 export default function MainCard() {
   return (
     <section className="flex h-[627px] min-w-[375px] w-[1100px] max-w-[92vw] l:max-w-[100vw] rounded-[23px] bg-gradient-to-b from-[#0000] to-[#0006]">
-      <div className={`bg-main-card border-[.75px] border-solid border-secondary border-opacity-10 flex flex-none flex-row flex-nowrap justify-start gap-15 inset-0 overflow-hidden p-0 absolute bg-[#050505e6] content-start items-start backdrop-blur-[7.5px]`}>
-        <div className={`min-w-[150px] max-w-[33vw] border-r-[.75px] border-solid border-white border-opacity-10 bg-black bg-opacity-10 flex flex-col justify-between h-full p-15 relative overflow-visible`}>
+      <div className={`bg-main-card border-[.75px] border-solid border-secondary border-opacity-10 flex flex-none flex-row flex-nowrap justify-start gap-15 inset-0 overflow-hidden p-0 absolute content-start items-start backdrop-blur-[7.5px]`}>
+        <div className={`min-w-[150px] max-w-[33vw] border-r-[.75px] border-solid border-white border-opacity-10 flex flex-col justify-between h-full p-15 relative overflow-visible`}>
           {/* COLUMN LEFT SIDE */}
           <div className={`flex flex-col items-start justify-between p-[15px] gap-6 min-h-min-content overflow-visible relative w-full h-full`}>
             {/* LOGO */}
@@ -77,7 +77,7 @@ export default function MainCard() {
               </div>
             </div>
             {/* SERVICES BOTTOM */}
-            <div className={`border-[.75px] border-solid border-white rounded-b-[10px] border-opacity-5 bg-black bg-opacity-10`}>
+            <div className={`border-[.75px] border-solid border-white rounded-b-[10px] border-opacity-5`}>
               <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
                 <Image className="mt-3" src={Keyboard} alt="" priority />
                 <p className={`${styles.headingMainCard} pl-[9px]`}>Suministro Hardware</p>
@@ -107,7 +107,7 @@ export default function MainCard() {
           <div className={`border-t-[1px] mt-[15px] border-secondary border-solid border-opacity-10`}></div>
           {/* TOP UBCATION */}
           <div className={`flex justify-between my-[15px] h-[34px] pr-3 m:pr-0`}>
-            <div className={`shadow-main-card flex justify-center items-center p-1 overflow-hidden border-[.75px] bg-[#0009] bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
+            <div className={`shadow-main-card flex justify-center items-center p-1 overflow-hidden border-[.75px] rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
               <div className={`flex justify-between items-center w-[210px]`}>
                 <h4 className={`${styles.headingMainCard} px-2 leading-5 flex justify-center items-center overflow-hidden border-[.75px] bg-secondary bg-opacity-10 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>Ubicacion</h4>
                 <h4 className={`${styles.headingMainCard} ml-5`}>Baires</h4>
@@ -132,7 +132,7 @@ export default function MainCard() {
             {/* COLUMN ONE */}
             <div className={`flex flex-col space-y-4 w-full`}>
               {/* CARD ONE */}
-              <div className={`overflow-hidden z-20 flex h-[105px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+              <div className={`overflow-hidden z-20 flex h-[105px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex w-full`}>
                   <div className={`flex flex-col w-1/2 justify-between space-y-2 max-h-[105px] p-2.5 py-2 m-2.5`}>
                     <h4 className={`${styles.headingMainCard} text-white font-medium`}>Horarios -&gt;</h4>
@@ -150,7 +150,7 @@ export default function MainCard() {
                 </div>
               </div>
               {/* CARD TWO */}
-              <div className={`overflow-hidden z-20 flex h-[144px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+              <div className={`overflow-hidden z-20 flex h-[144px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex justify-between w-full`}>
                   <div className={`flex flex-col w-1/2 pl-2.5 m-2.5 space-y-1 m:space-y-2`}>
                     <Image className="-mb-3 w-14 -ml-2" src={SupportTool} alt="" priority />
@@ -160,30 +160,30 @@ export default function MainCard() {
                   </div>
                   <div className={`flex flex-col w-1/2 m-0 m:m-2.5 space-y-1`}>
                     <div className={`flex items-center mt-1`}>
-                      <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black rounded-full`}>1</div>
+                      <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black bg-opacity-20 rounded-full`}>1</div>
                       <h4 className={`${styles.headingMainCard} opacity-80`}>Cyber Seguridad</h4>
                     </div>
                     <div className={`flex items-center`}>
-                      <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black rounded-full`}>2</div>
+                      <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black bg-opacity-20 rounded-full`}>2</div>
                       <h4 className={`${styles.headingMainCard} opacity-80`}>Conectividad</h4>
                     </div>
                     <div className={`flex items-center`}>
-                      <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black rounded-full`}>3</div>
+                      <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black bg-opacity-20 rounded-full`}>3</div>
                       <h4 className={`${styles.headingMainCard} opacity-80`}>Instalacion</h4>
                     </div>
                     <div className={`flex items-center`}>
-                      <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black rounded-full`}>4</div>
+                      <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black bg-opacity-20 rounded-full`}>4</div>
                       <h4 className={`${styles.headingMainCard} opacity-80`}>Hardware</h4>
                     </div>
                     <div className={`flex items-center`}>
-                      <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black rounded-full`}>5</div>
+                      <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black bg-opacity-20 rounded-full`}>5</div>
                       <h4 className={`${styles.headingMainCard} opacity-80`}>Software</h4>
                     </div>
                   </div>
                 </div>
               </div>
               {/* CARD THREE */}
-              <div className={`overflow-hidden z-20 flex w-full h-[162px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+              <div className={`overflow-hidden z-20 flex w-full h-[162px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex justify-between px-2.5 py-1`}>
                   <Image className="w-10 -mt-16 mr-2" src={Stats} alt="" priority />
                   <div className={`flex flex-col p-2 space-y-3`}>
@@ -203,7 +203,7 @@ export default function MainCard() {
             {/* COLUMN TWO */}
             <div className={`hidden m:flex flex-col space-y-4 px-[15px] w-full`}>
               {/* CARD FOUR */}
-              <div className={`overflow-hidden z-20 flex w-full h-[342px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+              <div className={`overflow-hidden z-20 flex w-full h-[342px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col p-[15px]`}>
                   <Image className="w-full mb-[6px]" src={ImageCard} alt="" priority />
                   <div className={`${styles.headingMainCard} my-1 bg-[#3395FF] rounded-md flex justify-center py-1 text-[13px] w-[154px]`}>ATENCION INMEDIATA</div>
@@ -223,7 +223,7 @@ export default function MainCard() {
                 </div>
               </div>
               {/* CARD FIVE */}
-              <div className={`overflow-hidden z-20 flex w-full h-[160px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+              <div className={`overflow-hidden z-20 flex w-full h-[160px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col items-center w-full space-y-3`}>
                   <h4 className={`${styles.headingMainCard} text-medium pl-6 text-[13.5px] mt-[15px] `}>Monitoreo Permanente</h4>
                   <Image className="w-full px-6" src={Bars} alt="" priority />
@@ -233,7 +233,7 @@ export default function MainCard() {
             {/* COLUMN THREE */}
             <div className={`hidden l:flex flex-col space-y-4 w-full`}>
               {/* CARD SIX */}
-              <div className={`overflow-hidden z-20 flex w-full h-[232px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+              <div className={`overflow-hidden z-20 flex w-full h-[232px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col py-[15px] px-[30px] space-y-2`}>
                   <Image className="-ml-[15px] -mb-4" src={Toggle} alt="" priority />
                   <h4 className={`${styles.headingMainCard} text-[13.5px] text-medium`}>Planes</h4>
@@ -248,7 +248,7 @@ export default function MainCard() {
                 </div>
               </div>
               {/* CARD SEVEN */}
-              <div className={`overflow-hidden z-20 flex flex-col h-[260px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+              <div className={`overflow-hidden z-20 flex flex-col h-[260px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex justify-between pt-[15px] px-[15px]`}>
                   <h4 className={`${styles.headingMainCard} text-medium text-[13.5px]`}>Notificaciones</h4>
                   <div className={`flex justify-between -ml-28`}>

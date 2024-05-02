@@ -14,7 +14,7 @@ import Ring from "./Ring"
 const Hero = () => {
 
   return (
-    <section className={`flex flex-col flex-nowrap min-h-[100vh] justify-center relative`}>
+    <section className={`flex flex-col flex-nowrap min-h-[100vh] justify-center`}>
       <div id="home" className={`absolute top-0`} />
       <div className={`absolute -left-3 top-[60px] bg-lines h-[1000px] w-[100vw]`}></div>
 
@@ -44,11 +44,12 @@ const Hero = () => {
       </div>
 
       <div className={`${styles.flexCenter}`}>
-        <div className={`relative my-12 `}>
+        <div className={`relative my-12`}>
           <div className={`${styles.flexCenter} min-h-[627px]`}> {/* border-[.75px] border-[rgba(255, 255, 255, .1)] border-solid blur-[7.5px] ${styles.flexStart} bg-[#050505e6] rounded-[23px] flex flex-row flex-nowrap gap-[15px] inset-0 mix-blend-screen overflow-hidden p-0 absolute will-change-transform */}
             <Image className={`absolute w-full h-full`} src={Lights} alt="Lights" priority />
-            <MainCard />
-
+            <div className="z-20">
+              <MainCard />
+            </div>
             <div className={`absolute top-[20%] left-[5%] m:left-[7%] m:-top-[13%] l:-left-[9%] z-50`}>
               <Ring />
               <Image className={`rounded-full`} src={ProgressRing} alt="SupportRing" width="165" height="165" priority />
