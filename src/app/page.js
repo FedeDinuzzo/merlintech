@@ -15,10 +15,7 @@ export const metadata = {
 function Home() {
   return (
     <div className={`space-y-48`}>
-      <Hero
-        title="Soporte Tecnico IT"
-        title2="Para Empresas"
-      />
+      <Hero />
       <DynamicClients />
       <DynamicScroll />
       <DynamicPartners />
