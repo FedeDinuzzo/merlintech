@@ -1,75 +1,90 @@
 import styles from "@/app/constants/style"
 import Image from 'next/image'
-import cuposLimitados from "@/public/cuposLimitados.png"
-import { Button } from "./Buttons"
-import { ButtonTwo } from "./Buttons"
-import { ButtonThree } from "./Buttons"
+import { ButtonFour } from "./Buttons"
 import ChevronRight from "../../public/ChevronRight.svg"
-import ProgressRing from "../../public/ProgressRing.svg"
-import SupportRing from "../../public/SupportRing.svg"
-import Lights from "../../public/MainCard/Lights.png"
-import MainCard from "./MainCard"
-import Ring from "./Ring"
+import ContactBall from "../../public/ContactBall.webp"
+import ShadowContact from "../../public/ShadowContact.png"
+import Disney from "../../public/TestimonialDisney.jpg"
+import Nike from "../../public/TestimonialNike1.jpg"
+import Nike2 from "../../public/TestimonialNike2.jpg"
+import Number from "../../public/Number.svg"
+import Number2 from "../../public/Number2.svg"
 
 const Contact = () => {
   return (
-    <section className={`flex flex-col flex-nowrap min-h-[180vh] justify-center`}>
-      <div id="home" className={`top-0`} />
-      <div className={`absolute -left-3 bg-lines h-[1000px] -mt-80 w-[100vw]`}></div>
-
-      <div className={`absolute flex-none overflow-x-hidden h-[200vh] w-full z-0`}>
-        <div className="relative top-96">
-          <div className={`absolute bg-radial-white h-[1054px] w-[1054px] z-10`}></div>
-          <div className={`absolute bg-radial-violet h-[807px] z-10`}></div>
+    <section className={`mt-96 px-5`}>
+      <div id="testimonios" className={`absolute -mt-20`} />
+      <div className={`flex justify-center -ml-40`}>
+        <Image className="mt-44 hidden m:flex absolute" src={ContactBall} alt="Ball" />
+      </div>
+      <div className={`flex mb-[60px]`}>
+        <div className={`flex flex-col mx-auto gap-[30px] l:w-[1260px]`}>
+          <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-20`}>
+            <h3 className={`inline text-white`}>Agentes Disponibles </h3>
+            <h3 className={`opacity-40 inline`}>contactanos y reserva tu lugar en merlintech. Tu negocio crece, nosotros crecemos con vos.</h3>
+          </div>
+          <ButtonFour image={ChevronRight} text={`COMENZAR CONSULTORIA`} link={''} />
         </div>
       </div>
 
-      <div className={`text-center m:mx-10 l:mx-20 relative px-5 z-50 -mt-40`}>
-        <div className={`${styles.flexCenter} mb-5`}>
-          <ButtonThree image={ChevronRight} text="Top 1 del pais" link="" />
+      <div className={`${styles.flexCenter} flex-wrap py-[20px] gap-[20px] m:py-[30px] m:gap-[10px] l:gap-[20px] max-w-[1380px] mx-auto`}>
+        <div className={`bg-card-contact pt-5 pl-5 max-w-[590px] l:max-w-[620px]`}>
+          {/* AGREGAR SOMBRA CON CSS */}
+          <h3 className={`${styles.heading3} text-[20px] mt-2.5 mb-2`}>Disney</h3>
+          <p className={`${styles.paragraph} mb-5 pr-5 m:pr-32 max-w-[620px]`}>DesignCode UI offers real-time guidance and advice on UI design best an expansive library of UI components, each meticulously crafted for functionality and aesthetics.a</p>
+          <div className={`flex`}>
+            <Image className="absolute w-full h-full object-cover top-0 left-0 z-10" src={ShadowContact} alt="Overlay" />
+            <Image className={`self-end rounded-br-[20px]`} src={Disney} alt="supportIT" width="603" height="305" />
+          </div>
         </div>
-        <div className={`${styles.flexCenter} flex-col`}>
-          <h1 className={`${styles.heading} text-gradient py-2 m:py-4 max-w-[520px]`}>Soporte IT</h1>
-          <h3 className={`${styles.heading} text-gradient py-2 m:py-4 max-w-[520px]`}>Para Empresas</h3>
-        </div>
-        <div className={`${styles.flexCenter} my-5`}>
-          <p className={`${styles.paragraph} max-w-[500px] min-w-[346px]`}>
-            Optimiza tu tecnología con nuestro soporte IT especializado.
-            ¡Maximiza la productividad y minimiza los tiempos de inactividad!
-            Nuestros profesionales mantendran tus sistemas en marcha
-          </p>
-        </div>
-        <div className={`${styles.flexCenter}`}>
-          <Button image={ChevronRight} text="CONSULTORIA GRATUITA" link="" />
-        </div>
-      </div>
 
-      <div className={`${styles.flexCenter}`}>
-        <div className={`relative my-12 `}>
-          <div className={`${styles.flexCenter} min-h-[627px]`}> {/* border-[.75px] border-[rgba(255, 255, 255, .1)] border-solid blur-[7.5px] ${styles.flexStart} bg-[#050505e6] rounded-[23px] flex flex-row flex-nowrap gap-[15px] inset-0 mix-blend-screen overflow-hidden p-0 absolute will-change-transform */}
-            <Image className={`absolute w-full h-full`} src={Lights} alt="Lights" priority />
-            <MainCard />
+        <div className={`bg-card-contact pt-5 pl-5 max-w-[590px] l:max-w-[620px]`}>
 
-            <div className={`absolute top-[20%] left-[5%] m:left-[7%] m:-top-[13%] l:-left-[9%] z-50`}>
-              <Ring />
-              <Image className={`rounded-full`} src={ProgressRing} alt="SupportRing" width="165" height="165" priority />
+          <h3 className={`${styles.heading3} text-[20px] mt-2.5 mb-2`}>Nike Argentina</h3>
+          <p className={`${styles.paragraph} mb-2 pr-5 m:pr-32 max-w-[620px]`}>Our platform provides real-time guidance and advice on UI design best practices whether youre working on layout optimization, color scheme selection, or typography.</p>
+          <div className={`flex`}>
+            <Image className="absolute w-full h-full object-cover top-0 left-0" src={ShadowContact} alt="Overlay" />
+            <Image className={`self-end w-2/5`} src={Nike} alt="supportIT" width="245" height="266" />
+            <Image className={`self-end w-3/5 rounded-br-[20px]`} src={Nike2} alt="supportIT" width="362" height="320" />
+          </div>
+        </div>
+
+        <div className={`bg-card-contact flex flex-grow flex-wrap max-w-[1260px] min-h-[194px] justify-evenly p-10`}>
+          <div id="contacto" className={`absolute -mt-32`} />
+          <div className={`flex flex-col m:flex-row justify-center align-top`}>
+            <div className={`mr-2.5 -mt-3 mb-4 -ml-2.5 l:-ml-24`}>
+              <Image src={Number} alt="supportIT" width="48" height="48" />
             </div>
-            <div className={`absolute right-[0%] top-[89%] m:right-[10%] m:top-[82%] l:-right-[9%] l:top-[40%] z-50`}>
-              <Image className={``} src={SupportRing} alt="progressRing" width="175" height="175" priority />
+            <div className={`max-w-[340px]`}>
+              <div className={``}>
+                <h4 className={`${styles.heading3White} my-2.5 inline`}>Ubicacion . </h4>
+                <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>Billinghurst 1193, 4to A, Buenos Aires, Argentina</p>
+              </div>
+              <div className={``}>
+                <h4 className={`${styles.heading3White} my-2.5 inline`}>Horarios . </h4>
+                <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>Lunes a Viernes de 9:00 a 18:00</p>
+              </div>
             </div>
           </div>
 
-          <div className="flex relative item">
-            <div className={`bg-card-hero absolute flex flex-col flex-nowrap h-[380px] w-[340px] gap-2.5 p-5 -top-[330px] left-1/2 translate-x-[-50%] l:left-[88%] l:-top-[670px] z-40`}>
-              <Image src={cuposLimitados} alt="supportIT" width="1200" height="627" priority />
-              <h2 className={`${styles.heading3} my-2.5`}>Soporte IT Personalizado</h2>
-              <p className={`${styles.paragraph} mb-2.5`}>Asegure que sus datos y sistemas estén siempre disponibles, protegidos y actualizados.</p>
-              <ButtonTwo image={ChevronRight} text="Realizar Auditoria" link="" />
+          <div className={`flex flex-col m:flex-row align-top max-w-[430px] mt-12 m:mt-0`}>
+            <div className={`mr-2.5 mb-4`}>
+              <Image src={Number2} alt="supportIT" width="24" height="24" />
+            </div>
+            <div className={`max-w-[330px] flex flex-wrap items-start m:block`}>
+              <div className={``}>
+                <h4 className={`${styles.heading3White} my-2.5 inline`}>Telefono . </h4>
+                <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>+54 911 7090-5150</p>
+              </div>
+              <div className={`mb-8 m:mb-0`}>
+                <h4 className={`${styles.heading3White} my-2.5 inline`}>Email . </h4>
+                <p className={`${styles.paragraph} mb-2.5 pl-2 inline underline underline-offset-2`}>info@merlintech.com.ar</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 
