@@ -26,12 +26,12 @@ const Hero = () => {
       <div id="home" className={`absolute top-0`} />
       <div className={`absolute -left-3 top-[60px] bg-lines h-[1000px] w-[100vw]`}></div>
 
-      <div className={`flex-none inset-0 overflow-hidden absolute z-0 min-h-[1440px]`}>
-        <div className={`absolute bg-radial-white h-[1054px] top-[200px] z-0`}></div>
-        <div className={`absolute bg-radial-violet h-[807px] top-[400px] z-0`}></div>
+      <div className={`flex-none inset-0 overflow-hidden absolute min-h-[1440px] z-0`}>
+        <div className={`absolute bg-radial-white h-[1054px] top-[200px] z-20`}></div>
+        <div className={`absolute bg-radial-violet h-[807px] top-[400px] z-20`}></div>
       </div>
 
-      <div className={`text-center m:mx-10 l:mx-20 relative px-5`}>
+      <div className={`text-center m:mx-10 l:mx-20 relative px-5 z-50`}>
         <div className={`${styles.flexCenter} mb-5`}>
           <ButtonThree image={ChevronRight} text="Top 1 del pais" link="" />
         </div>

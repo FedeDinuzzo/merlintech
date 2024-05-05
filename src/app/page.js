@@ -14,7 +14,7 @@ export const metadata = {
 
 function Home() {
   return (
-    <div className={`space-y-48`}>
+    <div className={`space-y-24 m:space-y-48`}>
       <Hero />
       <DynamicClients />
       <DynamicScroll />
