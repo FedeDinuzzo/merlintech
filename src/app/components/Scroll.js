@@ -10,9 +10,9 @@ import ChevronRight from "../../public/ChevronRight.svg"
 function Scroll() {
   return (
     <>
-      <section className={`min-h-[120vh] relative flex justify-between items-center`}>
+      <section className={`min-h-[128vh] relative flex justify-between items-center`}>
         <div id="servicios" smooth={true} className={`absolute -mt-32`} />
-        <div className={`m:mt-20 flex flex-col justify-center mx-5 m:mx-8 l:mx-24 max-w-[580px] z-50`}>
+        <div className={`-mt-20 flex flex-col justify-center mx-5 m:mx-8 l:mx-24 max-w-[580px] z-50`}>
           <h2 className={`${styles.heading} m:leading-[70px] mb-16`}>
             Simplifica
             <span className={`inline text-white opacity-40`}> tus
@@ -36,16 +36,16 @@ function Scroll() {
           <Button image={ChevronRight} text={`COMENZAR CONSULTORIA`} link={''} />
         </div>
 
-        <div className={`flex-none inset-0 overflow-hidden p-40 absolute z-40 min-h-[790px]`}>
-          <div className={`absolute bg-radial-white h-[790px] z-40`}></div>
-          <div className={`absolute bg-radial-violet h-[520px] mt-[150px] ml-[5%] z-50`}></div>
+        <div className={`-mt- flex-none inset-0 overflow-hidden p-40 absolute z-40 min-h-[790px]`}>
+          <div className={`absolute bg-radial-white h-[760px] z-40`}></div>
+          <div className={`absolute bg-radial-violet h-[500px] mt-[150px] ml-[5%] z-50`}></div>
         </div>
 
         <div className={`absolute right-[0%] top-[89%] m:right-[10%] m:top-[82%] l:right-[40%] l:top-[45%] z-50`}>
           <Image className={``} src={SupportRing} alt="progressRing" width="175" height="175" priority />
         </div>
 
-        <div className={`hidden m:flex h-[840px] relative z-50 mt-56`}>
+        <div className={`hidden m:flex h-[840px] relative z-50`}>
           <div class="w-full h-[260px] absolute bottom-0 bg-gradient-to-b from-transparent to-black rounded-[23px] z-50"></div>
           <ServicesCard />
         </div>
