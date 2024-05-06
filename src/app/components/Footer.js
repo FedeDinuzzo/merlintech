@@ -67,12 +67,8 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <div className="m:mt-20 w-full flex justify-between items-center pt-6 border-t-[1px] border-t-[#3F3E45] px-5 l:px-0 m:mb-8 l:-mb-8">
+      <div className="m:mt-20 w-full flex justify-center m:justify-between items-center pt-6 border-t-[1px] border-t-[#3F3E45] px-8 l:px-0 m:mb-8 l:-mb-8">
         <p className={`${styles.paragraph} flex`}>&#169;​ 2024 | Merlin Technology</p>
-
-        <Link href="http://qr.afip.gob.ar/?qr=b3QEcW17fgrFdrGofVZ4kA,," target="_blank" aria-label={`Enlace a AFIP data fiscal`}>
-          <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="rounded cursor-pointer m:hidden flex" />
-        </Link>
 
         <Link className={`${styles.paragraph} hidden m:visible m:flex ml-72 items-center`} href="http://qr.afip.gob.ar/?qr=b3QEcW17fgrFdrGofVZ4kA,," target="_blank" aria-label={`Enlace a AFIP data fiscal`}>
           Data Fiscal
@@ -80,8 +76,13 @@ const Footer = () => (
         </Link>
 
         <a href="#home">
-          <Image src={ArrowUp} alt='' width={36} height={36} className="cursor-pointer border-[1px] border-white/20 rounded-full p-1.5" />
+          <Image src={ArrowUp} alt='' width={36} height={36} className="cursor-pointer border-[1px] border-white/20 rounded-full p-1.5 ml-4 m:ml-0" />
         </a>
+      </div>
+      <div className="w-full h-16 mt-6 flex justify-center px-8 items-center">
+        <Link href="http://qr.afip.gob.ar/?qr=b3QEcW17fgrFdrGofVZ4kA,," target="_blank" aria-label={`Enlace a AFIP data fiscal`}>
+          <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="rounded cursor-pointer m:hidden flex" />
+        </Link>
       </div>
     </div>
   </section>

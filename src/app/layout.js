@@ -3,6 +3,7 @@
 import { Inter } from '@next/font/google'
 import styles from '../styles/globals.css'
 import Navbar from './components/Navbar/Navbar'
+import Whatsapp from "./components/Whatsapp"
 import { lazy, Suspense } from "react"
 
 const Contact = lazy(() => import('./components/Contact'))
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
     <html lang='es'>
       <body className={`${font.variable}`}>
         <Navbar />
+        <Whatsapp />
         <div className={`bg-primary pt-36`}>
           <main>{children}</main>
           <Suspense fallback={`Loading...`}>

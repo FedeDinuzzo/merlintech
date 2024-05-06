@@ -36,7 +36,7 @@ function Scroll() {
           <Button image={ChevronRight} text={`COMENZAR CONSULTORIA`} link={''} />
         </div>
 
-        <div className={`-mt- flex-none inset-0 overflow-hidden p-40 absolute z-40 min-h-[790px]`}>
+        <div className={`-mt-32 m:mt-0 flex-none inset-0 overflow-hidden p-40 absolute z-40 min-h-[790px]`}>
           <div className={`absolute bg-radial-white h-[760px] z-40`}></div>
           <div className={`absolute bg-radial-violet h-[500px] mt-[150px] ml-[5%] z-50`}></div>
         </div>

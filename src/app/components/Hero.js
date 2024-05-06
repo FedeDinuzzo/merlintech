@@ -24,6 +24,7 @@ const Hero = () => {
   return (
     <section className={`flex flex-col flex-nowrap min-h-[100vh] justify-center`}>
       <div id="home" className={`absolute top-0`} />
+
       <div className={`absolute -left-3 top-[60px] bg-lines h-[1000px] w-[100vw]`}></div>
 
       <div className={`flex-none inset-0 overflow-hidden absolute min-h-[1440px] z-0`}>
