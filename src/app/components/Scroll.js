@@ -6,6 +6,7 @@ import SupportRing from "../../public/SupportRing.svg"
 import ServicesCard from './ServicesCard'
 import { Button } from "./Buttons"
 import ChevronRight from "../../public/ChevronRight.svg"
+import Lights from "../../public/MainCard/Lights.png"
 
 function Scroll() {
   return (
@@ -47,6 +48,7 @@ function Scroll() {
 
         <div className={`hidden m:flex h-[840px] relative`}>
           <div class="w-full h-[260px] absolute bottom-0 bg-gradient-to-b from-transparent to-black rounded-[23px] z-50"></div>
+          <Image className={`absolute w-full h-full`} src={Lights} alt="Lights" priority />
           <ServicesCard />
         </div>
       </section>
