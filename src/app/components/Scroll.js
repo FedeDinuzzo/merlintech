@@ -12,8 +12,8 @@ function Scroll() {
   return (
     <>
       <section className={`min-h-[120vh] m:min-h-[128vh] relative flex justify-between items-center z-40`}>
-        <div id="servicios" smooth={true} className={`absolute -mt-32`} />
-        <div className={`-mt-20 flex flex-col justify-center mx-5 m:mx-8 l:mx-24 max-w-[580px] z-50`}>
+        <div id="servicios" smooth={true} className={`-mt-[1040px]`} />
+        <div className={`-mt-20 flex flex-col mx-5 m:mx-8 l:mx-24 w-full l:pr-72 z-50`}>
           <h2 className={`${styles.heading} m:leading-[70px] mb-16`}>
             Simplifica
             <span className={`inline text-white opacity-40`}> tus
@@ -37,12 +37,12 @@ function Scroll() {
           <Button image={ChevronRight} text={`COMENZAR CONSULTORIA`} link={''} />
         </div>
 
-        <div className={`-mt-32 m:mt-0 flex-none inset-0 overflow-hidden p-40 absolute min-h-[790px]`}>
+        <div className={`-mt-32 m:mt-0 m:ml-0 flex-none inset-0 overflow-hidden p-40 absolute min-h-[790px]`}>
           <div className={`absolute bg-radial-white h-[760px]`}></div>
           <div className={`absolute bg-radial-violet h-[500px] mt-[150px] ml-[5%]`}></div>
         </div>
 
-        <div className={`hidden m:flex absolute right-[0%] top-[89%] m:right-[10%] m:top-[82%] l:right-[40%] l:top-[45%] z-50`}>
+        <div className={`hidden m:flex absolute right-[0%] l:right-[39%] l:top-[42%] z-50`}>
           <Image className={``} src={SupportRing} alt="progressRing" width="175" height="175" priority />
         </div>
 
