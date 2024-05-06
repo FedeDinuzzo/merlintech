@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "@/app/constants/style"
 import Image from 'next/image'
 import cardInnerShadow from "../../public/card-inner-shadow.webp"
-import key from '../../public/Key.svg'
+import key from '../../public/key.svg'
 import cloud from '../../public/cloud.svg'
 import cloudKey from '../../public/cloudKey.svg'
 import circuit from '../../public/circuit.svg'
