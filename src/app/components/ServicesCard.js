@@ -1,44 +1,27 @@
 import React from 'react'
 import styles from "@/app/constants/style"
 import Image from 'next/image'
-import logo from '../../public/LogoMerlin.svg'
 import cardInnerShadow from "../../public/card-inner-shadow.webp"
-import MenuNineCircles from '../../public/MainCard/MenuNineCircles.svg'
-import Hand from '../../public/MainCard/Hand.svg'
-import PatternLock from '../../public/MainCard/PatternLock.svg'
-import CreditCard from '../../public/MainCard/CreditCard.svg'
-import PlayCircles from '../../public/MainCard/PlayCircles.svg'
-import Square from '../../public/MainCard/Square.svg'
-import Photo from '../../public/MainCard/Photo.svg'
-import Keyboard from '../../public/MainCard/Keyboard.svg'
-import Settings from '../../public/MainCard/Settings.svg'
-import Help from '../../public/MainCard/Help.svg'
-import Search from '../../public/MainCard/Search.svg'
+import key from '../../public/Key.svg'
+import cloud from '../../public/cloud.svg'
+import cloudKey from '../../public/cloudKey.svg'
+import circuit from '../../public/circuit.svg'
+import toolService from '../../public/toolService.svg'
 import AvatarProgress from '../../public/MainCard/AvatarProgress.png'
 import ChevronDown from '../../public/ChevronDown.svg'
-import ImageCard from '../../public/MainCard/ImageCard.png'
-import SupportTool from '../../public/MainCard/SupportTool.svg'
-import Toggle from '../../public/MainCard/Toggle.svg'
-import DISmall from '../../public/MainCard/DISmall.svg'
-import home from '../../public/MainCard/home.svg'
 import Bars from '../../public/MainCard/Bars.png'
 import BarsHorizontal from '../../public/MainCard/BarsHorizontal.svg'
 import separator from '../../public/MainCard/separator.svg'
 import merlinCard from '../../public/MainCard/merlinCard.svg'
 import Stats from '../../public/MainCard/Stats.svg'
-import AvatarChino from '../../public/MainCard/AvatarChino.png'
-import AvatarUnicef from '../../public/MainCard/AvatarUnicef.png'
 import AvatarDisney from '../../public/MainCard/AvatarDisney.png'
 import LogoServicios from '../../public/MainCard/LogoServicios.png'
-import AvatarFox from '../../public/MainCard/AvatarFox.png'
 
 
 export default function ServicesCard() {
   return (
     <section className="flex h-[627px] min-w-[375px] w-[800px] max-w-[100vw] rounded-[23px] bg-gradient-to-b from-[#0000] to-[#0006]">
       <div className={`bg-main-card border-[.75px] border-solid border-secondary border-opacity-10 flex flex-none flex-row flex-nowrap justify-start gap-15 inset-0 overflow-hidden p-0 absolute bg-[#050505e6] content-start items-start backdrop-blur-[7.5px]`}>
-
-
         {/* TOP SEARCH */}
         <div className={`flex flex-col text-white w-[897px] h-full max-w-[65vw] p-[15px]`}>
           <Image className={`absolute h-full w-full -m-[15px] opacity-60`} src={cardInnerShadow} alt="supportIT" />
@@ -91,7 +74,7 @@ export default function ServicesCard() {
               <div className={`overflow-hidden z-20 flex h-[105px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col w-full`}>
                   <div className={`flex justify-between space-y-2 max-h-[105px] p-2.5 py-2 m-2.5`}>
-                    <Image className={`w-28`} src={merlinCard} alt="" priority />
+                    <Image className={`w-28`} src={toolService} alt="" priority />
                     <div className={`flex flex-col w-full`}>
                       <h4 className={`${styles.headingMainCard} text-white font-medium`}>Soporte de PC</h4>
                       <h4 className={`${styles.headingMainCard} opacity-80`}>Planes para empresas</h4>
@@ -124,7 +107,7 @@ export default function ServicesCard() {
                       <p className={`${styles.headingMainCard} opacity-80`}>Correos</p>
                     </div>
                     <div className={`flex flex-col`}>
-                      <Image className={`w-28`} src={merlinCard} alt="" priority />
+                      <Image className={`w-28`} src={cloud} alt="" priority />
                       <p className={`${styles.headingMainCard} opacity-80`}>Cloud</p>
                     </div>
                     <div className={`flex flex-col`}>
@@ -169,7 +152,7 @@ export default function ServicesCard() {
                     <h4 className={`${styles.headingMainCard} font-medium text-[13px]`}>Clientes satisfechos</h4>
                     <p className={`${styles.headingMainCard} opacity-80`}>Gracias al equipo de soporte IT por mantener la magia de Disney. Su dedicación es fundamental para nuestro éxito</p>
                     <div className={`flex items-center`}>
-                      <Image className="mr-2 h-6 w-6" src={AvatarDisney} alt="" priority />
+                      <Image className="mr-2 h-6 w-6" src={cloudKey} alt="" priority />
                       <div>
                         <h4 className={`${styles.headingMainCard} font-medium`}>Ceo Disney</h4>
                         <p className={`${styles.headingMainCard} opacity-80`}>Mensaje de agradecimiento</p>
@@ -180,7 +163,7 @@ export default function ServicesCard() {
               </div>
             </div>
             {/* COLUMN TWO */}
-            <div className={`hidden m:flex flex-col space-y-4 px-[15px] w-full`}>
+            <div className={`hidden m:flex flex-col space-y-4 pl-[15px] w-full`}>
               {/* CARD FIVE */}
               <div className={`overflow-hidden z-20 flex h-[105px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col w-full`}>
@@ -212,7 +195,7 @@ export default function ServicesCard() {
               <div className={`overflow-hidden z-20 flex h-[105px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col w-full`}>
                   <div className={`flex justify-between space-y-2 max-h-[105px] p-2.5 py-2 m-2.5`}>
-                    <Image className={`w-28`} src={merlinCard} alt="" priority />
+                    <Image className={`w-28`} src={key} alt="" priority />
                     <div className={`flex flex-col w-full`}>
                       <h4 className={`${styles.headingMainCard} text-white font-medium`}>Soporte de PC</h4>
                       <h4 className={`${styles.headingMainCard} opacity-80`}>Planes para empresas</h4>
@@ -238,7 +221,7 @@ export default function ServicesCard() {
               {/* CARD SEVEN */}
               <div className={`overflow-hidden z-20 flex w-full h-[162px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex justify-between px-2.5 py-1`}>
-                  <Image className="w-10 -mt-16 mr-2" src={Stats} alt="" priority />
+                  <Image className="w-10 -mt-16 mr-2" src={circuit} alt="" priority />
                   <div className={`flex flex-col p-2 space-y-3`}>
                     <h4 className={`${styles.headingMainCard} font-medium text-[13px]`}>Clientes satisfechos</h4>
                     <p className={`${styles.headingMainCard} opacity-80`}>Gracias al equipo de soporte IT por mantener la magia de Disney. Su dedicación es fundamental para nuestro éxito</p>
@@ -256,7 +239,7 @@ export default function ServicesCard() {
               <div className={`overflow-hidden z-20 flex h-[105px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col w-full`}>
                   <div className={`flex justify-between space-y-2 max-h-[105px] p-2.5 py-2 m-2.5`}>
-                    <Image className={`w-28`} src={merlinCard} alt="" priority />
+                    <Image className={`w-28`} src={toolService} alt="" priority />
                     <div className={`flex flex-col w-full`}>
                       <h4 className={`${styles.headingMainCard} text-white font-medium`}>Soporte de PC</h4>
                       <h4 className={`${styles.headingMainCard} opacity-80`}>Planes para empresas</h4>
@@ -280,7 +263,6 @@ export default function ServicesCard() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div >

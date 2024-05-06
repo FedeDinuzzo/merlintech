@@ -18,7 +18,7 @@ import Ceo from '../../public/Ceo.png'
 function Partners() {
   return (
     <section id="socios" smooth={true} className={`min-h-[116vh] flex flex-col justify-center items-center px-5`}>
-      <div className={`mt-0 flex z-10`}>
+      <div className={`flex z-10`}>
         <h3 className={`${styles.heading2Partners} text-gradient max-w-[305px] tracking-tighter`}>NUESTROS PARTNERS & RESELLERS</h3>
         <div className={`${styles.heading2Partners} m:max-w-[305px] flex flex-col items-end mt-2`}>
           <h4 className={`text-[90px] m:text-[140px] text-gradient py-8`}>+24</h4>

@@ -27,9 +27,14 @@ const Hero = () => {
 
       <div className={`absolute -left-3 top-[60px] bg-lines h-[1000px] w-[100vw]`}></div>
 
-      <div className={`flex-none inset-0 overflow-hidden absolute min-h-[1440px] z-0`}>
-        <div className={`absolute bg-radial-white h-[1054px] top-[200px] z-20`}></div>
-        <div className={`absolute bg-radial-violet h-[807px] top-[400px] z-20`}></div>
+      <div className={`flex-none inset-0 overflow-hidden absolute min-h-[1440px]`}>
+        <div className={`absolute bg-radial-white w-[760px] m:w-[1054px] top-[200px]`}></div>
+        <div className={`absolute bg-radial-violet w-[500px] m:w-[807px] top-[400px]`}></div>
+      </div>
+
+      <div className={`flex-none inset-0 overflow-hidden absolute min-h-[1440px] m:hidden`}>
+        <div className={`absolute bg-radial-white w-[760px] top-[580px]`}></div>
+        <div className={`absolute bg-radial-violet w-[500px] top-[740px]`}></div>
       </div>
 
       <div className={`text-center m:mx-10 l:mx-20 relative px-5 z-50`}>
