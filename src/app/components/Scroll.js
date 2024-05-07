@@ -29,11 +29,11 @@ function Scroll() {
             </div>
             <div className={`mb-10`}>
               <h3 className={`${styles.heading3White} opacity-40`}>Sobre Nosotros</h3>
-              <p className={`${styles.paragraph} opacity-50`}>Haz clic en la inicial, y descubri como llegamos a ser los mejores del sector.</p>
+              <p className={`${styles.paragraph} opacity-50`}>Haz clic en la inicial, y descubrí como llegamos a ser los mejores del sector.</p>
             </div>
           </div>
 
-          <Button image={ChevronRight} text={`COMENZAR CONSULTORIA`} link={''} />
+          <Button image={ChevronRight} text={`COMENZAR CONSULTORÍA`} link={''} />
         </div>
 
         <div className={`-mt-20 m:mt-0 m:ml-0 flex-none inset-0 overflow-hidden p-40 absolute min-h-[790px]`}>

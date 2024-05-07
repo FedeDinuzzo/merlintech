@@ -20,7 +20,7 @@ const Features = () => {
         <div className={`flex flex-col l:w-[1260px] mx-auto gap-[30px]`}>
           <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-2`}>
             <div className={`bg-line-services`}></div>
-            <h1 className={`inline text-white`}>Nuestra Filosofia </h1>
+            <h1 className={`inline text-white`}>Nuestra Filosofía </h1>
             <h3 className={`opacity-40 inline`}>se centra en proporcionar soluciones eficientes y efectivas para  satisfacer las necesidades y desafíos tecnológicos de sus clientes</h3>
           </div>
           <ButtonFour image={ChevronRight} text={`CUPOS LIMITADOS`} link={''} />
@@ -32,7 +32,7 @@ const Features = () => {
           <div className={`max-w-[360px] mx-auto`}>
             <Image className={`min-w-[282px] mb-5`} src={Card1Empresa} alt="supportIT" width="360" height="210" />
             <h2 className={`${styles.heading3} my-2.5`}>+300 Empresas nos eligieron</h2>
-            <p className={`${styles.paragraph} mb-2.5`}>Ellos confian y confiaron en nosotros. Porque entendemos a la perfección sus necesidades tecnológicas y les brindamos soluciones a medida y efectivas.</p>
+            <p className={`${styles.paragraph} mb-2.5`}>Ellos confían y confiaron en nosotros. Porque entendemos a la perfección sus necesidades tecnológicas y les brindamos soluciones a medida y efectivas.</p>
           </div>
         </div>
 
@@ -47,8 +47,8 @@ const Features = () => {
         <div className={`bg-card-service flex flex-col flex-nowrap justify-evenly m:h-[465px] m:max-w-[520px] l:w-[520px] p-8`}>
           <div className={`max-w-[360px] mx-auto`}>
             <Image className={`min-w-[282px] mb-5`} src={Card3Empresa} alt="supportIT" width="360" height="210" />
-            <h2 className={`${styles.heading3} my-2.5`}>+5 Paises presentes</h2>
-            <p className={`${styles.paragraph} mb-2.5`}>Nuestra flexibilidad y adaptabilidad nos permiten ajustar nuestros servicios para llegar a todo el mundo, cumpliendo con todas las leyes y regulaciones pertinentes de cada pais.</p>
+            <h2 className={`${styles.heading3} my-2.5`}>+5 Países presentes</h2>
+            <p className={`${styles.paragraph} mb-2.5`}>Nuestra flexibilidad y adaptabilidad nos permiten ajustar nuestros servicios para llegar a todo el mundo, cumpliendo con todas las leyes y regulaciones pertinentes de cada país.</p>
           </div>
         </div>
 

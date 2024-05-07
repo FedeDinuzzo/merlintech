@@ -25,7 +25,7 @@ const AllServices = () => {
             <Image src={MonitoreoLines} alt="supportIT" width="819" height="138" />
           </div>
           <h2 className={`${styles.heading3Monitoreo} text-center text-gradient mb-2.5`}>Monitoreo 24/7</h2>
-          <h1 className={`${styles.headingServices} text-center text-gradient max-w-[770px] h-[120%]`}>Soporte tecnico y mantenimiento a sus redes, computadoras servidores y sistemas.</h1>
+          <h1 className={`${styles.headingServices} text-center text-gradient max-w-[770px] h-[120%]`}>Soporte técnico y mantenimiento a sus redes, computadoras servidores y sistemas.</h1>
         </div>
       </div>
 
@@ -43,9 +43,9 @@ const AllServices = () => {
         <div className={`bg-card-service flex flex-col h-[380px] w-[340px] m:w-[620px] gap-2.5`}>
           <Image className={`absolute h-[380px] rounded-[40px]`} src={cardInnerShadow} alt="supportIT" />
           <div className={`flex flex-col h-[380px] w-[340px] m:w-[620px] gap-2.5 pt-5 m:pt-[22px] px-5 pb-0 z-10`}>
-            <h2 className={`${styles.heading3} my-2.5`}>Recuperacion de la Informacion</h2>
+            <h2 className={`${styles.heading3} my-2.5`}>Recuperación de la Información</h2>
             <p className={`${styles.paragraph} mb-2.5`}>Protéjase de una eventual pérdida de datos con un almacenamiento encriptado y una recuperación virtual a través de nuestro escritorio remoto. Accediendo a sus equipos para reparar cualquier problema en su software.</p>
-            <ButtonTwo image={ChevronRight} text={`Proteccion y resguardo`} link={''} />
+            <ButtonTwo image={ChevronRight} text={`Protección y resguardo`} link={''} />
             <Image className={`mt-3`} src={Card2Services} alt="supportIT" width="580" height="147" />
           </div>
         </div>
@@ -56,7 +56,7 @@ const AllServices = () => {
             <Image src={Card3Services} alt="supportIT" width="580" height="99" />
             <h2 className={`${styles.heading3} my-2.5`}>Streaming: Centro Operacional</h2>
             <p className={`${styles.paragraph} mb-2.5`}>El centro de control BOCC ha sido diseñado para mejorar la calidad, la fiabilidad y la disponibilidad de la transmisión de contenidos multimedia. Delegue la monitorización, las alertas, la asistencia en vivo y preserve sus flujos de vídeo OTT con los expertos en contenido multimedia de Merlin.</p>
-            <ButtonTwo image={ChevronRight} text={`Proteccion y resguardo`} link={''} />
+            <ButtonTwo image={ChevronRight} text={`Protección y resguardo`} link={''} />
           </div>
         </div>
 

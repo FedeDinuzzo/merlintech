@@ -1,5 +1,8 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
+import Spline from '@splinetool/react-spline'
 import styles from '../constants/style'
 import SpiralBlur from '../../public/SpiralBlur.png'
 import Hexagon0 from '../../public/Hexagon0.png'
@@ -28,6 +31,7 @@ function Partners() {
       </div>
 
       <div className={`z-0 absolute w-full h-[1440px]`}>
+        {/* <Spline className="w-full flex scale-[.25] m:scale-[.35] l:scale-[1.2] items-center justify-center md:justify-start" scene='https://prod.spline.design/4IeNjp3Pr8ziJ5bH/scene.splinecode' /> */}
         <iframe src='https://my.spline.design/distortedspiralcopy-d85ad473f4a28e665eaab8ae4f04118b/' frameborder='0' width='100%' height='100%' loading="lazy"></iframe>
       </div>
       <Image className={`absolute z-10 -mt-40 m:-mt-10 opacity-50 min-h-[800px]`} src={SpiralBlur} alt="gradient lights" width="1080" height="1080" />
@@ -58,7 +62,7 @@ function Partners() {
       </div>
 
       <div className={`z-40 m:max-w-[613px] space-y-8`}>
-        <h3 className={`${styles.heading3} font-semibold text-[16px] pt-32`}>Tecnologia de Vanguardia</h3>
+        <h3 className={`${styles.heading3} font-semibold text-[16px] pt-32`}>Tecnología de Vanguardia</h3>
         <p className={`${styles.paragraph}`}>Junto a nuestros aliados en tecnología y distribuidores ofrecemos soluciones IT de primer nivel y garantizamos un soporte técnico excepcional a cada cliente</p>
 
         <div className={`flex items-center space-x-4`}>

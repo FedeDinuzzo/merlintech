@@ -73,7 +73,7 @@ export default function MainCard() {
               </div>
               <div className={`flex m:mx-[12px] my-[7.5px] space-y-4`}>
                 <Image className="mt-3 h-5 w-5" src={Photo} alt="" priority />
-                <p className={`${styles.headingMainCard} pl-[9px]`}>Camaras de Seguridad</p>
+                <p className={`${styles.headingMainCard} pl-[9px]`}>Cámaras de Seguridad</p>
               </div>
             </div>
             {/* SERVICES BOTTOM */}
@@ -84,7 +84,7 @@ export default function MainCard() {
               </div>
               <div className={`flex m:mx-[12px] my-[7.5px] space-y-4`}>
                 <Image className="mt-3 h-5 w-5" src={Settings} alt="" priority />
-                <p className={`${styles.headingMainCard} pl-[9px]`}>Proteccion y Seguridad</p>
+                <p className={`${styles.headingMainCard} pl-[9px]`}>Protección y Seguridad</p>
               </div>
               <div className={`flex m:mx-[12px] my-[7.5px] space-y-4 mb-3`}>
                 <Image className="mt-3 h-5 w-5" src={Help} alt="" priority />
@@ -98,7 +98,7 @@ export default function MainCard() {
           <Image className={`absolute h-full w-full -m-[15px] opacity-60`} src={cardInnerShadow} alt="supportIT" />
           <div className={`flex justify-between`}>
             <div className={`shadow-main-card flex justify-center items-center w-[300px] max-w-[50vw] gap-[9px] py-[7.5px] px-[15px] overflow-hidden border-[.75px] bg-secondary bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
-              <p className={`${styles.headingMainCard} leading-5 text-[12px]`}>Encontra tu solucion</p>
+              <p className={`${styles.headingMainCard} leading-5 text-[12px]`}>Encontra tu solución</p>
               <Image className="" src={Search} alt="" priority />
             </div>
             <Image className="hidden m:flex h-[37.5px] w-[37.5px]" src={AvatarProgress} alt="" priority />
@@ -109,7 +109,7 @@ export default function MainCard() {
           <div className={`flex justify-between my-[15px] h-[34px] pr-3 m:pr-0`}>
             <div className={`shadow-main-card flex justify-center items-center p-1 overflow-hidden border-[.75px] bg-[#0009] bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
               <div className={`flex justify-between items-center w-[210px]`}>
-                <h4 className={`${styles.headingMainCard} px-2 leading-5 flex justify-center items-center overflow-hidden border-[.75px] bg-secondary bg-opacity-10 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>Ubicacion</h4>
+                <h4 className={`${styles.headingMainCard} px-2 leading-5 flex justify-center items-center overflow-hidden border-[.75px] bg-secondary bg-opacity-10 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>Ubicación</h4>
                 <h4 className={`${styles.headingMainCard} ml-5`}>Baires</h4>
                 <h4 className={`${styles.headingMainCard}`}>Argentina</h4>
               </div>
@@ -136,7 +136,7 @@ export default function MainCard() {
                 <div className={`flex w-full`}>
                   <div className={`flex flex-col w-1/2 justify-between space-y-2 max-h-[105px] p-2.5 py-2 m-2.5`}>
                     <h4 className={`${styles.headingMainCard} text-white font-medium`}>Horarios -&gt;</h4>
-                    <h4 className={`${styles.headingMainCard} opacity-80`}>Ubicacion -&gt;</h4>
+                    <h4 className={`${styles.headingMainCard} opacity-80`}>Ubicación -&gt;</h4>
                     <Image className={`w-28`} src={merlinCard} alt="" priority />
                   </div>
 
@@ -155,7 +155,7 @@ export default function MainCard() {
                   <div className={`flex flex-col w-1/2 pl-2.5 m-2.5 space-y-1 m:space-y-2`}>
                     <Image className="-mb-3 w-14 -ml-2" src={SupportTool} alt="" priority />
                     <h4 className={`${styles.headingMainCard} font-medium text-[13px]`}>Asistencia IT</h4>
-                    <p className={`${styles.headingMainCard} text-[10px] opacity-80 w-20 m:w-28`}>Soluciones dinamicas</p>
+                    <p className={`${styles.headingMainCard} text-[10px] opacity-80 w-20 m:w-28`}>Soluciones dinámicas</p>
                     <div className='w-[10px] border-[1.75px] border-secondary border-solid rounded-lg'></div>
                   </div>
                   <div className={`flex flex-col w-1/2 m-0 m:m-2.5 space-y-1`}>
@@ -169,7 +169,7 @@ export default function MainCard() {
                     </div>
                     <div className={`flex items-center`}>
                       <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black rounded-full`}>3</div>
-                      <h4 className={`${styles.headingMainCard} opacity-80`}>Instalacion</h4>
+                      <h4 className={`${styles.headingMainCard} opacity-80`}>Instalación</h4>
                     </div>
                     <div className={`flex items-center`}>
                       <div className={`flex text-[10px] px-2 py-[3px] mr-1 bg-black rounded-full`}>4</div>
@@ -206,7 +206,7 @@ export default function MainCard() {
               <div className={`overflow-hidden z-20 flex w-full h-[342px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col p-[15px]`}>
                   <Image className="w-full mb-[6px]" src={ImageCard} alt="" priority />
-                  <div className={`${styles.headingMainCard} my-1 bg-[#3395FF] rounded-md flex justify-center py-1 text-[13px] w-[154px]`}>ATENCION INMEDIATA</div>
+                  <div className={`${styles.headingMainCard} my-1 bg-[#3395FF] rounded-md flex justify-center py-1 text-[13px] w-[154px]`}>ATENCIÓN INMEDIATA</div>
                   <h4 className={`${styles.headingMainCard} my-1 font-medium text-[13px]`}>Resolución Continua</h4>
                   <p className={`${styles.headingMainCard} my-1 opacity-80`}>Nos brindaron soluciones inmediatas, disponibles las 24 horas del día</p>
                   <div className={`flex my-3`}>
@@ -239,7 +239,7 @@ export default function MainCard() {
                   <h4 className={`${styles.headingMainCard} text-[13.5px] text-medium`}>Planes</h4>
                   <p className={`${styles.headingMainCard} text-[11px] opacity-80`}>El mejor precio del mercado</p>
                   <div className='border-[0.5px] border-secondary opacity-5 border-solid rounded'></div>
-                  <p className={`${styles.headingMainCard} text-[11px] opacity-80`}>Contamos con los mejores partners y resellers, ofreciendo un Soporte IT de categoria, a un precio competitivo, sin dudas la calidad esta asegurada</p>
+                  <p className={`${styles.headingMainCard} text-[11px] opacity-80`}>Contamos con los mejores partners y resellers, ofreciendo un Soporte IT de categoría, a un precio competitivo, sin dudas la calidad esta asegurada</p>
                   <div className='border-[0.5px] border-secondary opacity-5 border-solid rounded'></div>
                   <div className={`flex items-center`}>
                     <Image className="-ml-3" src={DISmall} alt="" priority />
@@ -270,7 +270,7 @@ export default function MainCard() {
                     <Image className="mt-1 mr-2 h-6 w-6" src={AvatarUnicef} alt="" priority />
                     <div className={`flex flex-col w-full`}>
                       <h4 className={`${styles.headingMainCard} mr-[130px]`}>Ong Unicef</h4>
-                      <p className={`${styles.headingMainCard} opacity-80`}>Tecnico en camino</p>
+                      <p className={`${styles.headingMainCard} opacity-80`}>Técnico en camino</p>
                     </div>
                     <p className={`${styles.headingMainCard} opacity-80`}>5m ago</p>
                   </div>

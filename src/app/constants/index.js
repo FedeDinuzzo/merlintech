@@ -324,9 +324,9 @@ export const services = [
   {
     id: "service2",
     image: "Card2Services",
-    title: "Recuperacion de la Informacion",
+    title: "Recuperación de la Información",
     content: "Protéjase de una eventual pérdida de datos con un almacenamiento encriptado y una recuperación virtual a través de nuestro escritorio remoto. Accediendo a sus equipos para reparar cualquier problema en su software.",
-    button: "Proteccion y resguardo",
+    button: "Protección y resguardo",
     btnIcon: "ChevronRight",
   },
   {
@@ -334,7 +334,7 @@ export const services = [
     image: "Card3Services",
     title: "Streaming: Centro Operacional",
     content: "El centro de control BOCC ha sido diseñado para mejorar la calidad, la fiabilidad y la disponibilidad de la transmisión de contenidos multimedia. Delegue la monitorización, las alertas, la asistencia en vivo y preserve sus flujos de vídeo OTT con los expertos en contenido multimedia de Merlin.",
-    button: "Gestion de Streaming",
+    button: "Gestión de Streaming",
     btnIcon: "ChevronRight",
   },
   {
@@ -353,7 +353,7 @@ export const about = [
     id: "about-1",
     image: "Card1Empresa",
     title: "+300 Empresas nos eligieron",
-    content: "Ellos confian y confiaron en nosotros. Porque entendemos a la perfección sus necesidades tecnológicas y les brindamos soluciones a medida y efectivas.",
+    content: "Ellos confían y confiaron en nosotros. Porque entendemos a la perfección sus necesidades tecnológicas y les brindamos soluciones a medida y efectivas.",
   },
   {
     id: "about-2",
@@ -364,7 +364,7 @@ export const about = [
   {
     id: "about-3",
     image: "Card3Empresa",
-    title: "+5 Paises presentes",
+    title: "+5 Países presentes",
     content: "Nuestra flexibilidad y adaptabilidad nos permiten ajustar nuestros servicios para llegar a todo el mundo, cumpliendo con todas las leyes y regulaciones pertinentes de cada pais.",
   },
   {

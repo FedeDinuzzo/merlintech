@@ -42,7 +42,7 @@ export default function ServicesCard() {
           <div className={`flex justify-between my-[15px] h-[34px] pr-3 m:pr-0`}>
             <div className={`shadow-main-card flex justify-center items-center pr-2.5 p-1 overflow-hidden border-[.75px] bg-[#0006] bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
               <div className={`flex justify-between items-center w-[210px]`}>
-                <h4 className={`${styles.headingServicesCard} px-2 leading-5 flex justify-center items-center overflow-hidden border-[.75px] bg-secondary bg-opacity-10 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>Ubicacion</h4>
+                <h4 className={`${styles.headingServicesCard} px-2 leading-5 flex justify-center items-center overflow-hidden border-[.75px] bg-secondary bg-opacity-10 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>Ubicación</h4>
                 <h4 className={`${styles.headingServicesCard} ml-5`}>Baires</h4>
                 <h4 className={`${styles.headingServicesCard}`}>Argentina</h4>
               </div>
@@ -88,7 +88,7 @@ export default function ServicesCard() {
                     </div>
                     <div className={`flex space-x-1.5`}>
                       <div className={`mt-[3px] border-[1px] border-solid border-secondary border-opacity-10 rounded-full px-1.5 max-h-[14px]`}></div>
-                      <p className={`${styles.headingServicesCard}`}>Consultoria IT</p>
+                      <p className={`${styles.headingServicesCard}`}>Consultoría IT</p>
                     </div>
                   </div>
                 </div>
@@ -137,14 +137,14 @@ export default function ServicesCard() {
                   </div>
                   <div className={`flex flex-col space-y-2`}>
                     <div className='flex items-center justify-between'>
-                      <h4 className={`${styles.headingServicesCard} font-medium text-[14px]`}>Proteccion y Seguridad</h4>
+                      <h4 className={`${styles.headingServicesCard} font-medium text-[14px]`}>Protección y Seguridad</h4>
                       <div className={`flex mr-5 space-x-14 items-center justify-between`}>
                         <div className={`mt-[2px] rounded-full w-4 h-2 bg-sky-500`}></div>
                         <h4 className={`${styles.headingServicesCard} font-medium`}>24min</h4>
                       </div>
 
                     </div>
-                    <p className={`${styles.headingServicesCard} opacity-80 pr-10`}>Recuperacion de datos, control de acceso y perimetral mediante camaras y DVR</p>
+                    <p className={`${styles.headingServicesCard} opacity-80 pr-10`}>Recuperación de datos, control de acceso y perimetral mediante cámaras y DVR</p>
                   </div>
                 </div>
               </div>
@@ -168,8 +168,8 @@ export default function ServicesCard() {
 
                   <div className={`flex justify-between items-center mt-1 w-full`}>
                     <div className={`flex flex-col`}>
-                      <p className={`${styles.headingServicesCard}`}>Garantia</p>
-                      <p className={`${styles.headingServicesCard} opacity-80`}>Tranqulidad</p>
+                      <p className={`${styles.headingServicesCard}`}>Garantía</p>
+                      <p className={`${styles.headingServicesCard} opacity-80`}>Tranquilidad</p>
                     </div>
                     <div className={`flex flex-col items-center`}>
                       <Image className={`w-22 h-22`} src={key} alt="" />
@@ -192,7 +192,7 @@ export default function ServicesCard() {
                   </div>
                   <div className={`flex flex-col space-y-2`}>
                     <div className='flex items-center justify-between'>
-                      <h4 className={`${styles.headingServicesCard} font-medium text-[14px]`}>Proteccion y Seguridad</h4>
+                      <h4 className={`${styles.headingServicesCard} font-medium text-[14px]`}>Protección y Seguridad</h4>
                       <div className={`flex mr-5 space-x-12 items-center justify-between`}>
                         <div className={`mt-[2px] rounded-full w-4 h-2 bg-sky-500`}></div>
                         <h4 className={`${styles.headingServicesCard} font-medium`}>24min</h4>
@@ -216,11 +216,11 @@ export default function ServicesCard() {
                   <div className={`flex w-full justify-around px-2`}>
                     <div className={`flex space-x-1.5`}>
                       <div className={`mt-[3px] border-[1px] border-solid border-secondary border-opacity-10 rounded-full px-1.5 max-h-[14px]`}></div>
-                      <p className={`${styles.headingServicesCard}`}>Comunicacion</p>
+                      <p className={`${styles.headingServicesCard}`}>Comunicación</p>
                     </div>
                     <div className={`flex space-x-1.5`}>
                       <div className={`mt-[3px] border-[1px] border-solid border-secondary border-opacity-10 rounded-full px-1.5 max-h-[14px]`}></div>
-                      <p className={`${styles.headingServicesCard}`}>Telefonia</p>
+                      <p className={`${styles.headingServicesCard}`}>Telefonía</p>
                     </div>
                     <div className={`flex space-x-1.5`}>
                       <div className={`mt-[3px] border-[1px] border-solid border-secondary border-opacity-10 rounded-full px-0.5 max-h-[14px]`}>
