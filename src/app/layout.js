@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
       <body className={`${font.variable}`}>
         <Navbar />
         <Whatsapp />
-        <div className={`bg-primary pt-36`}>
+        <div className={`pt-36`}>
           <main>{children}</main>
           <Suspense fallback={`Loading...`}>
             <Contact />

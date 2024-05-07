@@ -12,14 +12,6 @@ import { RingTwo } from "./Ring"
 
 const Hero = () => {
 
-  // background: rgba(0,0,0,0.5);
-  // background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.7) 100%); /* FF3.6+ */
-  // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0.7))); /* Chrome,Safari4+ */
-  // background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10+,Safari5.1+ */
-  // background: -o-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.7) 100%); /* Opera 11.10+ */
-  // background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.7) 100%); /* IE10+ */
-  // background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.7) 100%); W3C
-
   return (
     <section className={`flex flex-col flex-nowrap min-h-[100vh] justify-center`}>
       <div id="home" className={`absolute top-0`} />

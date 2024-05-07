@@ -30,7 +30,7 @@ function Partners() {
       <div className={`z-0 absolute w-full h-[1440px]`}>
         <iframe src='https://my.spline.design/distortedspiralcopy-d85ad473f4a28e665eaab8ae4f04118b/' frameborder='0' width='100%' height='100%' loading="lazy"></iframe>
       </div>
-      <Image className={`absolute z-10 -mt-40 m:-mt-10 opacity-60 min-h-[800px]`} src={SpiralBlur} alt="gradient lights" width="1080" height="1080" />
+      <Image className={`absolute z-10 -mt-40 m:-mt-10 opacity-50 min-h-[800px]`} src={SpiralBlur} alt="gradient lights" width="1080" height="1080" />
       <div className={`absolute mt-10 z-0`}>
         <div className={`hidden m:flex bg-lines-partners h-[1440px] w-[100vw] max-w-[1998px] mx-auto`}></div>
       </div>
