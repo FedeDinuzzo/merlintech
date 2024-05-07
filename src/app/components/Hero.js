@@ -5,11 +5,10 @@ import { Button } from "./Buttons"
 import { ButtonTwo } from "./Buttons"
 import { ButtonThree } from "./Buttons"
 import ChevronRight from "../../public/ChevronRight.svg"
-import ProgressRing from "../../public/ProgressRing.svg"
-import SupportRing from "../../public/SupportRing.svg"
-import Lights from "../../public/MainCard/Lights.png"
+import Lights from "../../public/Lights.png"
 import MainCard from "./MainCard"
-import Ring from "./Ring"
+import { RingOne } from "./Ring"
+import { RingTwo } from "./Ring"
 
 const Hero = () => {
 
@@ -64,11 +63,10 @@ const Hero = () => {
             <MainCard />
 
             <div className={`absolute top-[20%] left-[5%] m:left-[7%] m:-top-[13%] l:-left-[9%] z-50`}>
-              <Ring />
-              <Image className={`rounded-full`} src={ProgressRing} alt="SupportRing" width="165" height="165" priority />
+              <RingOne />
             </div>
             <div className={`absolute right-[0%] top-[89%] m:right-[10%] m:top-[82%] l:-right-[9%] l:top-[40%] z-50`}>
-              <Image className={``} src={SupportRing} alt="progressRing" width="175" height="175" priority />
+              <RingTwo />
             </div>
           </div>
 

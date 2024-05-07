@@ -9,7 +9,7 @@ export const metadata = {
 
 function Laempresa() {
   return (
-    <div>
+    <div className="-mb-20">
       <Features />
     </div>
   )

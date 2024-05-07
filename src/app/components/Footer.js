@@ -15,7 +15,7 @@ import Link from "next/link"
 const Footer = () => (
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col mt-20`}>
     <div className={`${styles.boxWidth}`}>
-      <div className={`flex-col mb-8 w-full `}>
+      <div className={`flex-col marker:mb-8 w-full `}>
         <div className="flex mx-auto justify-around flex-wrap w-full">
           <div className="mr-0 w-full mb-5 m:mr-96 l:mb-0 l:w-auto px-5 l:px-0">
             <Image src={logo} alt="logo" loading="lazy" width="123" height="32" />
@@ -79,9 +79,9 @@ const Footer = () => (
           <Image src={ArrowUp} alt='' width={36} height={36} className="cursor-pointer border-[1px] border-white/20 rounded-full p-1.5 ml-4 m:ml-0" />
         </a>
       </div>
-      <div className="w-full h-16 mt-6 flex justify-center px-8 items-center">
+      <div className="m:hidden flex w-full h-16 mt-6 flex justify-center px-8 items-center">
         <Link href="http://qr.afip.gob.ar/?qr=b3QEcW17fgrFdrGofVZ4kA,," target="_blank" aria-label={`Enlace a AFIP data fiscal`}>
-          <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="rounded cursor-pointer m:hidden flex" />
+          <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="rounded cursor-pointer flex" />
         </Link>
       </div>
     </div>

@@ -3,39 +3,39 @@ import styles from "@/app/constants/style"
 import Image from 'next/image'
 import logo from '../../public/LogoMerlin.svg'
 import cardInnerShadow from "../../public/card-inner-shadow.webp"
-import MenuNineCircles from '../../public/MainCard/MenuNineCircles.svg'
-import Hand from '../../public/MainCard/Hand.svg'
-import PatternLock from '../../public/MainCard/PatternLock.svg'
-import CreditCard from '../../public/MainCard/CreditCard.svg'
-import PlayCircles from '../../public/MainCard/PlayCircles.svg'
-import Square from '../../public/MainCard/Square.svg'
-import Photo from '../../public/MainCard/Photo.svg'
-import Keyboard from '../../public/MainCard/Keyboard.svg'
-import Settings from '../../public/MainCard/Settings.svg'
-import Help from '../../public/MainCard/Help.svg'
-import Search from '../../public/MainCard/Search.svg'
-import AvatarProgress from '../../public/MainCard/AvatarProgress.png'
+import MenuNineCircles from '../../public/MenuNineCircles.svg'
+import Hand from '../../public/Hand.svg'
+import PatternLock from '../../public/PatternLock.svg'
+import CreditCard from '../../public/CreditCard.svg'
+import PlayCircles from '../../public/PlayCircles.svg'
+import Square from '../../public/Square.svg'
+import Photo from '../../public/Photo.svg'
+import Keyboard from '../../public/Keyboard.svg'
+import Settings from '../../public/Settings.svg'
+import Help from '../../public/Help.svg'
+import Search from '../../public/Search.svg'
+import AvatarProgress from '../../public/AvatarProgress.png'
 import ChevronDown from '../../public/ChevronDown.svg'
-import ImageCard from '../../public/MainCard/ImageCard.png'
-import SupportTool from '../../public/MainCard/SupportTool.svg'
-import Toggle from '../../public/MainCard/Toggle.svg'
-import DISmall from '../../public/MainCard/DISmall.svg'
-import home from '../../public/MainCard/home.svg'
-import Bars from '../../public/MainCard/Bars.png'
-import BarsHorizontal from '../../public/MainCard/BarsHorizontal.svg'
-import separator from '../../public/MainCard/separator.svg'
-import merlinCard from '../../public/MainCard/merlinCard.svg'
-import Stats from '../../public/MainCard/Stats.svg'
-import AvatarChino from '../../public/MainCard/AvatarChino.png'
-import AvatarUnicef from '../../public/MainCard/AvatarUnicef.png'
-import AvatarDisney from '../../public/MainCard/AvatarDisney.png'
-import AvatarNike from '../../public/MainCard/AvatarNike.png'
-import AvatarFox from '../../public/MainCard/AvatarFox.png'
+import ImageCard from '../../public/ImageCard.png'
+import SupportTool from '../../public/SupportTool.svg'
+import Toggle from '../../public/Toggle.svg'
+import DISmall from '../../public/DISmall.svg'
+import home from '../../public/home.svg'
+import Bars from '../../public/Bars.png'
+import BarsHorizontal from '../../public/BarsHorizontal.svg'
+import separator from '../../public/separator.svg'
+import merlinCard from '../../public/merlinCard.svg'
+import Stats from '../../public/Stats.svg'
+import AvatarChino from '../../public/AvatarChino.png'
+import AvatarUnicef from '../../public/AvatarUnicef.png'
+import AvatarDisney from '../../public/AvatarDisney.png'
+import AvatarNike from '../../public/AvatarNike.png'
+import AvatarFox from '../../public/AvatarFox.png'
 
 
 export default function MainCard() {
   return (
-    <section className="flex h-[627px] min-w-[375px] w-[1100px] max-w-[92vw] l:max-w-[100vw] rounded-[23px] bg-gradient-to-b from-[#0000] to-[#0006]">
+    <section className="flex h-[627px] min-w-[375px] w-[1100px] max-w-[96vw] l:max-w-[100vw] rounded-[23px] bg-gradient-to-b from-[#0000] to-[#0006]">
       <div className={`bg-main-card border-[.75px] border-solid border-secondary border-opacity-10 flex flex-none flex-row flex-nowrap justify-start gap-15 inset-0 overflow-hidden p-0 absolute bg-[#050505e6] content-start items-start backdrop-blur-[7.5px]`}>
         <div className={`min-w-[150px] max-w-[33vw] border-r-[.75px] border-solid border-white border-opacity-10 bg-black bg-opacity-10 flex flex-col justify-between h-full p-15 relative overflow-visible`}>
           {/* COLUMN LEFT SIDE */}
@@ -43,51 +43,51 @@ export default function MainCard() {
             {/* LOGO */}
             <Image className="w-18 h-6 mt-[7.5px]" src={logo} alt="logo" priority />
             {/* SERVICES */}
-            <div className={`-mt-20`}>
+            <div className={`m:-mt-20`}>
               {/* SERVICES TOP */}
               <div className={`flex`}>
-                <div className='-ml-1 m:ml-0 border-l-[2px] -mb-[6px] border-[#2670e9] border-solid'></div>
-                <div className='-ml-1 m:ml-0 absolute w-36 h-7 bg-gradient-to-r from-[#2670e9] to-transparent opacity-30'></div>
-                <Image className="pt-[6px] ml-[2px] m:ml-[13px]" src={MenuNineCircles} alt="" priority />
-                <p className={`${styles.headingMainCard} pt-[6px] pl-[9px]`}>Todos los Servicios</p>
+                <div className='-ml-3 m:ml-0 border-l-[2px] -mb-[6px] border-[#2670e9] border-solid'></div>
+                <div className='-ml-3 m:ml-0 absolute w-36 h-[30px] bg-gradient-to-r from-[#2670e9] to-transparent opacity-30'></div>
+                <Image className="pt-[6px] ml-[2px] m:ml-[10px] h-6 w-6" src={MenuNineCircles} alt="" priority />
+                <p className={`${styles.headingMainCard} pt-[8px] pl-[9px]`}>Todos los Servicios</p>
               </div>
-              <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
-                <Image className="mt-3" src={Hand} alt="" priority />
+              <div className={`flex m:mx-[12px] my-[7.5px] space-y-4`}>
+                <Image className="mt-3 h-5 w-5" src={Hand} alt="" priority />
                 <p className={`${styles.headingMainCard} pl-[9px]`}>Soporte de PC</p>
               </div>
-              <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
-                <Image className="mt-3" src={PatternLock} alt="" priority />
+              <div className={`flex m:mx-[12px] my-[7.5px] space-y-4`}>
+                <Image className="mt-3 h-5 w-5" src={PatternLock} alt="" priority />
                 <p className={`${styles.headingMainCard} pl-[9px]`}>Redes y Servidores</p>
               </div>
-              <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
-                <Image className="mt-3" src={CreditCard} alt="" priority />
+              <div className={`flex m:mx-[12px] my-[7.5px] space-y-4`}>
+                <Image className="mt-3 h-5 w-5" src={CreditCard} alt="" priority />
                 <p className={`${styles.headingMainCard} pl-[9px]`}>Licencias de Software</p>
               </div>
-              <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
-                <Image className="mt-3" src={PlayCircles} alt="" priority />
+              <div className={`flex m:mx-[12px] my-[7.5px] space-y-4`}>
+                <Image className="mt-3 h-5 w-5" src={PlayCircles} alt="" priority />
                 <p className={`${styles.headingMainCard} pl-[9px]`}>Backup en la Nube</p>
               </div>
-              <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
-                <Image className="mt-3" src={Square} alt="" priority />
+              <div className={`flex m:mx-[12px] my-[7.5px] space-y-4`}>
+                <Image className="mt-3 h-5 w-5" src={Square} alt="" priority />
                 <p className={`${styles.headingMainCard} pl-[9px]`}>Servicio de Hosting</p>
               </div>
-              <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
-                <Image className="mt-3" src={Photo} alt="" priority />
+              <div className={`flex m:mx-[12px] my-[7.5px] space-y-4`}>
+                <Image className="mt-3 h-5 w-5" src={Photo} alt="" priority />
                 <p className={`${styles.headingMainCard} pl-[9px]`}>Camaras de Seguridad</p>
               </div>
             </div>
             {/* SERVICES BOTTOM */}
             <div className={`border-[.75px] border-solid border-white rounded-b-[10px] border-opacity-5 bg-black bg-opacity-10`}>
-              <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
-                <Image className="mt-3" src={Keyboard} alt="" priority />
+              <div className={`flex m:mx-[12px] my-[7.5px] space-y-4`}>
+                <Image className="mt-3 h-5 w-5" src={Keyboard} alt="" priority />
                 <p className={`${styles.headingMainCard} pl-[9px]`}>Suministro Hardware</p>
               </div>
-              <div className={`flex m:mx-[15px] my-[7.5px] space-y-4`}>
-                <Image className="mt-3" src={Settings} alt="" priority />
+              <div className={`flex m:mx-[12px] my-[7.5px] space-y-4`}>
+                <Image className="mt-3 h-5 w-5" src={Settings} alt="" priority />
                 <p className={`${styles.headingMainCard} pl-[9px]`}>Proteccion y Seguridad</p>
               </div>
-              <div className={`flex m:mx-[15px] my-[7.5px] space-y-4 mb-3`}>
-                <Image className="mt-3" src={Help} alt="" priority />
+              <div className={`flex m:mx-[12px] my-[7.5px] space-y-4 mb-3`}>
+                <Image className="mt-3 h-5 w-5" src={Help} alt="" priority />
                 <p className={`${styles.headingMainCard} pl-[9px]`}>Centro de Ayuda</p>
               </div>
             </div>
@@ -132,7 +132,7 @@ export default function MainCard() {
             {/* COLUMN ONE */}
             <div className={`flex flex-col space-y-4 w-full`}>
               {/* CARD ONE */}
-              <div className={`overflow-hidden z-20 flex h-[105px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
+              <div className={`overflow-hidden z-20 flex h-[115px] m:h-[105px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex w-full`}>
                   <div className={`flex flex-col w-1/2 justify-between space-y-2 max-h-[105px] p-2.5 py-2 m-2.5`}>
                     <h4 className={`${styles.headingMainCard} text-white font-medium`}>Horarios -&gt;</h4>

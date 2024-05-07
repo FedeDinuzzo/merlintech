@@ -7,15 +7,9 @@ import cloud from '../../public/cloud.svg'
 import cloudKey from '../../public/cloudKey.svg'
 import circuit from '../../public/circuit.svg'
 import toolService from '../../public/toolService.svg'
-import AvatarProgress from '../../public/MainCard/AvatarProgress.png'
+import AvatarProgress from '../../public/AvatarProgress.png'
 import ChevronDown from '../../public/ChevronDown.svg'
-import Bars from '../../public/MainCard/Bars.png'
-import BarsHorizontal from '../../public/MainCard/BarsHorizontal.svg'
-import separator from '../../public/MainCard/separator.svg'
-import merlinCard from '../../public/MainCard/merlinCard.svg'
-import Stats from '../../public/MainCard/Stats.svg'
-import AvatarDisney from '../../public/MainCard/AvatarDisney.png'
-import LogoServicios from '../../public/MainCard/LogoServicios.png'
+import LogoServicios from '../../public/LogoServicios.png'
 
 
 export default function ServicesCard() {
@@ -26,7 +20,7 @@ export default function ServicesCard() {
         <div className={`flex flex-col text-white w-[897px] h-full max-w-[65vw] p-[15px]`}>
           <Image className={`absolute h-full w-full -m-[15px] opacity-80`} src={cardInnerShadow} alt="supportIT" />
           <div className={`flex justify-between items-center pl-4`}>
-            <Image className={`-mr-12`} src={LogoServicios} alt="" priority />
+            <Image className={`-mr-12`} src={LogoServicios} alt="" />
             <div className={`flex items-center max-w-[50vw] py-[7.5px] gap-9 overflow-hidden `}>
               <h4 className={`${styles.headingServicesCard} text-[12px] text-center border-[.75px] px-2 py-1 bg-secondary bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>Soporte</h4>
               <h4 className={`${styles.headingServicesCard} text-[12px]`}>Redes</h4>
@@ -36,8 +30,8 @@ export default function ServicesCard() {
             </div>
             <div className={`flex items-center gap-4`}>
               AR
-              <Image className={`mr-2`} src={ChevronDown} alt="" priority />
-              <Image className="hidden m:flex h-[37.5px] w-[37.5px]" src={AvatarProgress} alt="" priority />
+              <Image className={`mr-2`} src={ChevronDown} alt="" />
+              <Image className="hidden m:flex h-[37.5px] w-[37.5px]" src={AvatarProgress} alt="" />
             </div>
 
 
@@ -57,11 +51,11 @@ export default function ServicesCard() {
             <div className={`hidden l:flex space-x-5`}>
               <div className={`shadow-main-card flex justify-center items-center px-3 overflow-hidden border-[.75px] bg-secondary bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
                 <h4 className={`${styles.headingServicesCard} text-[12px]`}>Capital Federal</h4>
-                <Image className="ml-[9px]" src={ChevronDown} alt="" priority />
+                <Image className="ml-[9px]" src={ChevronDown} alt="" />
               </div>
               <div className={`shadow-main-card flex justify-center items-center px-3 overflow-hidden border-[.75px] bg-secondary bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
                 <h4 className={`${styles.headingServicesCard} text-[12px]`}>Argentina</h4>
-                <Image className="ml-[9px]" src={ChevronDown} alt="" priority />
+                <Image className="ml-[9px]" src={ChevronDown} alt="" />
               </div>
             </div>
           </div>
@@ -74,7 +68,7 @@ export default function ServicesCard() {
               <div className={`overflow-hidden z-20 flex h-[130px] max-w-[30vw] min-w-[350px] rounded-[12px] backdrop-blur-[15px] bg-[#0006] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col w-full`}>
                   <div className={`flex max-h-[62px] px-4 py-2.5 m-4 border-[1px] rounded-[12px] border-solid border-secondary border-opacity-10`}>
-                    <Image className={`mr-4 w-22 h-22`} src={toolService} alt="" priority />
+                    <Image className={`mr-4 mt-1 w-8 h-8`} src={toolService} alt="" />
                     <div className={`flex flex-col w-full`}>
                       <h4 className={`${styles.headingServicesCard} text-[14px] text-white font-medium`}>Soporte de PC</h4>
                       <h4 className={`${styles.headingServicesCard} opacity-80`}>Planes para empresas</h4>
@@ -110,7 +104,7 @@ export default function ServicesCard() {
                       <p className={`${styles.headingServicesCard} opacity-80`}>Correos</p>
                     </div>
                     <div className={`flex flex-col items-center`}>
-                      <Image className={`w-22 h-22`} src={cloud} alt="" priority />
+                      <Image className={`w-22 h-22`} src={cloud} alt="" />
                       <p className={`${styles.headingServicesCard}`}>Cloud</p>
                     </div>
                     <div className={`flex flex-col`}>
@@ -138,7 +132,9 @@ export default function ServicesCard() {
               {/* CARD FOUR */}
               <div className={`overflow-hidden z-20 flex w-full h-[140px] max-w-[30vw] min-w-[350px] rounded-[24px] backdrop-blur-[15px] bg-[#0006] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex justify-between items-center pl-4 py-1`}>
-                  <Image className="w-14 h-14 mr-3 bg-sky-500 rounded-full p-3" src={cloudKey} alt="" priority />
+                  <div className='h-12 bg-sky-500 rounded-full p-3 mr-3 '>
+                    <Image className="mt-0.5 w-10 h-5 " src={cloudKey} alt="" />
+                  </div>
                   <div className={`flex flex-col space-y-2`}>
                     <div className='flex items-center justify-between'>
                       <h4 className={`${styles.headingServicesCard} font-medium text-[14px]`}>Proteccion y Seguridad</h4>
@@ -176,7 +172,7 @@ export default function ServicesCard() {
                       <p className={`${styles.headingServicesCard} opacity-80`}>Tranqulidad</p>
                     </div>
                     <div className={`flex flex-col items-center`}>
-                      <Image className={`w-22 h-22`} src={key} alt="" priority />
+                      <Image className={`w-22 h-22`} src={key} alt="" />
                       <p className={`${styles.headingServicesCard}`}>Passwords</p>
                     </div>
                     <div className={`flex flex-col`}>
@@ -192,7 +188,7 @@ export default function ServicesCard() {
               <div className={`overflow-hidden z-20 flex w-full h-[144px] max-w-[30vw] min-w-[350px] rounded-[24px] backdrop-blur-[15px] bg-[#0006] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex justify-between items-center pl-4 py-1`}>
                   <div className='mr-3 bg-sky-500 p-3 w-20 h-11 rounded-full'>
-                    <Image className="-mt-[17px] w-14 h-14 " src={circuit} alt="" priority />
+                    <Image className="-mt-0.5 w-6 h-6 " src={circuit} alt="" />
                   </div>
                   <div className={`flex flex-col space-y-2`}>
                     <div className='flex items-center justify-between'>
@@ -210,7 +206,7 @@ export default function ServicesCard() {
               <div className={`overflow-hidden z-20 flex h-[124px] max-w-[30vw] min-w-[350px] rounded-[12px] backdrop-blur-[15px] bg-[#0006] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col w-full`}>
                   <div className={`flex max-h-[58px] px-4 py-2.5 m-4 border-[1px] rounded-[12px] border-solid border-secondary border-opacity-10`}>
-                    <Image className={`mr-4 w-22 h-22`} src={toolService} alt="" priority />
+                    <Image className={`mr-4 mt-1 w-8 h-8`} src={toolService} alt="" />
                     <div className={`flex flex-col w-full`}>
                       <h4 className={`${styles.headingServicesCard} text-white font-medium`}>Productividad empresarial</h4>
                       <h4 className={`${styles.headingServicesCard} opacity-80`}>Integrando todos tus sistemas</h4>

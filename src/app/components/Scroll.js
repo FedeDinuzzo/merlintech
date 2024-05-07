@@ -1,12 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '../constants/style'
-import ScrollCard from '../../public/ScrollBlur.png'
-import SupportRing from "../../public/SupportRing.svg"
 import ServicesCard from './ServicesCard'
 import { Button } from "./Buttons"
 import ChevronRight from "../../public/ChevronRight.svg"
-import Lights from "../../public/MainCard/Lights.png"
+import Lights from "../../public/Lights.png"
+import { RingThree } from "./Ring"
 
 function Scroll() {
   return (
@@ -37,18 +36,18 @@ function Scroll() {
           <Button image={ChevronRight} text={`COMENZAR CONSULTORIA`} link={''} />
         </div>
 
-        <div className={`-mt-32 m:mt-0 m:ml-0 flex-none inset-0 overflow-hidden p-40 absolute min-h-[790px]`}>
-          <div className={`absolute bg-radial-white h-[760px]`}></div>
+        <div className={`-mt-20 m:mt-0 m:ml-0 flex-none inset-0 overflow-hidden p-40 absolute min-h-[790px]`}>
+          <div className={`absolute bg-radial-white h-[700px]`}></div>
           <div className={`absolute bg-radial-violet h-[500px] mt-[150px] ml-[5%]`}></div>
         </div>
 
-        <div className={`hidden m:flex absolute right-[0%] l:right-[39%] l:top-[42%] z-50`}>
-          <Image className={``} src={SupportRing} alt="progressRing" width="175" height="175" priority />
+        <div className={`hidden m:flex absolute right-[0%] l:right-[38%] l:top-[50%] z-50`}>
+          <RingThree />
         </div>
 
         <div className={`hidden m:flex h-[840px] relative`}>
           <div class="w-full h-[260px] absolute bottom-0 bg-gradient-to-b from-transparent to-black rounded-[23px] z-50"></div>
-          <Image className={`absolute w-full h-full`} src={Lights} alt="Lights" priority />
+          <Image className={`absolute w-full h-full`} src={Lights} alt="Lights" />
           <ServicesCard />
         </div>
       </section>
