@@ -185,7 +185,7 @@ export default function MainCard() {
               {/* CARD THREE */}
               <div className={`overflow-hidden z-20 flex w-full h-[162px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex justify-between px-2.5 py-1`}>
-                  <Image className="w-10 -mt-16 mr-2" src={Stats} alt="" priority />
+                  <Image className="w-10 h-24 mr-2" src={Stats} alt="" priority />
                   <div className={`flex flex-col p-2 space-y-3`}>
                     <h4 className={`${styles.headingMainCard} font-medium text-[13px]`}>Clientes satisfechos</h4>
                     <p className={`${styles.headingMainCard} opacity-80`}>Gracias al equipo de soporte IT por mantener la magia de Disney. Su dedicación es fundamental para nuestro éxito</p>
