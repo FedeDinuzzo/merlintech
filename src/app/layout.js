@@ -1,13 +1,39 @@
-"use client"
-
 import { Inter } from '@next/font/google'
-import styles from '../styles/globals.css'
+import { Suspense, lazy } from "react"
+import { CustomCursor } from './components/CustomCursor'
 import Navbar from './components/Navbar/Navbar'
 import Whatsapp from "./components/Whatsapp"
-import { lazy, Suspense } from "react"
+import styles from '../styles/globals.css'
 
-const Contact = lazy(() => import('./components/Contact'))
-const Footer = lazy(() => import('./components/Footer'))
+// Importar los componentes de forma dinámica solo cuando sean necesarios
+const LazyContact = lazy(() => import('./components/Contact'))
+const LazyFooter = lazy(() => import('./components/Footer'))
+
+const font = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ['400', '500']
+})
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang='es'>
+      <body className={`${font.variable}`}>
+        <CustomCursor />
+        <Navbar />
+        <Whatsapp />
+        <div className={`pt-36`}>
+          <main>{children}</main>
+          <Suspense fallback={`Loading...`}>
+            <LazyContact onLoad={() => setIsContactLoaded(true)} />
+            <LazyFooter onLoad={() => setIsFooterLoaded(true)} />
+          </Suspense>
+        </div>
+      </body>
+    </html>
+  )
+}
+
 
 // export const metadata = {
 //   title: '▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA',
@@ -44,28 +70,3 @@ const Footer = lazy(() => import('./components/Footer'))
 //     google: 'google',
 //   },
 // }
-
-const font = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  weight: ['400', '500']
-})
-
-
-export default function RootLayout({ children }) {
-  return (
-    <html lang='es'>
-      <body className={`${font.variable}`}>
-        <Navbar />
-        <Whatsapp />
-        <div className={`pt-36`}>
-          <main>{children}</main>
-          <Suspense fallback={`Loading...`}>
-            <Contact />
-            <Footer />
-          </Suspense>
-        </div>
-      </body>
-    </html>
-  )
-}

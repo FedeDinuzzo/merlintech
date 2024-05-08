@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import logo from '../../../public/LogoMerlin.svg'
 import { Menu } from './MenuIcons'

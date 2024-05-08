@@ -3,10 +3,6 @@ import Image from 'next/image'
 import { ButtonFour } from "./Buttons"
 import ChevronRight from "../../public/ChevronRight.svg"
 import ContactBall from "../../public/ContactBall.webp"
-import ShadowContact from "../../public/ShadowContact.png"
-import Disney from "../../public/TestimonialDisney.jpg"
-import Nike from "../../public/TestimonialNike1.jpg"
-import Nike2 from "../../public/TestimonialNike2.jpg"
 import Number from "../../public/Number.svg"
 import Number2 from "../../public/Number2.svg"
 import { FlipCard } from './FlipCard.js';
@@ -40,7 +36,7 @@ const Contact = () => {
           <ButtonFour image={ChevronRight} text={`COMENZAR CONSULTORÍA`} link={''} />
         </div>
       </div>
-      <div className="space-y-10">
+      <div className="space-y-10 -z-10">
         <div className={`flex flex-wrap mx-auto max-w-[590px] m:max-w-[1260px] max-h-[960px] space-y-10 m:space-y-0  m:max-h-[460px]`}>
           <div className="w-full m:w-[calc(50%-20px)] m:mr-5 m:h-[460px] min-w-[356px] flex-wrap">
             <FlipCard itemsArray={itemsArray1} />

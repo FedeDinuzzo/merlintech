@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useRef, useEffect } from "react";
 import { motion, useSpring } from "framer-motion";
 import { useMediaQuery } from "@react-hook/media-query";
