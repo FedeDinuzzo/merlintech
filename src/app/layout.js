@@ -1,33 +1,31 @@
-import { Inter } from '@next/font/google'
-import { Suspense, lazy } from "react"
+import { Inter } from 'next/font/google'
+import dynamic from 'next/dynamic'
 import { CustomCursor } from './components/CustomCursor'
 import Navbar from './components/Navbar/Navbar'
 import Whatsapp from "./components/Whatsapp"
 import styles from '../styles/globals.css'
 
 // Importar los componentes de forma dinámica solo cuando sean necesarios
-const LazyContact = lazy(() => import('./components/Contact'))
-const LazyFooter = lazy(() => import('./components/Footer'))
+const DynamicContact = dynamic(() => import('./components/Contact'), { loading: () => <p>Loading...</p>, })
+const DynamicFooter = dynamic(() => import('./components/Footer'), { loading: () => <p>Loading...</p>, })
 
-const font = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
   weight: ['400', '500']
 })
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='es'>
-      <body className={`${font.variable}`}>
+    <html lang='es' >
+      <body className={inter.className}>
         <CustomCursor />
         <Navbar />
         <Whatsapp />
         <div className={`pt-36`}>
           <main>{children}</main>
-          <Suspense fallback={`Loading...`}>
-            <LazyContact onLoad={() => setIsContactLoaded(true)} />
-            <LazyFooter onLoad={() => setIsFooterLoaded(true)} />
-          </Suspense>
+          <DynamicContact />
+          <DynamicFooter />
         </div>
       </body>
     </html>

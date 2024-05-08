@@ -34,8 +34,8 @@ export default function Navbar() {
         <nav className={`z-30 p-4 w-[100%] h-[100%] border-b-[1px] broder-solid border-white border-opacity-10`}>
           <div className={`flex justify-center`}>
             <div className={`flex items-center justify-between w-[100vw] h-6 p-2 m:justify-normal m:w-[768px]`}>
-              <Link href={`/`} className={`-ml-8`}>
-                <Image className="w-32 h-8 cursor-pointer -ml-1" src={logo} alt="logo" priority />
+              <Link href={`/`} className={`-ml-8 h-auto w-auto`}>
+                <Image className="w-32 h-8 cursor-pointer ml-2 m:-ml-1" src={logo} alt="logo" height={32} width={128} priority />
               </Link>
               <div className='m:hidden'>
                 {showNav ? (
@@ -75,8 +75,8 @@ export default function Navbar() {
         <Link href={`/`} aria-label={`Ir a la pagina de inicio`}><button onClick={() => setShowNav(false)} className="font-inter font-medium cursor-pointer text-[15px]">Inicio</button></Link>
         <Link href={`/servicios`} aria-label={`Ir a la pagina de servicios`}><button onClick={() => setShowNav(false)} className="font-inter font-medium cursor-pointer text-[15px]">Servicios</button></Link>
         <Link href={`/nosotros`} aria-label={`Ir a la pagina de nosotros`}><button onClick={() => setShowNav(false)} className="font-inter font-medium cursor-pointer text-[15px]">Nosotros</button></Link>
-        <a href={`/#testimonios`} smooth={true} aria-label={`Ir a la sección testimonios`}><button onClick={() => setShowNav(false)} className="font-inter font-medium cursor-pointer text-[15px]">Testimonios</button></a>
-        <a href={`/#contacto`} smooth={true} aria-label={`Ir a la sección contacto`}><button onClick={() => setShowNav(false)} className="font-inter font-medium cursor-pointer text-[15px]">Contacto</button></a>
+        <a href={`/#testimonios`} smooth="true" aria-label={`Ir a la sección testimonios`}><button onClick={() => setShowNav(false)} className="font-inter font-medium cursor-pointer text-[15px]">Testimonios</button></a>
+        <a href={`/#contacto`} smooth="true" aria-label={`Ir a la sección contacto`}><button onClick={() => setShowNav(false)} className="font-inter font-medium cursor-pointer text-[15px]">Contacto</button></a>
       </ul>
     </>
   );

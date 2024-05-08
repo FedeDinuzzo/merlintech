@@ -43,8 +43,8 @@ const Footer = () => (
           ))}
 
           <div className="flex flex-col">
-            <div className="flex mt-5 l:mt-0">
-              <Image src={FooterLine} alt='line' width={2} height={20} className="mr-2" />
+            <div className="flex mt-5 l:mt-0 h-auto w-auto">
+              <Image src={FooterLine} alt='line' width={2} height={20} className="mr-2 w-0.5 h-5" />
               <h3 className="font-inter font-normal text-[15px] leading-[27px] text-white">SEGUINOS</h3>
             </div>
             <div className="flex mt-4 px-2 -ml-4">
@@ -79,9 +79,9 @@ const Footer = () => (
           <Image src={ArrowUp} alt='' width={36} height={36} className="cursor-pointer border-[1px] border-white/20 rounded-full p-1.5 ml-4 m:ml-0" />
         </a>
       </div>
-      <div className="m:hidden flex w-full h-16 mt-6 flex justify-center px-8 items-center">
+      <div className="m:hidden flex w-full h-16 mt-6 justify-center px-8 items-center">
         <Link href="http://qr.afip.gob.ar/?qr=b3QEcW17fgrFdrGofVZ4kA,," target="_blank" aria-label={`Enlace a AFIP data fiscal`}>
-          <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="rounded cursor-pointer flex" />
+          <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="w-[50px] h-[50px] rounded cursor-pointer flex" />
         </Link>
       </div>
     </div>

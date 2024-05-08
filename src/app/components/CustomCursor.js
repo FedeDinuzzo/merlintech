@@ -71,7 +71,7 @@ export const CustomCursor = () => {
       setCursorPointer(false);
     };
 
-    const pointer = document.querySelectorAll("button, link");
+    const pointer = document.querySelectorAll("button, a, link");
 
     pointer.forEach((elements) => {
       elements.addEventListener("mouseover", handleMouseOverButton);
@@ -109,8 +109,7 @@ export const CustomCursor = () => {
           width={100}
           height={100}
           stroke={`${cursorPointer ? "#3395FF" : "white"}`}
-          fill="white"
-          opacity="0.7"
+          opacity="1"
           viewBox="0 0 100 100"
           style={{
             position: "absolute",
@@ -123,7 +122,9 @@ export const CustomCursor = () => {
             r="25"
             cx="50"
             cy="50"
-            opacity="0.25"
+            opacity="1"
+            stroke="grey"
+            strokeWidth={1.25}
           />
         </svg>
       </div>

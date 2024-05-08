@@ -36,7 +36,7 @@ const Contact = () => {
           <ButtonFour image={ChevronRight} text={`COMENZAR CONSULTORÍA`} link={''} />
         </div>
       </div>
-      <div className="space-y-10 -z-10">
+      <div className="space-y-10">
         <div className={`flex flex-wrap mx-auto max-w-[590px] m:max-w-[1260px] max-h-[960px] space-y-10 m:space-y-0  m:max-h-[460px]`}>
           <div className="w-full m:w-[calc(50%-20px)] m:mr-5 m:h-[460px] min-w-[356px] flex-wrap">
             <FlipCard itemsArray={itemsArray1} />

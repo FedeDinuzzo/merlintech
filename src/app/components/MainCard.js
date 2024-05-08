@@ -41,7 +41,7 @@ export default function MainCard() {
           {/* COLUMN LEFT SIDE */}
           <div className={`flex flex-col items-start justify-between p-[15px] gap-6 min-h-min-content overflow-visible relative w-full h-full`}>
             {/* LOGO */}
-            <Image className="w-18 h-6 mt-[7.5px]" src={logo} alt="logo" priority />
+            <Image className="w-18 h-6 mt-[7.5px]" src={logo} alt="logo" height={24} width={72} priority />
             {/* SERVICES */}
             <div className={`m:-mt-20`}>
               {/* SERVICES TOP */}

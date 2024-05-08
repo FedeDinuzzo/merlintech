@@ -11,7 +11,7 @@ function Scroll() {
   return (
     <>
       <section className={`min-h-[120vh] m:min-h-[128vh] relative flex justify-between items-center z-40`}>
-        <div id="servicios" smooth={true} className={`-mt-[1040px]`} />
+        <div id="servicios" smooth="true" className={`-mt-[1040px]`} />
         <div className={`-mt-20 flex flex-col mx-5 m:mx-8 l:mx-24 w-full l:pr-72 z-50`}>
           <h2 className={`${styles.heading} m:leading-[70px] mb-16`}>
             Simplifica
@@ -46,7 +46,7 @@ function Scroll() {
         </div>
 
         <div className={`hidden m:flex h-[840px] relative`}>
-          <div class="w-full h-[260px] absolute bottom-0 bg-gradient-to-b from-transparent to-black rounded-[23px] z-50"></div>
+          <div className="w-full h-[260px] absolute bottom-0 bg-gradient-to-b from-transparent to-black rounded-[23px] z-50"></div>
           <Image className={`absolute w-full h-full`} src={Lights} alt="Lights" />
           <ServicesCard />
         </div>

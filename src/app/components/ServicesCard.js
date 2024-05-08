@@ -133,7 +133,7 @@ export default function ServicesCard() {
               <div className={`overflow-hidden z-20 flex w-full h-[140px] max-w-[30vw] min-w-[350px] rounded-[24px] backdrop-blur-[15px] bg-[#0006] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex justify-between items-center pl-4 py-1`}>
                   <div className='h-12 bg-sky-500 rounded-full p-3 mr-3 '>
-                    <Image className="mt-0.5 w-10 h-5 " src={cloudKey} alt="" />
+                    <Image className="mt-0.5 w-10 h-5" src={cloudKey} alt="" width={40} height={20} />
                   </div>
                   <div className={`flex flex-col space-y-2`}>
                     <div className='flex items-center justify-between'>
