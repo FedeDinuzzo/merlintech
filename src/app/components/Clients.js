@@ -27,7 +27,7 @@ function Clients() {
           </h2>
         </div>
         <Image className={`absolute z-10 mt-64 m:mt-64 m:-ml-20 opacity-40`} src={WorldBlur} alt="gradient lights" width="840" height="840" />
-        <Image className={`absolute z-0 mt-36 m:mt-48`} src={World} alt="World" width="667" height="647" />
+        <Image className={`absolute -z-10 mt-36 m:mt-48`} src={World} alt="World" width="667" height="647" />
 
         <div className={`grid grid-cols-4 max-w-[100vw] px-4 m:max-w-[613px] mt-0 m:-mt-16 z-20`}>
           <div className={`mt-[56%] -mx-2 m:-mx-3`}>
