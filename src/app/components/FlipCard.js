@@ -51,6 +51,10 @@ export function FlipCard({ width, height, itemsArray }) {
 
   return (
     <motion.div
+      animate={{
+        rotateY: isFlipped ? -180 : 0,
+        scaleX: isFlipped ? -1 : 1,
+      }}
       onClick={handleClick}
       transition={spring}
       style={{
@@ -62,7 +66,7 @@ export function FlipCard({ width, height, itemsArray }) {
     >
       <motion.div
         ref={ref}
-        whileHover={{ scale: 1.1 }}
+        whileHover={{ scale: 1.05 }}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseEnd}
         transition={spring}
@@ -73,7 +77,6 @@ export function FlipCard({ width, height, itemsArray }) {
           rotateY: dy,
         }}
       >
-        {/* Mueve este div aquí */}
         <div
           style={{
             perspective: "1200px",
