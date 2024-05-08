@@ -41,12 +41,15 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className={`${styles.flexCenter} flex-wrap py-[20px] gap-[20px] m:py-[30px] m:gap-[10px] l:gap-[20px] w-[1260px] mx-auto`}>
-        <div className="h-[480px] w-full gap-[48px] grid m:grid-cols-2 justify-between">
+      <div className={`flex flex-wrap mx-auto max-w-[590px] m:max-w-[1260px] min-h-[900px] m:min-h-[500px]`}>
+        <div className="w-full m:w-[calc(50%-20px)] m:mr-2 l:mr-5 m:h-[400px] min-w-[368px] flex-wrap">
           <FlipCard itemsArray={itemsArray1} />
+        </div>
+        <div className="w-full m:w-[calc(50%-20px)] m:ml-2 l:ml-5 m:h-[400px] min-w-[368px] flex-wrap">
           <FlipCard itemsArray={itemsArray2} />
         </div>
-
+      </div>
+      <div className={`flex flex-wrap max-w-[1260px] mx-auto`}>
         <div className={`bg-card-contact flex flex-grow flex-wrap max-w-[1260px] min-h-[194px] justify-evenly p-10`}>
           <div id="contacto" className={`absolute -mt-32`} />
           <div className={`flex flex-col m:flex-row justify-center align-top`}>

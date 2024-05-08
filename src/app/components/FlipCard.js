@@ -48,6 +48,7 @@ export function FlipCard({ width, height, itemsArray }) {
     dy.set(rotateYaxis);
   }, [rotateXaxis, rotateYaxis]);
 
+
   return (
     <motion.div
       onClick={handleClick}
@@ -72,6 +73,7 @@ export function FlipCard({ width, height, itemsArray }) {
           rotateY: dy,
         }}
       >
+        {/* Mueve este div aquí */}
         <div
           style={{
             perspective: "1200px",
@@ -80,22 +82,8 @@ export function FlipCard({ width, height, itemsArray }) {
             height: "100%",
           }}
         >
-          <motion.div
-            animate={{
-              rotateY: isFlipped ? -180 : 0,
-              scaleX: isFlipped ? -1 : 1,
-            }}
-            transition={spring}
-
-            style={{
-              width: "100%",
-              height: "100%",
-              position: "absolute",
-            }}
-          >
-            {/* Renderizar el ítem actual del array */}
-            {itemsArray[currentIndex]}
-          </motion.div>
+          {/* Renderiza el ítem actual del array */}
+          {itemsArray[currentIndex]}
         </div>
       </motion.div>
     </motion.div>
