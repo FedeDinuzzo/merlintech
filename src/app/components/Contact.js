@@ -9,13 +9,21 @@ import Nike from "../../public/TestimonialNike1.jpg"
 import Nike2 from "../../public/TestimonialNike2.jpg"
 import Number from "../../public/Number.svg"
 import Number2 from "../../public/Number2.svg"
-import { withClick } from "./withClick";
+import { FlipCard } from './FlipCard.js';
 import { Card1, Card2 } from './Cards'
+
 
 const Contact = () => {
 
-  const ClickableCard = withClick();
-  // const ClickableCard2 = withClick("hola");
+  const itemsArray1 = [
+    <Card1 key="card1" />,
+    <Card2 key="card2" />,
+  ];
+
+  const itemsArray2 = [
+    <Card2 key="card2" />,
+    <Card1 key="card1" />,
+  ];
 
   return (
     <section className={`mt-96 px-5`}>
@@ -34,30 +42,10 @@ const Contact = () => {
       </div>
 
       <div className={`${styles.flexCenter} flex-wrap py-[20px] gap-[20px] m:py-[30px] m:gap-[10px] l:gap-[20px] w-[1260px] mx-auto`}>
-        {/* CARD ONE */}
-        <div className="h-[480px] w-full gap-[80px] grid m:grid-cols-2 justify-between">
-          <ClickableCard frontComponent={<Card1 />}
-            backComponent={<Card2 />} />
-          {/* <ClickableCard2 /> */}
+        <div className="h-[480px] w-full gap-[48px] grid m:grid-cols-2 justify-between">
+          <FlipCard itemsArray={itemsArray1} />
+          <FlipCard itemsArray={itemsArray2} />
         </div>
-        {/* <div className={`bg-card-contact pt-5 pl-5 max-w-[590px] l:max-w-[620px]`}>
-          <h3 className={`${styles.heading3} text-[20px] mt-2.5 mb-2`}>Disney</h3>
-          <p className={`${styles.paragraph} mb-5 pr-5 m:pr-32 max-w-[620px]`}>DesignCode UI offers real-time guidance and advice on UI design best an expansive library of UI components, each meticulously crafted for functionality and aesthetics.a</p>
-          <div className={`flex`}>
-            <Image className="absolute w-full h-full object-cover top-0 left-0 z-10 rounded-[20px]" src={ShadowContact} alt="Overlay" />
-            <Image className={`self-end rounded-br-[20px]`} src={Disney} alt="supportIT" width="603" height="305" />
-          </div>
-        </div> */}
-        {/* CARD TWO */}
-        {/* <div className={`bg-card-contact pt-5 pl-5 max-w-[590px] l:max-w-[620px]`}>
-          <h3 className={`${styles.heading3} text-[20px] mt-2.5 mb-2`}>Nike Argentina</h3>
-          <p className={`${styles.paragraph} mb-2 pr-5 m:pr-32 max-w-[620px]`}>Our platform provides real-time guidance and advice on UI design best practices whether youre working on layout optimization, color scheme selection, or typography.</p>
-          <div className={`flex`}>
-            <Image className="absolute w-full h-full object-cover top-0 left-0 rounded-[20px]" src={ShadowContact} alt="Overlay" />
-            <Image className={`self-end w-2/5`} src={Nike} alt="supportIT" width="245" height="266" />
-            <Image className={`self-end w-3/5 rounded-br-[20px]`} src={Nike2} alt="supportIT" width="362" height="320" />
-          </div>
-        </div> */}
 
         <div className={`bg-card-contact flex flex-grow flex-wrap max-w-[1260px] min-h-[194px] justify-evenly p-10`}>
           <div id="contacto" className={`absolute -mt-32`} />
