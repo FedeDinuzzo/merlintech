@@ -40,46 +40,47 @@ const Contact = () => {
           <ButtonFour image={ChevronRight} text={`COMENZAR CONSULTORÍA`} link={''} />
         </div>
       </div>
-
-      <div className={`flex flex-wrap mx-auto max-w-[590px] m:max-w-[1260px] min-h-[900px] m:min-h-[500px]`}>
-        <div className="w-full m:w-[calc(50%-20px)] m:mr-2 l:mr-5 m:h-[400px] min-w-[368px] flex-wrap">
-          <FlipCard itemsArray={itemsArray1} />
-        </div>
-        <div className="w-full m:w-[calc(50%-20px)] m:ml-2 l:ml-5 m:h-[400px] min-w-[368px] flex-wrap">
-          <FlipCard itemsArray={itemsArray2} />
-        </div>
-      </div>
-      <div className={`flex flex-wrap max-w-[1260px] mx-auto`}>
-        <div className={`bg-card-contact flex flex-grow flex-wrap max-w-[1260px] min-h-[194px] justify-evenly p-10`}>
-          <div id="contacto" className={`absolute -mt-32`} />
-          <div className={`flex flex-col m:flex-row justify-center align-top`}>
-            <div className={`mr-2.5 -mt-3 mb-4 -ml-2.5 l:-ml-24`}>
-              <Image src={Number} alt="supportIT" width="48" height="48" />
-            </div>
-            <div className={`max-w-[340px]`}>
-              <div className={``}>
-                <h4 className={`${styles.heading3White} my-2.5 inline`}>Ubicación . </h4>
-                <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>Billinghurst 1193, 4to A, Buenos Aires, Argentina</p>
-              </div>
-              <div className={``}>
-                <h4 className={`${styles.heading3White} my-2.5 inline`}>Horarios . </h4>
-                <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>Lunes a Viernes de 9:00 a 18:00</p>
-              </div>
-            </div>
+      <div className="space-y-10">
+        <div className={`flex flex-wrap mx-auto max-w-[590px] m:max-w-[1260px] max-h-[960px] space-y-10 m:space-y-0  m:max-h-[460px]`}>
+          <div className="w-full m:w-[calc(50%-20px)] m:mr-5 m:h-[460px] min-w-[356px] flex-wrap">
+            <FlipCard itemsArray={itemsArray1} />
           </div>
-
-          <div className={`flex flex-col m:flex-row align-top max-w-[430px] mt-12 m:mt-0`}>
-            <div className={`mr-2.5 mb-4`}>
-              <Image src={Number2} alt="supportIT" width="24" height="24" />
-            </div>
-            <div className={`max-w-[330px] flex flex-wrap items-start m:block`}>
-              <div className={``}>
-                <h4 className={`${styles.heading3White} my-2.5 inline`}>Teléfono . </h4>
-                <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>+54 911 7090-5150</p>
+          <div className="w-full m:w-[calc(50%-20px)] m:ml-5 m:h-[460px] min-w-[356px] flex-wrap">
+            <FlipCard itemsArray={itemsArray2} />
+          </div>
+        </div>
+        <div className={`flex flex-wrap max-w-[1260px] mx-auto`}>
+          <div className={`bg-card-contact flex flex-grow flex-wrap max-w-[1260px] min-h-[194px] justify-evenly p-10`}>
+            <div id="contacto" className={`absolute -mt-32`} />
+            <div className={`flex flex-col m:flex-row justify-center align-top`}>
+              <div className={`mr-2.5 -mt-3 mb-4 -ml-2.5 l:-ml-24`}>
+                <Image src={Number} alt="supportIT" width="48" height="48" />
               </div>
-              <div className={`mb-8 m:mb-0`}>
-                <h4 className={`${styles.heading3White} my-2.5 inline`}>Email . </h4>
-                <p className={`${styles.paragraph} mb-2.5 pl-2 inline underline underline-offset-2`}>info@merlintech.com.ar</p>
+              <div className={`max-w-[340px]`}>
+                <div className={``}>
+                  <h4 className={`${styles.heading3White} my-2.5 inline`}>Ubicación . </h4>
+                  <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>Billinghurst 1193, 4to A, Buenos Aires, Argentina</p>
+                </div>
+                <div className={``}>
+                  <h4 className={`${styles.heading3White} my-2.5 inline`}>Horarios . </h4>
+                  <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>Lunes a Viernes de 9:00 a 18:00</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={`flex flex-col m:flex-row align-top max-w-[430px] mt-12 m:mt-0`}>
+              <div className={`mr-2.5 mb-4`}>
+                <Image src={Number2} alt="supportIT" width="24" height="24" />
+              </div>
+              <div className={`max-w-[330px] flex flex-wrap items-start m:block`}>
+                <div className={``}>
+                  <h4 className={`${styles.heading3White} my-2.5 inline`}>Teléfono . </h4>
+                  <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>+54 911 7090-5150</p>
+                </div>
+                <div className={`mb-8 m:mb-0`}>
+                  <h4 className={`${styles.heading3White} my-2.5 inline`}>Email . </h4>
+                  <p className={`${styles.paragraph} mb-2.5 pl-2 inline underline underline-offset-2`}>info@merlintech.com.ar</p>
+                </div>
               </div>
             </div>
           </div>
