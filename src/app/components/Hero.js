@@ -63,14 +63,14 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex relative">
+          {/* <div className="flex relative">
             <div className={`bg-card-hero absolute flex flex-col flex-nowrap h-[380px] w-[340px] gap-2.5 p-5 -top-[330px] left-1/2 translate-x-[-50%] l:left-[88%] l:-top-[670px] z-40`}>
               <Image className="w-[300px] h-[123px]" src={cuposLimitados} alt="supportIT" width="300" height="123" priority />
               <h2 className={`${styles.heading3} my-2.5`}>Soporte IT Personalizado</h2>
               <p className={`${styles.paragraph} mb-2.5`}>Asegure que sus datos y sistemas estén siempre disponibles, protegidos y actualizados.</p>
               <ButtonTwo image={ChevronRight} text="Realizar Auditoria" link="" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
