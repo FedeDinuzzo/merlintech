@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react'
 import Image from 'next/image'
 import Spline from '@splinetool/react-spline'
@@ -30,11 +28,9 @@ function Partners() {
       </div>
 
       <div className={`absolute w-full h-[1440px] -z-10`}>
-        <Spline className="w-full flex l:scale-[1.2] items-center justify-center md:justify-start" scene='https://prod.spline.design/4IeNjp3Pr8ziJ5bH/scene.splinecode' />
-        {/* <iframe src='https://my.spline.design/distortedspiralcopy-d85ad473f4a28e665eaab8ae4f04118b/' frameBorder='0' width='100%' height='100%' loading="lazy" ></iframe> */}
+        {/* <Spline className="w-full flex l:scale-[1.2] items-center justify-center md:justify-start" scene='https://prod.spline.design/4IeNjp3Pr8ziJ5bH/scene.splinecode' /> */}
+        <iframe src='https://my.spline.design/distortedspiralcopy-d85ad473f4a28e665eaab8ae4f04118b/' frameBorder='0' width='100%' height='100%' loading="lazy" ></iframe>
       </div>
-      {/* <Image className={`absolute z-10 -mt-40 m:-mt-10 opacity-50 min-h-[800px]`} src={SpiralBlur} alt="gradient lights" width="1080" height="1080" /> */}
-
 
       <div className='absolute w-full h-[1000px] -mt-32 m:-mt-48'>
         <div className={`flex-none inset-0 overflow-hidden absolute pt-72`}>
