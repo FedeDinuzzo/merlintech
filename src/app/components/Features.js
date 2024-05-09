@@ -1,7 +1,6 @@
 import styles from "@/app/constants/style"
 import Image from 'next/image'
 import { ButtonFour } from "./Buttons"
-import ContactBall from "../../public/ContactBall.webp"
 import ChevronRight from "../../public/ChevronRight.svg"
 import Card1Empresa from "../../public/Card1Empresa.png"
 import Card2Empresa from "../../public/Card2Empresa.png"
@@ -13,9 +12,14 @@ const Features = () => {
   return (
     <section className={`px-5`}>
       <div id="home" className={`absolute top-0`} />
-      <div className={`flex flex-col items-center`}>
-        <Image className="mt-72 m:mt-60 m:-ml-48 w-[60%] opacity-60 absolute" src={ContactBall} alt="Ball" />
+      <div className='absolute w-full h-[2000px] mt-40 -ml-10'>
+        <div className={`flex-none inset-0 overflow-hidden absolute`}>
+          <div className={`absolute bg-radial-violet w-[780px] h-[780px] mt-40 ml-28 -z-10`}></div>
+          <div className={`absolute bg-radial-blue w-[780px] h-[780px] mt-60 z-0`}></div>
+          <div className={`absolute bg-radial-blue-dark w-[520px] h-[520px] mt-96 -ml-12 z-0`}></div>
+        </div>
       </div>
+
       <div className={`flex mb-[60px]`}>
         <div className={`flex flex-col l:w-[1260px] mx-auto gap-[30px]`}>
           <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-2`}>

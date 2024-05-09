@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import World from '../../public/Earth.jpg'
-import WorldBlur from '../../public/ContactBall.webp'
 import Polygon0 from '../../public/Polygon0.png'
 import Polygon1 from '../../public/Polygon1.png'
 import Polygon2 from '../../public/Polygon2.png'
@@ -29,8 +28,8 @@ function Clients() {
 
         <div className='absolute w-full h-[100vh] mt-48'>
           <div className={`flex-none inset-0 overflow-hidden absolute`}>
-            <div className={`absolute bg-radial-violet w-[300px] h-[300px] ml-12 mt-64 m:w-[400px] m:h-[400px] m:ml-48 m:mt-48 z-10`}></div>
-            <div className={`absolute bg-radial-blue w-[400px] h-[400px] mt-56 m:w-[500px] m:h-[500px] m:mt-64 -ml-10 z-0`}></div>
+            <div className={`absolute bg-radial-violet w-[340px] h-[340px] ml-8 mt-56 l:mt-64 l:w-[420px] l:h-[420px] m:ml-48 m:mt-48 z-10`}></div>
+            <div className={`absolute bg-radial-blue w-[400px] h-[400px] mt-48 m:w-[500px] m:h-[500px] m:mt-64 -ml-10 z-0`}></div>
           </div>
         </div>
 

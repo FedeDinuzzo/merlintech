@@ -2,7 +2,6 @@ import styles from "@/app/constants/style"
 import Image from 'next/image'
 import { ButtonFour } from "./Buttons"
 import ChevronRight from "../../public/ChevronRight.svg"
-import ContactBall from "../../public/ContactBall.webp"
 import Number from "../../public/Number.svg"
 import Number2 from "../../public/Number2.svg"
 import { FlipCard } from './FlipCard.js';
@@ -24,9 +23,13 @@ const Contact = () => {
   return (
     <section className={`mt-96 px-5`}>
       <div id="testimonios" className={`absolute -mt-20`} />
-      <div className={`flex justify-center -ml-40`}>
-        <Image className="mt-44 hidden m:flex absolute" src={ContactBall} alt="Ball" />
+      <div className='absolute w-full h-[2000px] mt-28'>
+        <div className={`flex-none inset-0 overflow-hidden absolute`}>
+          <div className={`absolute bg-radial-violet-full w-[600px] h-[600px] mt-40 ml-28 -z-10`}></div>
+          <div className={`absolute bg-radial-blue-full w-[700px] h-[700px] mt-40 z-0`}></div>
+        </div>
       </div>
+
       <div className={`flex mb-[60px]`}>
         <div className={`flex flex-col mx-auto gap-[30px] l:w-[1260px]`}>
           <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-20`}>

@@ -18,12 +18,12 @@ const Hero = () => {
 
       <div className={`absolute -left-3 top-[60px] bg-lines h-[1000px] w-[100vw]`}></div>
 
-      <div className={`flex-none inset-0 overflow-hidden absolute min-h-[1440px]`}>
+      <div className={`flex-none inset-0 overflow-hidden absolute min-h-[1440px] opacity-80 l:opacity-100`}>
         <div className={`absolute bg-radial-white w-[760px] m:w-[1054px] top-[200px]`}></div>
         <div className={`absolute bg-radial-violet w-[500px] m:w-[807px] top-[400px]`}></div>
       </div>
 
-      <div className={`flex-none inset-0 overflow-hidden absolute min-h-[1440px] m:hidden`}>
+      <div className={`flex-none inset-0 overflow-hidden absolute min-h-[1440px] opacity-80 m:hidden`}>
         <div className={`absolute bg-radial-white w-[760px] top-[580px]`}></div>
         <div className={`absolute bg-radial-violet w-[500px] top-[740px]`}></div>
       </div>

@@ -4,7 +4,6 @@ import React from 'react'
 import Image from 'next/image'
 import Spline from '@splinetool/react-spline'
 import styles from '../constants/style'
-import SpiralBlur from '../../public/SpiralBlur.png'
 import Hexagon0 from '../../public/Hexagon0.png'
 import Hexagon1 from '../../public/Hexagon1.png'
 import Hexagon2 from '../../public/Hexagon2.png'
@@ -39,8 +38,8 @@ function Partners() {
 
       <div className='absolute w-full h-[1000px] -mt-32 m:-mt-48'>
         <div className={`flex-none inset-0 overflow-hidden absolute pt-72`}>
-          <div className={`absolute bg-radial-violet w-[600px] h-[600px] opacity-80 -mt-32 ml-40 z-10`}></div>
-          <div className={`absolute bg-radial-blue w-[700px] h-[700px] opacity-60 -mt-40 z-10`}></div>
+          <div className={`absolute bg-radial-violet w-[600px] h-[600px] opacity-80 -mt-36 l:-mt-28 ml-40 z-10`}></div>
+          <div className={`absolute bg-radial-blue w-[600px] h-[600px] opacity-60 -mt-40 l:w-[700px] l:h-[700px] z-10`}></div>
         </div>
       </div>
 
