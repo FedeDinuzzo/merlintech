@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import MobileOptimization from "./MobileOptimization"
 import RingX2 from '../../public/RingX2.svg'
 import Ring1bg from '../../public/Ring1bg.svg'
 import Ring1 from '../../public/Ring1.svg'
@@ -22,22 +23,18 @@ export function RingOne() {
 
 export function RingTwo() {
   return (
-    <div className=''>
-      <div className='bg-circles h-32 w-32 rounded-full flex justify-center items-center border-solid border-secondary/25 border-[2px]'>
-        <Image className='absolute' src={Ring2} alt={Ring2} width="60" height="60" priority />
-        <Image className='absolute' src={RingX2} alt={RingX2} width="150" height="150" priority />
-      </div>
+    <div className='bg-circles h-32 w-32 rounded-full flex justify-center items-center border-solid border-secondary/25 border-[2px]'>
+      <MobileOptimization img={Ring2} design={`absolute`} w={60} h={60} />
+      <MobileOptimization img={RingX2} design={`absolute`} w={150} h={150} />
     </div>
   )
 }
 
 export function RingThree() {
   return (
-    <div className=''>
-      <div className='bg-circles h-32 w-32 rounded-full flex justify-center items-center border-solid border-secondary/25 border-[2px]'>
-        <Image className='absolute' src={Ring3} alt={Ring3} width="60" height="60" priority />
-        <Image className='absolute' src={RingX2} alt={RingX2} width="150" height="150" priority />
-      </div>
+    <div className='bg-circles h-32 w-32 rounded-full flex justify-center items-center border-solid border-secondary/25 border-[2px]'>
+      <Image className='absolute' src={Ring3} alt={Ring3} width="60" height="60" />
+      <Image className='absolute' src={RingX2} alt={RingX2} width="150" height="150" />
     </div>
   )
 }

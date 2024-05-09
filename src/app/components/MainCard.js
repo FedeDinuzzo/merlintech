@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "@/app/constants/style"
 import Image from 'next/image'
+import MobileOptimization from "./MobileOptimization"
 import logo from '../../public/LogoMerlin.svg'
 import cardInnerShadow from "../../public/card-inner-shadow.webp"
 import MenuNineCircles from '../../public/MenuNineCircles.svg'
@@ -95,7 +96,7 @@ export default function MainCard() {
         </div>
         {/* TOP SEARCH */}
         <div className={`flex flex-col text-white w-[897px] h-full max-w-[80vw] p-[15px]`}>
-          <Image className={`hidden m:block absolute h-[627px] w-[898px] max-w-[78vw] -m-[15px] opacity-60`} src={cardInnerShadow} alt="cardInnerShadow" />
+          <MobileOptimization img={cardInnerShadow} design={`hidden m:block absolute h-[627px] w-[897px] max-w-[78vw] -m-[15px] opacity-60`} nombre="cardInnerShadow" h={627} w={897} />
           <div className={`flex justify-between`}>
             <div className={`shadow-main-card flex justify-center items-center w-[300px] max-w-[50vw] gap-[9px] py-[7.5px] px-[15px] overflow-hidden border-[.75px] bg-secondary bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
               <p className={`${styles.headingMainCard} leading-5 text-[12px]`}>Encontra tu solución</p>
@@ -205,7 +206,7 @@ export default function MainCard() {
               {/* CARD FOUR */}
               <div className={`overflow-hidden z-20 flex w-full h-[342px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col p-[15px]`}>
-                  <Image className="w-full mb-[6px]" src={ImageCard} alt="" />
+                  <MobileOptimization img={ImageCard} design={`w-full mb-[6px]`} nombre="tech pictrue abstract" />
                   <button className={`${styles.headingMainCard} my-1 bg-[#3395FF] rounded-md flex justify-center py-1 text-[13px] w-[154px]`}>ATENCIÓN INMEDIATA</button>
                   <h4 className={`${styles.headingMainCard} my-1 font-medium text-[13px]`}>Resolución Continua</h4>
                   <p className={`${styles.headingMainCard} my-1 opacity-80`}>Nos brindaron soluciones inmediatas, disponibles las 24 horas del día</p>
