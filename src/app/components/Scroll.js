@@ -4,7 +4,6 @@ import styles from '../constants/style'
 import ServicesCard from './ServicesCard'
 import { Button } from "./Buttons"
 import ChevronRight from "../../public/ChevronRight.svg"
-import Lights from "../../public/Lights.png"
 import { RingThree } from "./Ring"
 
 function Scroll() {
@@ -47,7 +46,9 @@ function Scroll() {
 
         <div className={`hidden m:flex h-[840px] relative`}>
           <div className="w-full h-[260px] absolute bottom-0 bg-gradient-to-b from-transparent to-black rounded-[23px] z-50"></div>
-          <Image className={`absolute w-full h-full`} src={Lights} alt="Lights" />
+          <div className={`flex-none inset-0 overflow-hidden absolute min-h-[20px] w-full`}>
+            <div className={`absolute bg-lights w-[calc(100%-48px)] h-1`}></div>
+          </div>
           <ServicesCard />
         </div>
       </section>

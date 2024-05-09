@@ -101,7 +101,7 @@ export default function MainCard() {
               <p className={`${styles.headingMainCard} leading-5 text-[12px]`}>Encontra tu solución</p>
               <Image className="" src={Search} alt="" priority />
             </div>
-            <Image className="hidden m:flex h-[37.5px] w-[37.5px]" src={AvatarProgress} alt="" priority />
+            <Image className="hidden m:flex h-[37.5px] w-[37.5px]" src={AvatarProgress} alt="" />
           </div>
           {/* LINE */}
           <div className={`border-t-[1px] mt-[15px] border-secondary border-solid border-opacity-10`}></div>
@@ -205,8 +205,8 @@ export default function MainCard() {
               {/* CARD FOUR */}
               <div className={`overflow-hidden z-20 flex w-full h-[342px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col p-[15px]`}>
-                  <Image className="w-full mb-[6px]" src={ImageCard} alt="" priority />
-                  <div className={`${styles.headingMainCard} my-1 bg-[#3395FF] rounded-md flex justify-center py-1 text-[13px] w-[154px]`}>ATENCIÓN INMEDIATA</div>
+                  <Image className="w-full mb-[6px]" src={ImageCard} alt="" />
+                  <button className={`${styles.headingMainCard} my-1 bg-[#3395FF] rounded-md flex justify-center py-1 text-[13px] w-[154px]`}>ATENCIÓN INMEDIATA</button>
                   <h4 className={`${styles.headingMainCard} my-1 font-medium text-[13px]`}>Resolución Continua</h4>
                   <p className={`${styles.headingMainCard} my-1 opacity-80`}>Nos brindaron soluciones inmediatas, disponibles las 24 horas del día</p>
                   <div className={`flex my-3`}>
@@ -226,7 +226,7 @@ export default function MainCard() {
               <div className={`overflow-hidden z-20 flex w-full h-[160px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col items-center w-full space-y-3`}>
                   <h4 className={`${styles.headingMainCard} text-medium pl-6 text-[13.5px] mt-[15px] `}>Monitoreo Permanente</h4>
-                  <Image className="w-full px-6" src={Bars} alt="" priority />
+                  <Image className="w-full px-6" src={Bars} alt="" />
                 </div>
               </div>
             </div>
@@ -254,41 +254,41 @@ export default function MainCard() {
                   <div className={`flex justify-between -ml-28`}>
                     <Image className="" src={home} alt="" priority />
                     <Image className="" src={BarsHorizontal} alt="" priority />
-                    <Image className="ml-2 mt-[2px] h-5 w-5" src={AvatarChino} alt="" priority />
+                    <Image className="ml-2 mt-[2px] h-5 w-5" src={AvatarChino} alt="" />
                   </div>
                 </div>
                 <div className={`flex flex-col px-[15px] space-y-2`}>
                   <div className={`flex w-full border-[1px] border-secondary border-opacity-10 rounded-md px-2 py-1`}>
-                    <Image className="mt-1 mr-2 h-6 w-6" src={AvatarFox} alt="" priority />
+                    <Image className="mt-1 mr-2 h-6 w-6" src={AvatarFox} alt="" />
                     <div className={`flex flex-col w-full`}>
-                      <h4 className={`${styles.headingMainCard} mr-[122px]`}>Gerente FOX</h4>
+                      <h4 className={`${styles.headingMainCard} w-[160px] flex`}>Gerente FOX</h4>
                       <p className={`${styles.headingMainCard} opacity-80`}>Ticket resuelto</p>
                     </div>
-                    <p className={`${styles.headingMainCard} opacity-80`}>2m ago</p>
+                    <p className={`${styles.headingMainCard} opacity-80 w-20`}>2m ago</p>
                   </div>
                   <div className={`flex border-[1px] border-secondary border-opacity-10 rounded-md px-2 py-1`}>
-                    <Image className="mt-1 mr-2 h-6 w-6" src={AvatarUnicef} alt="" priority />
+                    <Image className="mt-1 mr-2 h-6 w-6" src={AvatarUnicef} alt="" />
                     <div className={`flex flex-col w-full`}>
-                      <h4 className={`${styles.headingMainCard} mr-[130px]`}>Ong Unicef</h4>
+                      <h4 className={`${styles.headingMainCard} w-[160px] flex`}>Ong Unicef</h4>
                       <p className={`${styles.headingMainCard} opacity-80`}>Técnico en camino</p>
                     </div>
-                    <p className={`${styles.headingMainCard} opacity-80`}>5m ago</p>
+                    <p className={`${styles.headingMainCard} opacity-80 w-20`}>5m ago</p>
                   </div>
                   <div className={`flex border-[1px] border-secondary border-opacity-10 rounded-md px-2 py-1`}>
-                    <Image className="mt-1 mr-2 h-6 w-6" src={AvatarDisney} alt="" priority />
+                    <Image className="mt-1 mr-2 h-6 w-6" src={AvatarDisney} alt="" />
                     <div className={`flex flex-col w-full`}>
-                      <h4 className={`${styles.headingMainCard} mr-[123px]`}>Ceo Disney</h4>
+                      <h4 className={`${styles.headingMainCard} w-[156px] flex`}>Ceo Disney</h4>
                       <p className={`${styles.headingMainCard} opacity-80`}>Servidores en linea</p>
                     </div>
-                    <p className={`${styles.headingMainCard} opacity-80`}>15m ago</p>
+                    <p className={`${styles.headingMainCard} opacity-80 w-20`}>15m ago</p>
                   </div>
                   <div className={`flex border-[1px] border-secondary border-opacity-10 rounded-md px-2 py-1`}>
-                    <Image className="mt-1 mr-2 h-6 w-6" src={AvatarNike} alt="" priority />
+                    <Image className="mt-1 mr-2 h-6 w-6" src={AvatarNike} alt="" />
                     <div className={`flex flex-col w-full`}>
-                      <h4 className={`${styles.headingMainCard} mr-[122px]`}>Manager Nike</h4>
+                      <h4 className={`${styles.headingMainCard} w-[164px] flex`}>Manager Nike</h4>
                       <p className={`${styles.headingMainCard} opacity-80`}>Mantenimiento activado</p>
                     </div>
-                    <p className={`${styles.headingMainCard} opacity-80`}>1d ago</p>
+                    <p className={`${styles.headingMainCard} opacity-80 w-20`}>1d ago</p>
                   </div>
                 </div>
               </div>
