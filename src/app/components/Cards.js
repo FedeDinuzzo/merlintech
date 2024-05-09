@@ -2,9 +2,9 @@ import React from 'react'
 import styles from "@/app/constants/style"
 import Image from 'next/image'
 import ShadowContact from "../../public/ShadowContact.png"
-import Disney from "../../public/TestimonialDisney.jpg"
-import Nike from "../../public/TestimonialNike1.jpg"
-import Nike2 from "../../public/TestimonialNike2.jpg"
+import Disney from "../../public/TestimonialDisney.png"
+import Nike from "../../public/TestimonialNike1.png"
+import Nike2 from "../../public/TestimonialNike2.png"
 
 export function Card1() {
   return (
