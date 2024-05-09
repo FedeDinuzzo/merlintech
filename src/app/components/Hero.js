@@ -40,7 +40,7 @@ const Hero = () => {
           <p className={`${styles.paragraph} max-w-[500px] min-w-[380px]`}>
             Optimiza tu tecnología con nuestro soporte IT especializado.
             ¡Maximiza la productividad y minimiza los tiempos de inactividad!
-            Nuestros profesionales mantendrán tus sistemas en linea
+            Operatividad 24/7 garantizada por nuestros expertos
           </p>
           <Button image={ChevronRight} text="CONSULTORÍA GRATUITA" link="" />
         </div>
