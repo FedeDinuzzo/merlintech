@@ -95,7 +95,7 @@ export default function MainCard() {
         </div>
         {/* TOP SEARCH */}
         <div className={`flex flex-col text-white w-[897px] h-full max-w-[65vw] p-[15px]`}>
-          <Image className={`hidden m:block absolute h-full w-full -m-[15px] opacity-60`} src={cardInnerShadow} alt="supportIT" priority />
+          <Image className={`hidden m:block absolute h-full w-full -m-[15px] opacity-60`} src={cardInnerShadow} alt="supportIT" />
           <div className={`flex justify-between`}>
             <div className={`shadow-main-card flex justify-center items-center w-[300px] max-w-[50vw] gap-[9px] py-[7.5px] px-[15px] overflow-hidden border-[.75px] bg-secondary bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
               <p className={`${styles.headingMainCard} leading-5 text-[12px]`}>Encontra tu solución</p>
