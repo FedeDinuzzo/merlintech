@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from "@/app/constants/style"
 import Image from 'next/image'
-import cardInnerShadow from "../../public/card-inner-shadow.webp"
 import key from '../../public/key.svg'
 import cloud from '../../public/cloud.svg'
 import cloudKey from '../../public/cloudKey.svg'
@@ -18,7 +17,7 @@ export default function ServicesCard() {
       <div className={`bg-main-card border-[.75px] border-solid border-secondary border-opacity-10 flex flex-none flex-row flex-nowrap justify-start gap-15 inset-0 overflow-hidden p-0 absolute bg-[#050505e6] content-start items-start backdrop-blur-[7.5px]`}>
         {/* TOP SEARCH */}
         <div className={`flex flex-col text-white w-[897px] h-full max-w-[65vw] p-[15px]`}>
-          <Image className={`absolute h-full w-full -m-[15px] opacity-80`} src={cardInnerShadow} alt="supportIT" />
+          <div className={`light-main-card absolute h-[627px] w-[897px] max-w-[78vw] -m-[15px] opacity-20`}></div>
           <div className={`flex justify-between items-center pl-4`}>
             <Image className={`-mr-12`} src={LogoServicios} alt="" />
             <div className={`flex items-center max-w-[50vw] py-[7.5px] gap-9 overflow-hidden `}>

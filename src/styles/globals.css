@@ -77,11 +77,16 @@ h1, h2, h3, h4, p {
   box-shadow: 0 22.5px 45px #0000001a, 0 11.25px 22.5px #0000000d, 0 3.75px 7.5px #0000000d, inset 0 37.5px 75px #ffffff26;
   mix-blend-mode: screen;
   transform: perspective(1200px);
-  will-change: var(--framer-will-change-override, transform);
 }
 
 .shadow-main-card {
   box-shadow: 0 7.5px 7.5px #0000001a, 0 3px 3px #0000000d, 0 .75px #0000000d;
+}
+
+.light-main-card {
+  box-shadow: 0 80px 200px #0000001a, 0 50px 100px #0000000d, 0 20px 30px #0000000d, inset 0 500px 500px #ffffff26;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .bg-lines {
