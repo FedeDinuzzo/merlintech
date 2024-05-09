@@ -4,7 +4,6 @@ import { ButtonTwo } from "./Buttons"
 import MonitoreoLines from "../../public/MonitoreoLines.svg"
 import ServicesBackground from "../../public/ServicesBackground.webp"
 import ChevronRight from "../../public/ChevronRight.svg"
-import cardInnerShadow from "../../public/card-inner-shadow.webp"
 import Card1Services from "../../public/Card1Services.png"
 import Card2Services from "../../public/Card2Services.png"
 import Card3Services from "../../public/Card3Services.png"
@@ -31,7 +30,8 @@ const AllServices = () => {
 
       <div className={`${styles.flexCenter} flex-wrap p-5 m:p-8 l:p-10 gap-5 m:gap-10 max-w-[1100px] mx-auto`}>
         <div className={`bg-card-service flex flex-col justify-evenly items-center min-h-[380px] w-[340px] p-5`}>
-          <Image className={`absolute h-[380px] rounded-[40px]`} src={cardInnerShadow} alt="supportIT" />
+          <div className={`light-main-card absolute h-[380px] w-full opacity-30 rounded-[40px]`}></div>
+
           <Image className={`mb-2.5 min-h-[99px] z-10`} src={Card1Services} alt="supportIT" width="300" height="99" />
           <h2 className={`${styles.heading3} my-2.5 z-10`}>Backups y Copias de Seguridad</h2>
           <p className={`${styles.paragraph} mb-2.5 z-10`}>Mantenga a salvo los datos e información de su negocio con la configuración de Backups remotos y automatizados</p>
@@ -41,7 +41,7 @@ const AllServices = () => {
         </div>
 
         <div className={`bg-card-service flex flex-col h-[380px] w-[340px] m:w-[620px] gap-2.5`}>
-          <Image className={`absolute h-[380px] rounded-[40px]`} src={cardInnerShadow} alt="supportIT" />
+          <div className={`light-main-card absolute h-[380px] w-full opacity-30 rounded-[40px]`}></div>
           <div className={`flex flex-col h-[380px] w-[340px] m:w-[620px] gap-2.5 pt-5 m:pt-[22px] px-5 pb-0 z-10`}>
             <h2 className={`${styles.heading3} my-2.5`}>Recuperación de la Información</h2>
             <p className={`${styles.paragraph} mb-2.5`}>Protéjase de una eventual pérdida de datos con un almacenamiento encriptado y una recuperación virtual a través de nuestro escritorio remoto. Accediendo a sus equipos para reparar cualquier problema en su software.</p>
@@ -51,7 +51,7 @@ const AllServices = () => {
         </div>
 
         <div className={`bg-card-service flex flex-col min-h-[380px] w-[340px] m:w-[620px] gap-2.5`}>
-          <Image className={`absolute h-[410px] m:h-[380px] rounded-[40px]`} src={cardInnerShadow} alt="supportIT" />
+          <div className={`light-main-card absolute h-[410px] m:h-[380px] w-full opacity-30 rounded-[40px]`}></div>
           <div className={`flex flex-col min-h-[380px] w-[340px] m:w-[620px] gap-2.5 p-5 z-10`}>
             <Image src={Card3Services} alt="supportIT" width="580" height="99" />
             <h2 className={`${styles.heading3} my-2.5`}>Streaming: Centro Operacional</h2>
@@ -61,7 +61,7 @@ const AllServices = () => {
         </div>
 
         <div className={`bg-card-service flex flex-col justify-evenly items-center min-h-[380px] w-[340px] p-5`}>
-          <Image className={`absolute h-[380px] rounded-[40px]`} src={cardInnerShadow} alt="supportIT" />
+          <div className={`light-main-card absolute h-[380px] w-full opacity-30 rounded-[40px]`}></div>
           <h2 className={`${styles.heading3} my-2.5 z-10`}>Cyber Seguridad</h2>
           <p className={`${styles.paragraph} mb-2.5 z-10`}>Proteja su negocio de malware, hackers, virus y prevenga futuros riesgos de seguridad</p>
           <div className={`flex w-[340px] px-5`}>
