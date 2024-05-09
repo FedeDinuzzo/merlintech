@@ -52,7 +52,7 @@ const Hero = () => {
         <div className={`relative my-12 `}>
           <div className={`${styles.flexCenter} min-h-[627px] l:w-[1100px]`}>
             <div className={`flex-none inset-0 overflow-hidden absolute min-h-[20px] w-full`}>
-              <div className={`absolute bg-lights w-[calc(100%-48px)] h-1`}></div>
+              <div className={`absolute bg-lights w-[calc(100%-40px)] h-1`}></div>
             </div>
             <MainCard />
 
