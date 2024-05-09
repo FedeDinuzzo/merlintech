@@ -10,9 +10,9 @@ import Card4Empresa from "../../public/Card4Empresa.png"
 const Features = () => {
 
   return (
-    <section className={`px-5`}>
+    <section>
       <div id="home" className={`absolute top-0`} />
-      <div className='absolute w-full h-[2000px] mt-40 -ml-10'>
+      <div className='absolute w-full h-[2000px] mt-40 l:-ml-10'>
         <div className={`flex-none inset-0 overflow-hidden absolute`}>
           <div className={`absolute bg-radial-violet w-[780px] h-[780px] mt-40 ml-28 -z-10`}></div>
           <div className={`absolute bg-radial-blue w-[780px] h-[780px] mt-60 z-0`}></div>
@@ -20,7 +20,7 @@ const Features = () => {
         </div>
       </div>
 
-      <div className={`flex mb-[60px]`}>
+      <div className={`flex mb-[60px] px-5`}>
         <div className={`flex flex-col l:w-[1260px] mx-auto gap-[30px]`}>
           <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-2`}>
             <div className={`bg-line-services`}></div>
@@ -31,7 +31,7 @@ const Features = () => {
         </div>
       </div>
 
-      <div className={`${styles.flexCenter} flex-wrap gap-[20px] m:p-[30px] l:p-[40px] m:gap-[10px] l:gap-[20px] max-w-[1380px] mx-auto`}>
+      <div className={`${styles.flexCenter} px-5 flex-wrap gap-[20px] m:p-[30px] l:p-[40px] m:gap-[10px] l:gap-[20px] max-w-[1380px] mx-auto`}>
         <div className={`bg-card-service flex flex-col flex-nowrap justify-evenly m:h-[465px] m:w-[720px] p-8 `}>
           <div className={`max-w-[360px] mx-auto`}>
             <Image className={`min-w-[282px] mb-5`} src={Card1Empresa} alt="supportIT" width="360" height="210" />

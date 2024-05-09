@@ -21,16 +21,16 @@ const Contact = () => {
   ];
 
   return (
-    <section className={`mt-96 px-5`}>
+    <section className={`mt-96`}>
       <div id="testimonios" className={`absolute -mt-20`} />
       <div className='absolute w-full h-[2000px] mt-28'>
         <div className={`flex-none inset-0 overflow-hidden absolute`}>
-          <div className={`absolute bg-radial-violet-full w-[600px] h-[600px] mt-40 ml-28 -z-10`}></div>
-          <div className={`absolute bg-radial-blue-full w-[700px] h-[700px] mt-40 z-0`}></div>
+          <div className={`absolute bg-radial-violet-full w-[700px] h-[700px] mt-72 ml-28 opacity-80 l:opacity-100 l:mt-40 m:w-[600px] m:h-[600px]  -z-10`}></div>
+          <div className={`absolute bg-radial-blue-full w-[800px] h-[800px] mt-72 opacity-80 l:opacity-100 l:mt-40 m:w-[700px] m:h-[700px] z-0`}></div>
         </div>
       </div>
 
-      <div className={`flex mb-[60px]`}>
+      <div className={`flex mb-[60px] px-5`}>
         <div className={`flex flex-col mx-auto gap-[30px] l:w-[1260px]`}>
           <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-20`}>
             <h3 className={`inline text-white`}>Agentes Disponibles </h3>
@@ -39,7 +39,7 @@ const Contact = () => {
           <ButtonFour image={ChevronRight} text={`COMENZAR CONSULTORÍA`} link={''} />
         </div>
       </div>
-      <div className="space-y-10">
+      <div className="space-y-10 px-5">
         <div className={`flex flex-wrap mx-auto max-w-[590px] m:max-w-[1260px] max-h-[960px] space-y-10 m:space-y-0  m:max-h-[460px]`}>
           <div className="w-full m:w-[calc(50%-20px)] m:mr-5 m:h-[460px] min-w-[356px] flex-wrap">
             <FlipCard itemsArray={itemsArray1} />
