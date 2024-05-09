@@ -81,7 +81,7 @@ const Footer = () => (
       </div>
       <div className="m:hidden flex w-full h-16 mt-6 justify-center px-8 items-center">
         <Link href="http://qr.afip.gob.ar/?qr=b3QEcW17fgrFdrGofVZ4kA,," target="_blank" aria-label={`Enlace a AFIP data fiscal`}>
-          <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="w-[50px] h-[50px] rounded cursor-pointer flex" />
+          <Image src={DataFiscal} alt='Social Icon' width={50} height={50} className="rounded cursor-pointer flex" />
         </Link>
       </div>
     </div>
