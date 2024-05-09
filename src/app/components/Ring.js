@@ -24,8 +24,8 @@ export function RingTwo() {
   return (
     <div className=''>
       <div className='bg-circles h-32 w-32 rounded-full flex justify-center items-center border-solid border-secondary/25 border-[2px]'>
-        <Image className='absolute' src={Ring2} alt={Ring2} width="60" height="60" />
-        <Image className='absolute' src={RingX2} alt={RingX2} width="150" height="150" />
+        <Image className='absolute' src={Ring2} alt={Ring2} width="60" height="60" priority />
+        <Image className='absolute' src={RingX2} alt={RingX2} width="150" height="150" priority />
       </div>
     </div>
   )
@@ -35,8 +35,8 @@ export function RingThree() {
   return (
     <div className=''>
       <div className='bg-circles h-32 w-32 rounded-full flex justify-center items-center border-solid border-secondary/25 border-[2px]'>
-        <Image className='absolute' src={Ring3} alt={Ring3} width="60" height="60" />
-        <Image className='absolute' src={RingX2} alt={RingX2} width="150" height="150" />
+        <Image className='absolute' src={Ring3} alt={Ring3} width="60" height="60" priority />
+        <Image className='absolute' src={RingX2} alt={RingX2} width="150" height="150" priority />
       </div>
     </div>
   )
