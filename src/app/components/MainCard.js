@@ -94,7 +94,7 @@ export default function MainCard() {
           </div>
         </div>
         {/* TOP SEARCH */}
-        <div className={`flex flex-col text-white w-[897px] h-full max-w-[65vw] p-[15px]`}>
+        <div className={`flex flex-col text-white w-[897px] h-full max-w-[80vw] p-[15px]`}>
           <Image className={`hidden m:block absolute h-full w-full -m-[15px] opacity-60`} src={cardInnerShadow} alt="supportIT" />
           <div className={`flex justify-between`}>
             <div className={`shadow-main-card flex justify-center items-center w-[300px] max-w-[50vw] gap-[9px] py-[7.5px] px-[15px] overflow-hidden border-[.75px] bg-secondary bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
@@ -214,7 +214,7 @@ export default function MainCard() {
                     <div className={`h-[3px] w-1/3 rounded-r-xl bg-white opacity-40 z-40`}></div>
                   </div>
                   <div className={`flex items-center`}>
-                    <Image className="mr-2 h-6 w-6" src={AvatarFox} alt="" priority />
+                    <Image className="mr-2 h-6 w-6" src={AvatarFox} alt="" />
                     <div>
                       <h4 className={`${styles.headingMainCard} font-medium`}>Gerente FOX</h4>
                       <p className={`${styles.headingMainCard} opacity-80`}>Mensaje de Conformidad</p>
@@ -231,7 +231,7 @@ export default function MainCard() {
               </div>
             </div>
             {/* COLUMN THREE */}
-            <div className={`hidden l:flex flex-col space-y-4 w-full`}>
+            <div className={`hidden m:flex flex-col space-y-4 w-full`}>
               {/* CARD SIX */}
               <div className={`overflow-hidden z-20 flex w-full h-[232px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col py-[15px] px-[30px] space-y-2`}>
