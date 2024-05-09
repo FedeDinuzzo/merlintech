@@ -87,8 +87,8 @@ export const CustomCursor = () => {
   }, []);
 
   return (
-    <>
-      <div className="hidden l:block fixed z-[2000] pointer-events-none ">
+    <div className="hidden l:block">
+      <div className="fixed z-[2000] pointer-events-none ">
         <svg
           fill={`${cursorPointer ? "#3395FF" : "white"}`}
           width={40}
@@ -104,7 +104,7 @@ export const CustomCursor = () => {
           <circle cx="25" cy="25" r="8" />
         </svg>
       </div>
-      <div className={`${cursorPointer ? "hidden" : "visible"} hidden l:block fixed pointer-events-none`}>
+      <div className={`fixed pointer-events-none`}>
         <svg
           width={100}
           height={100}
@@ -119,15 +119,16 @@ export const CustomCursor = () => {
           }}
         >
           <circle
-            r="25"
+            r={`${cursorPointer ? "38" : "25"}`}
             cx="50"
             cy="50"
-            opacity="1"
-            stroke="grey"
-            strokeWidth={1.25}
+            fill="transparent"
+            opacity="0.8"
+            stroke={`${cursorPointer ? "#3395FF" : "grey"}`}
+            strokeWidth={1.5}
           />
         </svg>
       </div>
-    </>
+    </div>
   );
 };
