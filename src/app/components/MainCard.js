@@ -94,8 +94,8 @@ export default function MainCard() {
           </div>
         </div>
         {/* TOP SEARCH */}
-        <div className={`flex flex-col text-white w-[897px] h-full max-w-[80vw] p-[15px]`}>
-          <div className={`light-main-card absolute h-[627px] w-[897px] max-w-[78vw] -m-[15px] opacity-30`}></div>
+        <div className={`flex flex-col text-white w-[897px] h-full max-w-[80vw] px-[7.5px] m:px-[15px] pt-[15px]`}>
+          <div className={`light-main-card absolute h-[627px] w-[897px] max-w-[78vw] -mx-[7.5px] m:-mx-[15px] -my-[15px] opacity-30 `}></div>
 
           <div className={`flex justify-between`}>
             <div className={`shadow-main-card flex justify-center items-center w-[300px] max-w-[50vw] gap-[9px] py-[7.5px] px-[15px] overflow-hidden border-[.75px] bg-secondary bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
@@ -107,7 +107,7 @@ export default function MainCard() {
           {/* LINE */}
           <div className={`border-t-[1px] mt-[15px] border-secondary border-solid border-opacity-10`}></div>
           {/* TOP UBCATION */}
-          <div className={`flex justify-between my-[15px] h-[34px] pr-3 m:pr-0`}>
+          <div className={`flex justify-between my-[15px] h-[34px] max-w-[56vw]`}>
             <div className={`shadow-main-card flex justify-center items-center p-1 overflow-hidden border-[.75px] bg-[#0009] bg-opacity-5 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>
               <div className={`flex justify-between items-center w-[210px]`}>
                 <h4 className={`${styles.headingMainCard} px-2 leading-5 flex justify-center items-center overflow-hidden border-[.75px] bg-secondary bg-opacity-10 rounded-[74px] border-secondary border-solid border-opacity-10 backdrop-blur-[7.5px]`}>Ubicación</h4>
@@ -129,7 +129,7 @@ export default function MainCard() {
           </div>
 
           {/* CARDS */}
-          <div className={`flex justify-between w-full pr-3 m:pr-0`}>
+          <div className={`flex justify-between w-full`}>
             {/* COLUMN ONE */}
             <div className={`flex flex-col space-y-4 w-full`}>
               {/* CARD ONE */}

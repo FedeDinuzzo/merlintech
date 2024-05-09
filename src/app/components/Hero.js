@@ -32,18 +32,16 @@ const Hero = () => {
         <div className={`${styles.flexCenter} mb-5`}>
           <ButtonThree image={ChevronRight} text="Top 1 del pais" link="" />
         </div>
-        <div className={`${styles.flexCenter} flex-col`}>
-          <h1 className={`${styles.heading} text-gradient py-2 m:py-4 max-w-[520px]`}>Soporte IT</h1>
-          <h3 className={`${styles.heading} text-gradient py-2 m:py-4 max-w-[520px]`}>Para Empresas</h3>
-        </div>
-        <div className={`${styles.flexCenter} my-5`}>
-          <p className={`${styles.paragraph} max-w-[500px] min-w-[346px]`}>
+        <div className={`${styles.flexCenter} flex-col space-y-5`}>
+          <div>
+            <h1 className={`${styles.heading} text-gradient py-2 m:py-4 max-w-[520px]`}>Soporte IT</h1>
+            <h3 className={`${styles.heading} text-gradient py-2 m:py-4 max-w-[520px]`}>Para Empresas</h3>
+          </div>
+          <p className={`${styles.paragraph} max-w-[500px] min-w-[380px]`}>
             Optimiza tu tecnología con nuestro soporte IT especializado.
             ¡Maximiza la productividad y minimiza los tiempos de inactividad!
-            Nuestros profesionales mantendrán tus sistemas en marcha
+            Nuestros profesionales mantendrán tus sistemas en linea
           </p>
-        </div>
-        <div className={`${styles.flexCenter}`}>
           <Button image={ChevronRight} text="CONSULTORÍA GRATUITA" link="" />
         </div>
       </div>
@@ -74,7 +72,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 
