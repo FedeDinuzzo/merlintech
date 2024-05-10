@@ -29,9 +29,9 @@ function Partners() {
         </div>
       </div>
 
-      <Suspense fallback={<p>Loading iframe...</p>}>
+      {/* <Suspense fallback={<p>Loading iframe...</p>}>
         <ServerIframe />
-      </Suspense>
+      </Suspense> */}
       {/* <Spline className="w-full flex l:scale-[1.2] items-center justify-center md:justify-start" scene='https://prod.spline.design/4IeNjp3Pr8ziJ5bH/scene.splinecode' /> */}
       {/* <iframe src='https://my.spline.design/distortedspiralcopy-d85ad473f4a28e665eaab8ae4f04118b/' frameBorder='0' width='100%' height='100%'></iframe> */}
 
