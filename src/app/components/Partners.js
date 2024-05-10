@@ -1,6 +1,7 @@
-
+'use client'
 import React, { Suspense } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 import ServerIframe from './ServerIframe'
 import Spline from '@splinetool/react-spline'
 import styles from '../constants/style'
@@ -15,6 +16,7 @@ import Hexagon7 from '../../public/Hexagon7.png'
 import Hexagon8 from '../../public/Hexagon8.png'
 import Hexagon9 from '../../public/Hexagon9.png'
 import Hexagon10 from '../../public/Hexagon10.png'
+import DistortedSpiral from '../../public/DistortedSpiral.jpg'
 import Ceo from '../../public/Ceo.png'
 
 function Partners() {
@@ -32,13 +34,16 @@ function Partners() {
       {/* <Suspense fallback={<p>Loading iframe...</p>}>
         <ServerIframe />
       </Suspense> */}
+      <div className={`flex justify-center`}>
+        <Image className={`absolute`} src={DistortedSpiral} alt="Brands and Partners" width="664" height="757" />
+      </div>
       {/* <Spline className="w-full flex l:scale-[1.2] items-center justify-center md:justify-start" scene='https://prod.spline.design/4IeNjp3Pr8ziJ5bH/scene.splinecode' /> */}
       {/* <iframe src='https://my.spline.design/distortedspiralcopy-d85ad473f4a28e665eaab8ae4f04118b/' frameBorder='0' width='100%' height='100%'></iframe> */}
 
       <div className='absolute w-full h-[1000px] -mt-32 m:-mt-48'>
         <div className={`flex-none inset-0 overflow-hidden absolute pt-72`}>
-          <div className={`absolute bg-radial-violet w-[600px] h-[600px] opacity-80 -mt-36 l:-mt-28 ml-40 z-10`}></div>
-          <div className={`absolute bg-radial-blue w-[600px] h-[600px] opacity-60 -mt-40 l:w-[700px] l:h-[700px] z-10`}></div>
+          <div className={`absolute bg-radial-violet w-[500px] h-[500px] opacity-50 -mt-32 l:-mt-20 ml-40 z-10`}></div>
+          <div className={`absolute bg-radial-blue w-[500px] h-[500px] opacity-40 mt-0 -ml-10 l:w-[700px] l:h-[700px] z-10`}></div>
         </div>
       </div>
 
@@ -81,7 +86,7 @@ function Partners() {
         </div>
       </div>
 
-    </section>
+    </section >
   )
 }
 

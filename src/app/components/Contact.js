@@ -11,16 +11,17 @@ const Contact = () => {
 
   const itemsArray1 = [
     <Card1 key="card1" />,
-    <Card6 key="card6" />,
+    <Card3 key="card3" />,
+    <Card5 key="card5" />,
     <Card7 key="card7" />,
-    <Card8 key="card8" />,
+    <Card9 key="card9" />,
   ];
 
   const itemsArray2 = [
     <Card4 key="card4" />,
-    <Card3 key="card3" />,
+    <Card6 key="card6" />,
+    <Card8 key="card8" />,
     <Card10 key="card10" />,
-    <Card9 key="card9" />,
   ];
 
   return (
