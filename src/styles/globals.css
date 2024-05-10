@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* global.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(64, 39, 136) 100%);;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(64, 39, 136);
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(86, 47, 205);
+}
+
 * {
   scroll-behavior: smooth;
   box-sizing: border-box;

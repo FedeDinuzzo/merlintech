@@ -1,23 +1,26 @@
 import styles from "@/app/constants/style"
 import Image from 'next/image'
 import { ButtonFour } from "./Buttons"
-import ChevronRight from "../../public/ChevronRight.svg"
+import mouse from "../../public/mouse.svg"
 import Number from "../../public/Number.svg"
 import Number2 from "../../public/Number2.svg"
 import { FlipCard } from './FlipCard.js';
-import { Card1, Card2 } from './Cards'
-
+import { Card1, Card3, Card4, Card5, Card6, Card7, Card8, Card9, Card10 } from './Cards'
 
 const Contact = () => {
 
   const itemsArray1 = [
     <Card1 key="card1" />,
-    <Card2 key="card2" />,
+    <Card6 key="card6" />,
+    <Card7 key="card7" />,
+    <Card8 key="card8" />,
   ];
 
   const itemsArray2 = [
-    <Card2 key="card2" />,
-    <Card1 key="card1" />,
+    <Card4 key="card4" />,
+    <Card3 key="card3" />,
+    <Card10 key="card10" />,
+    <Card9 key="card9" />,
   ];
 
   return (
@@ -30,15 +33,16 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className={`flex mb-[60px] px-5`}>
-        <div className={`flex flex-col mx-auto gap-[30px] l:w-[1260px]`}>
+      <div className={`flex mb-[60px] px-5 z-50`}>
+        <div className={`flex flex-col mx-auto gap-[30px] l:w-[1260px] z-50`}>
           <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-20`}>
-            <h3 className={`inline text-white`}>Agentes Disponibles </h3>
-            <h3 className={`opacity-40 inline`}>contactanos y reserva tu lugar en merlintech. Tu negocio crece, nosotros crecemos con vos.</h3>
+            <h3 className={`inline text-white`}>Descubrí ¿por qué?</h3>
+            <h3 className={`opacity-40 inline`}> las empresas líderes en Argentina y el mundo confían en merlintech para potenciar su éxito.</h3>
           </div>
-          <ButtonFour image={ChevronRight} text={`COMENZAR CONSULTORÍA`} link={''} />
+          <ButtonFour image={mouse} text={`CLICKEA LAS TARJETAS`} link={`#testimonials`} />
         </div>
       </div>
+      <div id="testimonials" className="absolute -mt-20"></div>
       <div className="space-y-10 px-5">
         <div className={`flex flex-wrap mx-auto max-w-[590px] m:max-w-[1260px] max-h-[960px] space-y-10 m:space-y-0  m:max-h-[460px]`}>
           <div className="w-full m:w-[calc(50%-20px)] m:mr-5 m:h-[460px] min-w-[356px] flex-wrap">

@@ -20,14 +20,14 @@ const Features = () => {
         </div>
       </div>
 
-      <div className={`flex mb-[60px] px-5`}>
-        <div className={`flex flex-col l:w-[1260px] mx-auto gap-[30px]`}>
+      <div className={`flex mb-[60px] px-5 z-50`}>
+        <div className={`flex flex-col l:w-[1260px] mx-auto gap-[30px] z-50`}>
           <div className={`${styles.heading3Contact} max-w-[810px] h-[100%] pr-2`}>
             <div className={`bg-line-services`}></div>
             <h1 className={`inline text-white`}>Nuestra Filosofía </h1>
             <h3 className={`opacity-40 inline`}>se centra en proporcionar soluciones eficientes y efectivas para  satisfacer las necesidades y desafíos tecnológicos de sus clientes</h3>
           </div>
-          <ButtonFour image={ChevronRight} text={`CUPOS LIMITADOS`} link={''} />
+          <ButtonFour className="cursor-pointer" image={ChevronRight} text={`CUPOS LIMITADOS`} link={''} />
         </div>
       </div>
 
