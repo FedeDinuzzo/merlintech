@@ -1,4 +1,4 @@
-import { Application } from '@splinetool/runtime';
+// import { Application } from '@splinetool/runtime';
 
 // const canvas = document.getElementById('canvas3d');
 // const app = new Application(canvas);
@@ -13,6 +13,6 @@ import { Application } from '@splinetool/runtime';
 
 //import { Application } from '@splinetool/runtime';
 
-const canvas = document.getElementById('canvas3d');
-const app = new Application(canvas);
-app.load('https://prod.spline.design/ShnmOlaePhgL49pm/scene.splinecode');
+// const canvas = document.getElementById('canvas3d');
+// const app = new Application(canvas);
+// app.load('https://prod.spline.design/ShnmOlaePhgL49pm/scene.splinecode');
