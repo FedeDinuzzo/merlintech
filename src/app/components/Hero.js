@@ -29,7 +29,7 @@ const Hero = () => {
 
       <div className={`text-center m:mx-10 l:mx-20 relative px-5 z-50`}>
         <div className={`${styles.flexCenter} mb-5`}>
-          <ButtonThree image={ChevronRight} text="Top 1 del país" link={`https://api.whatsapp.com/send?phone=541160173000&text=Hola%20Merlintech,%20%F0%9F%92%BB%20Les%20escribo%20desde%20el%20sitio%20web%20`} />
+          <ButtonThree image={ChevronRight} text="Top 1 del país" link={`#clientes`} />
         </div>
         <div className={`${styles.flexCenter} flex-col space-y-5`}>
           <div>
