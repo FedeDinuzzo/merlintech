@@ -1,5 +1,6 @@
 import styles from "@/app/constants/style"
-import cuposLimitados from "@/public/cuposLimitados.png"
+import Image from "next/image"
+import cuposLimitados from "../../public/cuposLimitados.png"
 import { Button } from "./Buttons"
 import { ButtonTwo } from "./Buttons"
 import { ButtonThree } from "./Buttons"
@@ -7,7 +8,6 @@ import ChevronRight from "../../public/ChevronRight.svg"
 import MainCard from "./MainCard"
 import { RingOne } from "./Ring"
 import { RingTwo } from "./Ring"
-import MobileOptimization from "./MobileOptimization"
 
 const Hero = () => {
 
@@ -20,11 +20,6 @@ const Hero = () => {
       <div className={`flex-none inset-0 overflow-hidden absolute min-h-[1440px] opacity-90 l:opacity-100`}>
         <div className={`absolute bg-radial-white w-[760px] m:w-[1054px] top-[200px]`}></div>
         <div className={`absolute bg-radial-violet w-[500px] m:w-[807px] top-[400px]`}></div>
-      </div>
-
-      <div className={`flex-none inset-0 overflow-hidden absolute min-h-[1440px] opacity-80 m:hidden`}>
-        <div className={`absolute bg-radial-white w-[760px] top-[580px]`}></div>
-        <div className={`absolute bg-radial-violet w-[500px] top-[740px]`}></div>
       </div>
 
       <div className={`text-center m:mx-10 l:mx-20 relative px-5 z-50`}>
@@ -51,19 +46,20 @@ const Hero = () => {
             <div className={`flex-none inset-0 overflow-hidden absolute min-h-[20px] w-full`}>
               <div className={`absolute bg-lights w-[calc(100%-40px)] h-1`}></div>
             </div>
-            <MainCard />
-
-            <div className={`absolute top-[20%] left-[5%] m:left-[7%] m:-top-[13%] l:-left-[9%] z-50`}>
+            <div className="hidden m:flex ">
+              <MainCard />
+            </div>
+            <div className={`absolute top-[-6%] right-[36px] m:right-0 m:left-[7%] m:-top-[13%] l:-left-[9%] z-50`}>
               <RingOne />
             </div>
-            <div className={`absolute right-[0%] top-[89%] m:right-[10%] m:top-[82%] l:-right-[9%] l:top-[40%] z-50`}>
+            <div className={`absolute right-[-165px] top-[92%] m:right-[10%] m:top-[82%] l:-right-[9%] l:top-[40%] z-50`}>
               <RingTwo />
             </div>
           </div>
 
-          <div className="flex relative">
+          <div className="-mt-[220px] l:mt-0 flex relative">
             <div className={`bg-card-hero absolute flex flex-col flex-nowrap h-[380px] w-[340px] gap-2.5 p-5 -top-[330px] left-1/2 translate-x-[-50%] l:left-[88%] l:-top-[670px] z-40`}>
-              <MobileOptimization img={cuposLimitados} width="300" height="123" />
+              <Image src={cuposLimitados} width="300" height="123" alt="card" />
               <h2 className={`${styles.heading3} my-2.5`}>Soporte IT Personalizado</h2>
               <p className={`${styles.paragraph} mb-2.5`}>Asegure que sus datos y sistemas estén siempre disponibles, protegidos y actualizados.</p>
               <ButtonTwo image={ChevronRight} text="Realizar Auditoria" tgt={`_blank`} link="https://api.whatsapp.com/send?phone=541160173000&text=Hola%20Merlintech,%20%F0%9F%92%BB%20Les%20escribo%20desde%20el%20sitio%20web%20" />
