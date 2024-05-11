@@ -42,8 +42,8 @@ function Partners() {
 
       <div className='absolute w-full h-[1000px] -mt-32 m:-mt-48'>
         <div className={`flex-none inset-0 overflow-hidden absolute pt-72`}>
-          <div className={`absolute bg-radial-violet w-[500px] h-[500px] opacity-50 -mt-32 l:-mt-20 ml-40 z-10`}></div>
-          <div className={`absolute bg-radial-blue w-[500px] h-[500px] opacity-40 mt-0 -ml-10 l:w-[700px] l:h-[700px] z-10`}></div>
+          <div className={`absolute bg-radial-violet w-[500px] h-[500px] opacity-70 m:opacity-50 -mt-28 l:-mt-20 ml-40 z-10`}></div>
+          <div className={`absolute bg-radial-blue w-[500px] h-[500px] opacity-60 m:opacity-40 mt-0 -ml-10 l:w-[700px] l:h-[700px] z-10`}></div>
         </div>
       </div>
 

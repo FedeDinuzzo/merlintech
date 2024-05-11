@@ -62,7 +62,7 @@ const Contact = () => {
                 <Image src={Number} alt="supportIT" width="48" height="48" />
               </div>
               <div className={`max-w-[340px]`}>
-                <div className={``}>
+                <div className={`mb-2 m:mb-0`}>
                   <Link href={`https://www.google.com/maps/place/Merlintech/@-34.5958388,-58.4138098,15z/data=!4m2!3m1!1s0x0:0x9627f54691cefafc?sa=X&ved=1t:2428&ictx=111`} target="_blank">
                     <h4 className={`${styles.heading3White} my-2.5 inline`}>Ubicación . </h4>
                     <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>Billinghurst 1193, 4to A, Buenos Aires, Argentina</p>
@@ -82,7 +82,7 @@ const Contact = () => {
                 <Image src={Number2} alt="supportIT" width="24" height="24" />
               </div>
               <div className={`max-w-[330px] flex flex-wrap items-start m:block`}>
-                <div className={``}>
+                <div className={`mb-2 m:mb-0`}>
                   <Link href={`tel:+5491170905150`} target="_blank">
                     <h4 className={`${styles.heading3White} my-2.5 inline`}>Teléfono . </h4>
                     <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>+54 911 7090-5150</p>
