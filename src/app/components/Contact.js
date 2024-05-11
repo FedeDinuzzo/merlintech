@@ -30,8 +30,8 @@ const Contact = () => {
       <div id="testimonios" className={`absolute -mt-20`} />
       <div className='absolute w-full h-[1600px] m:h-[1200px] l:h-[900px] mt-28 m:mt-0 l:mt-28'>
         <div className={`flex-none inset-0 overflow-hidden absolute`}>
-          <div className={`absolute bg-radial-violet-full w-[700px] h-[700px] mt-72 ml-28 opacity-70 l:opacity-100 l:mt-40 m:w-[600px] m:h-[600px]  -z-10`}></div>
-          <div className={`absolute bg-radial-blue-full w-[800px] h-[800px] mt-72 opacity-70 l:opacity-100 l:mt-40 m:w-[700px] m:h-[700px] z-0`}></div>
+          <div className={`absolute bg-radial-violet-full w-[700px] h-[700px] mt-72 ml-28 opacity-40 l:opacity-100 l:mt-40 m:w-[600px] m:h-[600px]  -z-10`}></div>
+          <div className={`absolute bg-radial-blue-full w-[800px] h-[800px] mt-72 opacity-50 l:opacity-100 l:mt-40 m:w-[700px] m:h-[700px] z-0`}></div>
         </div>
       </div>
 

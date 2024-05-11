@@ -26,7 +26,7 @@ function Clients() {
           </h2>
         </div>
 
-        <div className='absolute w-full h-[100vh] m:h-[125vh] l:h-[100vh] mt-48'>
+        <div className='absolute opacity-70 l:opacity-100 w-full h-[100vh] m:h-[125vh] l:h-[100vh] mt-48'>
           <div className={`flex-none inset-0 overflow-hidden absolute`}>
             <div className={`absolute bg-radial-violet w-[400px] h-[400px] ml-12 mt-48  m:mt-36 l:mt-64 m:w-[420px] m:h-[420px] m:ml-48 z-10 opacity-80 m:opacity-100`}></div>
             <div className={`absolute bg-radial-blue w-[400px] h-[400px] mt-32 l:mt-64 m:w-[500px] m:h-[500px] -ml-10 z-0 opacity-60 m:opacity-80`}></div>
