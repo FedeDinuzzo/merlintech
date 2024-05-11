@@ -27,7 +27,7 @@ const Features = () => {
             <h1 className={`inline text-white`}>Nuestra Filosofía </h1>
             <h3 className={`opacity-40 inline`}>se centra en proporcionar soluciones eficientes y efectivas para  satisfacer las necesidades y desafíos tecnológicos de sus clientes</h3>
           </div>
-          <ButtonFour className="cursor-pointer" image={ChevronRight} text={`CUPOS LIMITADOS`} link={''} />
+          <ButtonFour className="cursor-pointer" image={ChevronRight} text={`CUPOS LIMITADOS`} tgt={`_blank`} link={`https://api.whatsapp.com/send?phone=541160173000&text=Hola%20Merlintech,%20%F0%9F%92%BB%20Les%20escribo%20desde%20el%20sitio%20web%20`} />
         </div>
       </div>
 

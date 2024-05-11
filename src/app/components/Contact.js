@@ -6,6 +6,7 @@ import Number from "../../public/Number.svg"
 import Number2 from "../../public/Number2.svg"
 import { FlipCard } from './FlipCard.js';
 import { Card1, Card3, Card4, Card5, Card6, Card7, Card8, Card9, Card10 } from './Cards'
+import Link from "next/link"
 
 const Contact = () => {
 
@@ -37,8 +38,8 @@ const Contact = () => {
       <div className={`flex mb-[60px] px-5 z-50`}>
         <div className={`flex flex-col mx-auto gap-[30px] l:w-[1260px] z-50`}>
           <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-20`}>
-            <h3 className={`inline text-white`}>Descubrí ¿por qué?</h3>
-            <h3 className={`opacity-40 inline`}> las empresas líderes en Argentina y el mundo confían en merlintech para potenciar su éxito.</h3>
+            <h3 className={`inline text-white`}>Testimonios y Opiniones:</h3>
+            <h3 className={`opacity-40 inline`}> Las empresas líderes en Argentina y el mundo confían en merlintech para potenciar su éxito.</h3>
           </div>
           <ButtonFour image={mouse} text={`CLICKEA LAS TARJETAS`} link={`#testimonials`} />
         </div>
@@ -62,12 +63,16 @@ const Contact = () => {
               </div>
               <div className={`max-w-[340px]`}>
                 <div className={``}>
-                  <h4 className={`${styles.heading3White} my-2.5 inline`}>Ubicación . </h4>
-                  <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>Billinghurst 1193, 4to A, Buenos Aires, Argentina</p>
+                  <Link href={`https://www.google.com/maps/place/Merlintech/@-34.5958388,-58.4138098,15z/data=!4m2!3m1!1s0x0:0x9627f54691cefafc?sa=X&ved=1t:2428&ictx=111`} target="_blank">
+                    <h4 className={`${styles.heading3White} my-2.5 inline`}>Ubicación . </h4>
+                    <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>Billinghurst 1193, 4to A, Buenos Aires, Argentina</p>
+                  </Link>
                 </div>
                 <div className={``}>
-                  <h4 className={`${styles.heading3White} my-2.5 inline`}>Horarios . </h4>
-                  <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>Lunes a Viernes de 9:00 a 18:00</p>
+                  <Link href={`https://www.google.com/search?q=merlintech&sca_esv=b2746cf197726f04&sca_upv=1&sxsrf=ADLYWILu9Z1ggP-66dgs0OJWHIHaK3ba5w%3A1715385983644&ei=f7Y-ZtfzJqLU1sQP_tOx8AU&ved=0ahUKEwiXr9ThpoSGAxUiqpUCHf5pDF4Q4dUDCBA&uact=5&oq=merlintech&gs_lp=Egxnd3Mtd2l6LXNlcnAiCm1lcmxpbnRlY2gyChAjGIAEGCcYigUyCBAAGBMYBxgeMggQABgTGAcYHjIIEAAYExgHGB4yCBAAGBMYBxgeMggQABgTGAcYHjIOEC4YExgHGMcBGB4YrwEyCBAAGBMYBxgeMgoQABgTGAcYCBgeMgoQABgTGAcYCBgeSIMQUKUHWKEKcAJ4AJABAJgBcKABnAKqAQMyLjG4AQPIAQD4AQGYAgOgAqcCwgIHECMYsAIYJ8ICCxAAGIAEGBMYChgNwgIIEAAYgAQYogSYAwCIBgGSBwMyLjGgB4ES&sclient=gws-wiz-serp#ip=1`} target="_blank">
+                    <h4 className={`${styles.heading3White} my-2.5 inline`}>Horarios . </h4>
+                    <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>Lunes a Viernes de 9:00 a 18:00</p>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -78,12 +83,16 @@ const Contact = () => {
               </div>
               <div className={`max-w-[330px] flex flex-wrap items-start m:block`}>
                 <div className={``}>
-                  <h4 className={`${styles.heading3White} my-2.5 inline`}>Teléfono . </h4>
-                  <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>+54 911 7090-5150</p>
+                  <Link href={`tel:+5491170905150`} target="_blank">
+                    <h4 className={`${styles.heading3White} my-2.5 inline`}>Teléfono . </h4>
+                    <p className={`${styles.paragraph} mb-2.5 pl-2 inline`}>+54 911 7090-5150</p>
+                  </Link>
                 </div>
                 <div className={`mb-8 m:mb-0`}>
-                  <h4 className={`${styles.heading3White} my-2.5 inline`}>Email . </h4>
-                  <p className={`${styles.paragraph} mb-2.5 pl-2 inline underline underline-offset-2`}>info@merlintech.com.ar</p>
+                  <Link href={`mailto:info@merlintech.com.ar`} target="_blank">
+                    <h4 className={`${styles.heading3White} my-2.5 inline`}>Email . </h4>
+                    <p className={`${styles.paragraph} mb-2.5 pl-2 inline underline underline-offset-2`}>info@merlintech.com.ar</p>
+                  </Link>
                 </div>
               </div>
             </div>

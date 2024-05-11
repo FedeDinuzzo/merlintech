@@ -16,41 +16,9 @@ const useMousePosition = () => {
   };
 
   useEffect(() => {
-    document.addEventListener("mousemove", updatePosition, false);
-    document.addEventListener("mouseenter", updatePosition, false);
-
+    document.addEventListener("mousemove", updatePosition);
     return () => {
       document.removeEventListener("mousemove", updatePosition);
-      document.removeEventListener("mouseenter", updatePosition);
-    };
-  }, []);
-
-  return position;
-};
-
-const useMousePositionDelay = () => {
-  const [position, setPosition] = useState({
-    clientXCircle: 0,
-    clientYCircle: 0
-  });
-
-  const updatePosition = (event) => {
-    const { clientX, clientY } = event;
-    setTimeout(() => {
-      setPosition({
-        clientXCircle: clientX,
-        clientYCircle: clientY
-      });
-    }, 100);
-  };
-
-  useEffect(() => {
-    document.addEventListener("mousemove", updatePosition, false);
-    document.addEventListener("mouseenter", updatePosition, false);
-
-    return () => {
-      document.removeEventListener("mousemove", updatePosition);
-      document.removeEventListener("mouseenter", updatePosition);
     };
   }, []);
 
@@ -59,7 +27,6 @@ const useMousePositionDelay = () => {
 
 export const CustomCursor = () => {
   const { clientXDot, clientYDot } = useMousePosition();
-  const { clientXCircle, clientYCircle } = useMousePositionDelay();
   const [cursorPointer, setCursorPointer] = useState(false);
 
   useEffect(() => {
@@ -83,6 +50,18 @@ export const CustomCursor = () => {
         elements.removeEventListener("mouseover", handleMouseOverButton);
         elements.removeEventListener("mouseleave", handleMouseLeaveButton);
       });
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleClick = () => {
+      setCursorPointer(false); // Restablecer el cursor cuando se hace clic en algún elemento
+    };
+
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
     };
   }, []);
 
@@ -113,8 +92,8 @@ export const CustomCursor = () => {
           viewBox="0 0 100 100"
           style={{
             position: "absolute",
-            left: clientXCircle,
-            top: clientYCircle,
+            left: clientXDot,
+            top: clientYDot,
             transform: "translate(-50%, -50%)"
           }}
         >

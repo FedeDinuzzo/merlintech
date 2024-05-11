@@ -36,7 +36,7 @@ const AllServices = () => {
           <h2 className={`${styles.heading3} my-2.5 z-10`}>Backups y Copias de Seguridad</h2>
           <p className={`${styles.paragraph} mb-2.5 z-10`}>Mantenga a salvo los datos e información de su negocio con la configuración de Backups remotos y automatizados</p>
           <div className={`flex w-[340px] px-5`}>
-            <ButtonTwo className={``} image={ChevronRight} text={`Disaster Recovery`} link={''} />
+            <ButtonTwo className={``} image={ChevronRight} text={`Disaster Recovery`} tgt={`_blank`} link={'https://api.whatsapp.com/send?phone=541160173000&text=Hola%20Merlintech,%20%F0%9F%92%BB%20Les%20escribo%20desde%20el%20sitio%20web%20'} />
           </div>
         </div>
 
@@ -45,7 +45,7 @@ const AllServices = () => {
           <div className={`flex flex-col h-[380px] w-[340px] m:w-[620px] gap-2.5 pt-5 m:pt-[22px] px-5 pb-0 z-10`}>
             <h2 className={`${styles.heading3} my-2.5`}>Recuperación de la Información</h2>
             <p className={`${styles.paragraph} mb-2.5`}>Protéjase de una eventual pérdida de datos con un almacenamiento encriptado y una recuperación virtual a través de nuestro escritorio remoto. Accediendo a sus equipos para reparar cualquier problema en su software.</p>
-            <ButtonTwo image={ChevronRight} text={`Protección y resguardo`} link={''} />
+            <ButtonTwo image={ChevronRight} text={`Protección y resguardo`} tgt={`_blank`} link={'https://api.whatsapp.com/send?phone=541160173000&text=Hola%20Merlintech,%20%F0%9F%92%BB%20Les%20escribo%20desde%20el%20sitio%20web%20'} />
             <Image className={`mt-3`} src={Card2Services} alt="supportIT" width="580" height="147" />
           </div>
         </div>
@@ -56,7 +56,7 @@ const AllServices = () => {
             <Image src={Card3Services} alt="supportIT" width="580" height="99" />
             <h2 className={`${styles.heading3} my-2.5`}>Streaming: Centro Operacional</h2>
             <p className={`${styles.paragraph} mb-2.5`}>El centro de control BOCC ha sido diseñado para mejorar la calidad, la fiabilidad y la disponibilidad de la transmisión de contenidos multimedia. Delegue la monitorización, las alertas, la asistencia en vivo y preserve sus flujos de vídeo OTT con los expertos en contenido multimedia de Merlin.</p>
-            <ButtonTwo image={ChevronRight} text={`Protección y resguardo`} link={''} />
+            <ButtonTwo image={ChevronRight} text={`Protección y resguardo`} tgt={`_blank`} link={'https://api.whatsapp.com/send?phone=541160173000&text=Hola%20Merlintech,%20%F0%9F%92%BB%20Les%20escribo%20desde%20el%20sitio%20web%20'} />
           </div>
         </div>
 
@@ -65,7 +65,7 @@ const AllServices = () => {
           <h2 className={`${styles.heading3} my-2.5 z-10`}>Cyber Seguridad</h2>
           <p className={`${styles.paragraph} mb-2.5 z-10`}>Proteja su negocio de malware, hackers, virus y prevenga futuros riesgos de seguridad</p>
           <div className={`flex w-[340px] px-5`}>
-            <ButtonTwo image={ChevronRight} text={`Defensa Multinivel`} link={''} />
+            <ButtonTwo image={ChevronRight} text={`Defensa Multinivel`} tgt={`_blank`} link={'https://api.whatsapp.com/send?phone=541160173000&text=Hola%20Merlintech,%20%F0%9F%92%BB%20Les%20escribo%20desde%20el%20sitio%20web%20'} />
           </div>
           <Image className={`mt-2.5  z-10`} src={Card4Services} alt="supportIT" width="300" height="99" />
         </div>

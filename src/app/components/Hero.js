@@ -1,5 +1,4 @@
 import styles from "@/app/constants/style"
-import Image from 'next/image'
 import cuposLimitados from "@/public/cuposLimitados.png"
 import { Button } from "./Buttons"
 import { ButtonTwo } from "./Buttons"
@@ -40,9 +39,9 @@ const Hero = () => {
           <p className={`${styles.paragraph} max-w-[500px] min-w-[380px]`}>
             Optimiza tu tecnología con nuestro soporte IT especializado.
             ¡Maximiza la productividad y minimiza los tiempos de inactividad!
-            Operatividad 24/7 garantizada por nuestros expertos
+            Operatividad 24/7 garantizada por nuestros expertos.
           </p>
-          <Button image={ChevronRight} text="CONSULTORÍA GRATUITA" link="" />
+          <Button image={ChevronRight} text="CONSULTORÍA GRATUITA" link="#servicios" />
         </div>
       </div>
 
@@ -67,7 +66,7 @@ const Hero = () => {
               <MobileOptimization img={cuposLimitados} width="300" height="123" />
               <h2 className={`${styles.heading3} my-2.5`}>Soporte IT Personalizado</h2>
               <p className={`${styles.paragraph} mb-2.5`}>Asegure que sus datos y sistemas estén siempre disponibles, protegidos y actualizados.</p>
-              <ButtonTwo image={ChevronRight} text="Realizar Auditoria" link="" />
+              <ButtonTwo image={ChevronRight} text="Realizar Auditoria" tgt={`_blank`} link="https://api.whatsapp.com/send?phone=541160173000&text=Hola%20Merlintech,%20%F0%9F%92%BB%20Les%20escribo%20desde%20el%20sitio%20web%20" />
             </div>
           </div>
         </div>
