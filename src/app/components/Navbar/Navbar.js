@@ -50,7 +50,7 @@ export default function Navbar() {
                   />
                 )}
               </div>
-              <ul className={"s:hidden m:static fixed m:flex m:space-x-10 items-center m:text-white m:w-auto w-6/12 px-8"}>
+              <ul className={"hidden m:static fixed m:flex m:space-x-10 items-center m:text-white m:w-auto w-6/12 px-8"}>
                 <li className={`font-inter font-medium cursor-pointer text-[14px]`}>
                   <Link href={`/`} aria-label={`Ir a la sección inicio`}>Inicio</Link>
                 </li>

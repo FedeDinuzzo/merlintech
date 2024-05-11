@@ -36,10 +36,10 @@ const Hero = () => {
             <h1 className={`${styles.heading} text-gradient py-2 m:py-4 max-w-[520px]`}>Soporte IT</h1>
             <h3 className={`${styles.heading} text-gradient py-2 m:py-4 max-w-[520px]`}>Para Empresas</h3>
           </div>
-          <p className={`${styles.paragraph} max-w-[500px] min-w-[380px]`}>
+          <p className={`${styles.paragraph} max-w-[500px] min-w-[370px]`}>
             Optimiza tu tecnología con nuestro soporte IT especializado.
             ¡Maximiza la productividad y minimiza los tiempos de inactividad!
-            Operatividad 24/7 garantizada por nuestros expertos.
+            Operatividad 24/7 Garantizada por expertos.
           </p>
           <Button image={ChevronRight} text="CONSULTORÍA GRATUITA" link="#servicios" />
         </div>
