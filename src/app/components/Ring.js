@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import MobileOptimization from "./MobileOptimization"
+// import MobileOptimization from "./MobileOptimization"
 import RingX2 from '../../public/RingX2.svg'
 import Ring1bg from '../../public/Ring1bg.svg'
 import Ring1 from '../../public/Ring1.svg'
@@ -24,8 +24,10 @@ export function RingOne() {
 export function RingTwo() {
   return (
     <div className='bg-circles h-32 w-32 rounded-full flex justify-center items-center border-solid border-secondary/25 border-[2px]'>
-      <MobileOptimization img={Ring2} design={`absolute`} w={60} h={60} />
-      <MobileOptimization img={RingX2} design={`absolute`} w={150} h={150} />
+      <Image src={Ring2} className={`absolute`} w={60} h={60} alt="" />
+      <Image src={RingX2} className={`absolute`} w={150} h={150} alt="" />
+      {/* <MobileOptimization img={Ring2} design={`absolute`} w={60} h={60} />
+      <MobileOptimization img={RingX2} design={`absolute`} w={150} h={150} /> */}
     </div>
   )
 }
