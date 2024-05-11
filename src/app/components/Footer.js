@@ -13,7 +13,7 @@ import { Fragment } from "react"
 import Link from "next/link"
 
 const Footer = () => (
-  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col mt-20`}>
+  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col mt-20 m:mt-36`}>
     <div className={`${styles.boxWidth}`}>
       <div className="mx-auto footer-line h-[1px] w-[360px] m:w-[819px]" />
       <div className="mx-auto footer-light -mb-24 l:-mb-12 w-[360px] m:w-[819px]" />

@@ -9,7 +9,7 @@ import { RingThree } from "./Ring"
 function Scroll() {
   return (
     <>
-      <section className={`min-h-[120vh] m:min-h-[128vh] relative flex justify-between items-center z-40`}>
+      <section className={`min-h-[120vh] m:h-[220vh] l:m:h-[auto]  relative flex justify-between items-center z-40`}>
         <div id="servicios" smooth="true" className={`-mt-[1040px]`} />
         <div className={`-mt-20 flex flex-col mx-5 m:mx-8 l:mx-24 w-full l:pr-72 z-50`}>
           <h2 className={`${styles.heading} m:leading-[70px] mb-16`}>

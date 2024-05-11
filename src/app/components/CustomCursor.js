@@ -108,7 +108,7 @@ export const CustomCursor = () => {
   }, [clicked]);
 
   return (
-    <div className="hidden l:block">
+    <div className="hidden m:block">
       <div className="fixed z-[2000] pointer-events-none ">
         <svg
           fill={`${cursorPointer ? "#3395FF" : "white"}`}
