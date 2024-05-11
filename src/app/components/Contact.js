@@ -26,7 +26,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className={`mt-96`}>
+    <section className={`mt-80`}>
       <div id="testimonios" className={`absolute -mt-20`} />
       <div className='absolute w-full h-[1600px] m:h-[1200px] l:h-[900px] mt-28'>
         <div className={`flex-none inset-0 overflow-hidden absolute`}>
@@ -37,7 +37,7 @@ const Contact = () => {
 
       <div className={`flex mb-[60px] px-5 z-50`}>
         <div className={`flex flex-col mx-auto gap-[30px] l:w-[1260px] z-50`}>
-          <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-20`}>
+          <div className={`${styles.heading3Contact} max-w-[770px] h-[100%] pr-10 l:pr-20`}>
             <h3 className={`inline text-white`}>Testimonios y Opiniones:</h3>
             <h3 className={`opacity-40 inline`}> Las empresas líderes en Argentina y el mundo confían en merlintech para potenciar su éxito.</h3>
           </div>

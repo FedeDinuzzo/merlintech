@@ -16,7 +16,7 @@ const Footer = () => (
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col mt-20`}>
     <div className={`${styles.boxWidth}`}>
       <div className="mx-auto footer-line h-[1px] w-[360px] m:w-[819px]" />
-      <div className="mx-auto footer-light -mb-12 w-[360px] m:w-[819px]" />
+      <div className="mx-auto footer-light -mb-24 l:-mb-12 w-[360px] m:w-[819px]" />
       <div className={`flex-col mb-8 w-full`}>
         <div className="flex mx-auto justify-around flex-wrap w-full">
           <div className="mr-0 w-full mb-5 m:mr-96 l:mb-0 l:w-auto px-5 l:px-0">
