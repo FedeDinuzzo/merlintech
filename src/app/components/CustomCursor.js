@@ -16,9 +16,41 @@ const useMousePosition = () => {
   };
 
   useEffect(() => {
-    document.addEventListener("mousemove", updatePosition);
+    document.addEventListener("mousemove", updatePosition, false);
+    document.addEventListener("mouseenter", updatePosition, false);
+
     return () => {
       document.removeEventListener("mousemove", updatePosition);
+      document.removeEventListener("mouseenter", updatePosition);
+    };
+  }, []);
+
+  return position;
+};
+
+const useMousePositionDelay = () => {
+  const [position, setPosition] = useState({
+    clientXCircle: 0,
+    clientYCircle: 0
+  });
+
+  const updatePosition = (event) => {
+    const { clientX, clientY } = event;
+    setTimeout(() => {
+      setPosition({
+        clientXCircle: clientX,
+        clientYCircle: clientY
+      });
+    }, 100);
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousemove", updatePosition, false);
+    document.addEventListener("mouseenter", updatePosition, false);
+
+    return () => {
+      document.removeEventListener("mousemove", updatePosition);
+      document.removeEventListener("mouseenter", updatePosition);
     };
   }, []);
 
@@ -27,7 +59,9 @@ const useMousePosition = () => {
 
 export const CustomCursor = () => {
   const { clientXDot, clientYDot } = useMousePosition();
+  const { clientXCircle, clientYCircle } = useMousePositionDelay();
   const [cursorPointer, setCursorPointer] = useState(false);
+  const [clicked, setClicked] = useState(false); // Estado para rastrear si se ha hecho clic recientemente
 
   useEffect(() => {
     const handleMouseOverButton = () => {
@@ -55,7 +89,8 @@ export const CustomCursor = () => {
 
   useEffect(() => {
     const handleClick = () => {
-      setCursorPointer(false); // Restablecer el cursor cuando se hace clic en algún elemento
+      setCursorPointer(false);
+      setClicked(true); // Establecer clicado a true cuando se hace clic en algún elemento
     };
 
     document.addEventListener("click", handleClick);
@@ -64,6 +99,13 @@ export const CustomCursor = () => {
       document.removeEventListener("click", handleClick);
     };
   }, []);
+
+  // Forzar la actualización del componente cuando se hace clic para restablecer el cursor
+  useEffect(() => {
+    if (clicked) {
+      setClicked(false); // Restablecer clicado después de forzar la actualización
+    }
+  }, [clicked]);
 
   return (
     <div className="hidden l:block">
@@ -92,8 +134,8 @@ export const CustomCursor = () => {
           viewBox="0 0 100 100"
           style={{
             position: "absolute",
-            left: clientXDot,
-            top: clientYDot,
+            left: clientXCircle,
+            top: clientYCircle,
             transform: "translate(-50%, -50%)"
           }}
         >
