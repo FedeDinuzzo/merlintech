@@ -186,12 +186,12 @@ export default function MainCard() {
               {/* CARD THREE */}
               <div className={`overflow-hidden z-20 flex w-full h-[162px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex justify-between px-2.5 py-1`}>
-                  <Image className="w-10 h-24 mr-2" src={Stats} alt="" priority />
+                  <Image className="w-10 h-24 mr-2" src={Stats} alt="" />
                   <div className={`flex flex-col p-2 space-y-3`}>
                     <h4 className={`${styles.headingMainCard} font-medium text-[13px]`}>Clientes satisfechos</h4>
                     <p className={`${styles.headingMainCard} opacity-80`}>Gracias al equipo de soporte IT por mantener la magia de Disney. Su dedicación es fundamental para nuestro éxito</p>
                     <div className={`flex items-center`}>
-                      <Image className="mr-2 h-6 w-6" src={AvatarDisney} alt="" priority />
+                      <Image className="mr-2 h-6 w-6" src={AvatarDisney} alt="" />
                       <div>
                         <h4 className={`${styles.headingMainCard} font-medium`}>Ceo Disney</h4>
                         <p className={`${styles.headingMainCard} opacity-80`}>Mensaje de agradecimiento</p>
@@ -206,7 +206,7 @@ export default function MainCard() {
               {/* CARD FOUR */}
               <div className={`overflow-hidden z-20 flex w-full h-[342px] max-w-[60vw] rounded-[10px] backdrop-blur-[15px] bg-[#0009] bg-opacity-60 border-[.75px] border-secondary border-solid border-opacity-10`}>
                 <div className={`flex flex-col p-[15px]`}>
-                  <MobileOptimization img={ImageCard} design={`w-full mb-[6px]`} nombre="tech pictrue abstract" />
+                  <Image src={ImageCard} className={`w-full mb-[6px]`} alt="tech pictrue abstract" />
                   <button className={`${styles.headingMainCard} my-1 bg-[#3395FF] rounded-md flex justify-center py-1 text-[13px] w-[154px]`}>ATENCIÓN INMEDIATA</button>
                   <h4 className={`${styles.headingMainCard} my-1 font-medium text-[13px]`}>Resolución Continua</h4>
                   <p className={`${styles.headingMainCard} my-1 opacity-80`}>Nos brindaron soluciones inmediatas, disponibles las 24 horas del día</p>
