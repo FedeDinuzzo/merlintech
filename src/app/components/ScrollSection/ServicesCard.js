@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from "@/app/constants/style"
 import Image from 'next/image'
-import key from '../../public/key.svg'
-import cloud from '../../public/cloud.svg'
-import cloudKey from '../../public/cloudKey.svg'
-import circuit from '../../public/circuit.svg'
-import toolService from '../../public/toolService.svg'
-import AvatarProgress from '../../public/AvatarProgress.png'
-import ChevronDown from '../../public/ChevronDown.svg'
-import LogoServicios from '../../public/LogoServicios.png'
+import key from '../../../public/key.svg'
+import cloud from '../../../public/cloud.svg'
+import cloudKey from '../../../public/cloudKey.svg'
+import circuit from '../../../public/circuit.svg'
+import toolService from '../../../public/toolService.svg'
+import AvatarProgress from '../../../public/AvatarProgress.png'
+import ChevronDown from '../../../public/ChevronDown.svg'
+import LogoServicios from '../../../public/LogoServicios.png'
 
 
 export default function ServicesCard() {
