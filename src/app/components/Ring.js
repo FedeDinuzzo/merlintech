@@ -9,7 +9,7 @@ import Ring3 from '../../public/Ring3.svg'
 
 export function RingOne() {
   return (
-    <div className='h-[144px] w-[144px] flex justify-center items-center z-0'>
+    <div className='h-[144px] w-[144px] flex justify-center items-center'>
       <Image className='absolute z-50' src={Ring1} alt={Ring1} width="60" height="60" priority />
       <Image className='absolute z-50' src={Ring1bg} alt={Ring1bg} width="144" height="144" priority />
       <div className='absolute bg-circles h-[120px] w-[120px] rounded-full flex justify-center items-center border-solid border-secondary/25 border-[2px]'>
