@@ -6,9 +6,6 @@ import Spline from '@splinetool/react-spline';
 
 export default function ScrollThree() {
   return (
-
     <Spline scene="https://prod.spline.design/ShnmOlaePhgL49pm/scene.splinecode" />
-
-
   );
 }

@@ -4,10 +4,10 @@ import styles from '../../constants/style'
 import ScrollText from './ScrollText'
 import ScrollOne from './ScrollOne'
 import ScrollTwo from './ScrollTwo'
-import ScrollThree from './ScrollThree'
 import ServicesCard from './ServicesCard'
 import { Button } from "../Buttons"
 import { RingThree } from "../Ring"
+const DynamicScrollThree = dynamic(() => import('./ScrollThree '), { loading: () => <p>Loading...</p>, })
 
 function Scroll() {
   return (
@@ -28,7 +28,7 @@ function Scroll() {
               <ScrollTwo />
             </div>
             <div className='h-[90vh]'>
-              <ScrollThree />
+              <DynamicScrollThree />
             </div>
           </div>
         </div>
