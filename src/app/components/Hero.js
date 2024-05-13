@@ -15,7 +15,7 @@ const Hero = () => {
     <section className={`flex flex-col flex-nowrap min-h-[100vh] justify-center`}>
       <div id="home" className={`absolute top-0`} />
 
-      <div className={`hidden l:flex absolute -left-3 top-[60px] bg-lines h-[1000px] w-[100vw]`}></div>
+      <div className={`hidden m:flex absolute -left-3 top-[60px] bg-lines h-[1000px] w-[100vw]`}></div>
 
       <div className={`flex-none inset-0 overflow-hidden absolute min-h-[1440px] opacity-90 l:opacity-100`}>
         <div className={`absolute bg-radial-white w-[760px] m:w-[1054px] top-[200px]`}></div>
@@ -49,10 +49,10 @@ const Hero = () => {
             <div className="hidden m:flex ">
               <MainCard />
             </div>
-            <div className={`absolute top-[-6%] right-[36px] m:right-0 m:left-[7%] m:-top-[13%] l:-left-[9%] z-50`}>
+            <div className={`absolute top-[-6%] right-[36px] m:right-0 m:left-[7%] m:-top-[13%] l:-left-[9%] z-10`}>
               <RingOne />
             </div>
-            <div className={`absolute right-[-165px] top-[92%] m:right-[10%] m:top-[82%] l:-right-[9%] l:top-[40%] z-50`}>
+            <div className={`absolute right-[-165px] top-[92%] m:right-[10%] m:top-[82%] l:-right-[9%] l:top-[40%] z-10`}>
               <RingTwo />
             </div>
           </div>
