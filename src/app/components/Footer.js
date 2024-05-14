@@ -1,4 +1,4 @@
-import styles from "@/app/constants/style"
+import styles from "../constants/style"
 import Image from 'next/image'
 import logo from '../../public/LogoMerlin.svg'
 import FooterLine from '../../public/FooterLine.svg'
@@ -8,7 +8,7 @@ import Facebook from '../../public/IconFacebook.svg'
 import DataFiscal from '../../public/DataFiscal.webp'
 import ArrowUp from '../../public/ArrowUp.svg'
 import ChevronDown from '../../public/ChevronDown.svg'
-import { footerLinks } from '@/app/constants/index'
+import { footerLinks } from '../constants/index'
 import { Fragment } from "react"
 import Link from "next/link"
 

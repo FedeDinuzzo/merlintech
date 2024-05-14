@@ -1,4 +1,4 @@
-import styles from "@/app/constants/style"
+import styles from "../constants/style"
 import Image from "next/image"
 import cuposLimitados from "../../public/cuposLimitados.png"
 import { Button } from "./Buttons"

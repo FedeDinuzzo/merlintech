@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "@/app/constants/style"
+import styles from "../constants/style"
 import Image from 'next/image'
 import ShadowContact from "../../public/ShadowContact.png"
 import Disney from "../../public/Disney1.png"

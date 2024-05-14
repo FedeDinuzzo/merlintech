@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/app/constants/style'
+import styles from '../../constants/style'
 
 export function Menu({ OnClick }) {
   return (

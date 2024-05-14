@@ -1,4 +1,4 @@
-import styles from "@/app/constants/style"
+import styles from "../constants/style"
 import Image from 'next/image'
 import { ButtonFour } from "./Buttons"
 import mouse from "../../public/mouse.svg"

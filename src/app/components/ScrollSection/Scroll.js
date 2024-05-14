@@ -7,7 +7,7 @@ import ScrollTwo from './ScrollTwo'
 import ServicesCard from './ServicesCard'
 import { Button } from "../Buttons"
 import { RingThree } from "../Ring"
-const DynamicScrollThree = dynamic(() => import('./ScrollThree '), { loading: () => <p>Loading...</p>, })
+// const DynamicScrollThree = dynamic(() => import('./ScrollThree '), { loading: () => <p>Loading...</p>, })
 
 function Scroll() {
   return (
@@ -24,11 +24,11 @@ function Scroll() {
             <div className='h-[120vh]'>
               <ScrollOne />
             </div>
-            <div className='h-[90vh]'>
+            <div className='w-full'>
               <ScrollTwo />
             </div>
             <div className='h-[90vh]'>
-              <DynamicScrollThree />
+              {/* <DynamicScrollThree /> */}
             </div>
           </div>
         </div>
