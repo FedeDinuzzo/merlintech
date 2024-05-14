@@ -9,7 +9,7 @@ import { GlobeDemo } from './World'
 function ScrollTwo() {
   return (
     <>
-      <div className={`hidden m:flex w-full relative`}>
+      <div className={`flex w-full relative`}>
         <GlobeDemo />
       </div>
     </>
